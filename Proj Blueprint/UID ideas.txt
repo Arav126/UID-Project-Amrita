@@ -1,0 +1,14 @@
+1. customization - services (hotel, cars, rentals, furniture-house planning)
+2. movie rating
+3. fasion advice
+4. NGO
+5. sell a product- gpu, crytpo coin, vaccine, accessories-sports, 
+6. sell a service - car rentals, 
+
+
+create my trip - car rentals, fasion advice, trip rating, where to get a vaccine, hotels, reviews, landmarks, covid situation in  that place, guide/manual, trivia, duolingo, 
+
+less content per page - more pages - minimilistic
+standard template for the webites
+
+ 
