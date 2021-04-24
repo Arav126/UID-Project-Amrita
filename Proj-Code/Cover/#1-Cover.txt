@@ -6,6 +6,7 @@ BrandNames
 -trip tailormade
 -organized random wanderer
 -Exploration redefined
+-tent with us
 -
 
 
@@ -15,10 +16,14 @@ BrandNames
 
 
 
-one liner-
+one liner- Think trip/Exploration
+           Think brandName
 
-two liner-
 
-Button- 
+
+two liner- push button start ur imagination
+           
+
+Button- Explore with a new lens
 
 
