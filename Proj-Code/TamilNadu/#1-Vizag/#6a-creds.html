@@ -1,54 +1,94 @@
 <html>
 
-    <pre><H3 style="font-size: 200%; font-family:Verdana;">                                Credit Card Payment Gateway 💳</H1></pre>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <title>Feedback</title>
+    </head>
+    <pre><H3 style="font-size: 200%; font-family:Verdana; text-align: center;">Credit Card Payment Gateway 💳</H1></pre>
 
-        <form style="font-size: 130%; font-family: Verdana;">
-            <pre>
+    <form style="font-size: 130%; font-family: Verdana;">
+    <pre>
+
+    <style>
+
+        .form{
+            margin-left: 25%;
+        }
+
+        body{
+            background-color:darkgoldenrod;
+        }
+
+        input[type=text]:focus {
+
+           text-align: center;
+           width: 500px;
+           padding: 12px 20px;
+           margin-left: 100 px;
+           box-sizing: border-box;
+           border: 2px solid black;
+        }
+        
+        input[type=number]:focus {
+
+           text-align: center;
+           width: 500px;
+           padding: 12px 20px;
+           margin-left: 100 px;
+           box-sizing: border-box;
+           border: 2px solid black;
+        } 
+
+    </style>
             
-            <label for="ctype">Type of Card:</label><br>
-            <select name="card" id="card">
-                <option value="visa">Visa 💳</option>
-                <option value="mcard">MasterCard 💳</option>
-                <option value="amex">American Express 💳</option>
-                <option value="rupay">rupay 💳</option>
-              </select>
+    <div class="form" style="font-size: 150%;">
+    <label for="ctype">Type of Card:</label><br>
+    <select name="card" id="card">
+         <option value="visa">Visa 💳</option>
+         <option value="mcard">MasterCard 💳</option>
+         <option value="amex">American Express 💳</option>
+         <option value="rupay">rupay 💳</option>
+         </select>
+    
 
-            <label for="cnumber">Card Number:</label><br>
-            <input type="number" id="cnumber" name="cnumber"><br>
-            <label for="cname">Card Name:</label><br>
-            <input type="text" id="lname" name="lname">
+    <label for="cnumber">Card Number:</label><br>
+    <input type="number" id="cnumber" name="cnumber"><br>
+    <label for="cname">Card Name:</label><br>
+    <input type="text" id="lname" name="lname">
 
-            <p>           Expiry Date 🗓 </p> <br>
+    <p>           Expiry Date 🗓 </p> <br>
 
-            <label for="expd">Month:</label>
-            <select name="month" id="month">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
+    <label for="expd">Month:</label>
+    <select name="month" id="month">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
                 
-            </select>
+    </select>
 
-            <label for="year">Year:(20-__)</label><br>
-            <input type="year" id="year" name="year"><br>
+    <label for="year">Year:(20-__)</label><br>
+    <input type="number" id="year" name="year"><br>
 
-            <label for="cvv">CVV:</label><br>
-            <input type="cvv" id="cvv" name="cvv"><br>
+    <label for="cvv">CVV:</label><br>
+    <input type="number" id="cvv" name="cvv"><br>
+    </div> 
 
-            <a href="#8-Feedback.html">
-                <img src="payment.png" alt="HTML tutorial" style="width:200px;height:200px;">
-                </a>
+    <a href="#8-Feedback.html">
+        <img src="payment.png" alt="HTML tutorial" style="width:200px;height:200px;">
+     </a>
 
 
 
-            </pre>
-        </form>
+    </pre>
+    </form>
 </html>
