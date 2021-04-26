@@ -6,9 +6,17 @@
         <title>
             Title / tab name
         </title>
+        <style>
+            *{
+               padding: 0px; margin: 0px;
+            }
+            img{
+                display: block;
+            }
+        </style>
     </head>
 
-    <body style="padding: 0px; margin: 0px;">
+    <body>
         <!-- main table -->
         <!-- <table cellpadding="0" cellspacing="0" width="100%" border="1" bgcolor="">
             <tr>
@@ -32,7 +40,7 @@
                  16.66 * 3 = 49.98%
                  66.64%
                 16.6 * 5 = 83.3% -->
-        <table cellpadding="0" cellspacing="0" width="100%" border="1" bgcolor="">
+        <table cellpadding="0" cellspacing="0" width="100%" border="0" bgcolor="">
             <!-- row 1 - 6colspan  -->
             <tr>                
                 <td colspan="6" width=100%>
@@ -43,7 +51,7 @@
             <!-- row 2 - 1rowspan; 6colspan  -->
             <tr>
                 <td rowspan="5" colspan="1" width=16.66%>
-                    <img src="" width="100%" height="200">
+                    <img src="">
                 </td>
                 <td colspan="5" width=83.3%>
                     <img src="" width="100%" height="200">
@@ -54,30 +62,45 @@
             <tr>
                 <!-- <td></td> -->
                 <td width=16.66%>
-                    <img src="" width="100%" height="200">
+                    <img src="Pics/sec-2-row-2-img-1.jpg" width="100%" height="220">
                 </td>
                 <td width=16.66%>
-                    <img src="" width="100%" height="200">
+                    <img src="Pics/sec-2-row-2-img-2.jpg" width="100%" height="220">
                 </td>
                 <td width=16.66%>
-                    <img src="" width="100%" height="200">
+                    <img src="Pics/sec-2-row-2-img-3.jpg" width="100%" height="220">
                 </td>
                 <td width=16.66%>
-                    <img src="" width="100%" height="200">
+                    <img src="Pics/sec-2-row-2-img-4.jpeg" width="100%" height="220">
                 </td>
                 <td width=16.66%>
-                    <img src="" width="100%" height="200">
+                    <img src="Pics/sec-2-row-2-img-5.jpg" width="100%" height="220">
                 </td>
             </tr>
 
             <!-- row 4 - 1rowspan; 2*1colspan; 3*1colspan -->
             <tr>
                 <!-- <td></td> -->
-                <td colspan="2" width=33.32%>
-                    <img src="" width="100%" height="200">
+                <!-- <td colspan="2" width=33.32%>
+                    <img src="Pics/sec-2-row-3-img.jpg" width="100%" height="260">
                 </td>
                 <td colspan="3" width=49.98%>
                     <img src="" width="100%" height="200">
+                </td> -->
+
+                <td colspan="5" width="83.3%" >
+                    <table cellpadding="0" cellspacing="0"  border="0" width="100%" bgcolor="">
+                        <tr>
+                            <td colspan="2" width=35%>
+                                <img src="Pics/sec-2-row-3-img.jpg" width="100%" height="310">
+                            </td>
+                            <td colspan="3" width=65%>
+                                <center>
+                                    CONTENT
+                                </center>
+                            </td>
+                        </tr>
+                    </table>
                 </td>
 
             </tr>
@@ -86,7 +109,7 @@
             <tr>
                 <!-- <td></td> -->
                 <td colspan="5" width=83.3%>
-                    <img src="" width="100%" height="200">
+                    <img src="Pics/sec-2-row-4-img.jpg" width="100%" height="220">
                 </td>
             </tr>
 
@@ -94,25 +117,34 @@
             <tr>
                 <!-- <td></td> -->
                 <td colspan="2" width=33.32%>
-                    <img src="" width="100%" height="200">
+                    <center>
+                        CONTENT
+                    </center>
                 </td>
-                <td colspan="2" width=33.32%>
-                    <img src="" width="100%" height="200">
-                </td>
-                <td width=16.66%>
-                    <img src="" width="100%" height="200">
+                <td colspan="3" width="49.98%">
+                    <table cellpadding="0" cellspacing="0"  border="0" width="100%" bgcolor="">
+                        <tr>
+                            <td width=50%>
+                                <img src="Pics/sec-2-row-5-img-1.jpg" width="100%" height="265">
+                            </td>
+                            <td width=50%>
+                                <img src="Pics/sec-2-row-5-img-2.jpg" width="100%" height="265">
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
 
             <!-- row 7 - 2*3colspan -->
             <tr>
-                <td colspan="3" width=49.98%>
-                    <img src="" width="100%" height="200">
+                <td colspan="3" width=50%>
+                    <center>
+                        CONTENT
+                    </center>
                 </td>
-                <td colspan="3" width=49.98%>
-                    <img src="" width="100%" height="200">
+                <td colspan="3" width=50%>
+                    <img src="Pics/sec-3-img.jpg" width="100%" height="320">
                 </td>
-
             </tr>                               
         </table>
     </body>
