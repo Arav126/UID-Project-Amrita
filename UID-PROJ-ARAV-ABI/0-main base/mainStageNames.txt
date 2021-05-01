@@ -1,10 +1,10 @@
 NAMES
 
 STAGE 1 - Car Rentals       
-STAGE 2 - Resorts
+STAGE 2 - Resorts /// Rooms&Suites
 STAGE 3 - Stops on the way    ///
 STAGE 4 - Landmarks
-STAGE 5 - Things to do      ///
+STAGE 5 - Things to do      ///Experience
 STAGE 6 - Payment 
 STAGE 7 - Concluding stage - Thank You similar   ////
 
