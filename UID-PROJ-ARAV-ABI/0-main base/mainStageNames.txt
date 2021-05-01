@@ -1,16 +1,18 @@
 NAMES
 
-STAGE 1 - Car Rentals       
+STAGE 1 - Car Rentals       // Car Share
 STAGE 2 - Resorts
-STAGE 3 - Stops on the way    ///
+STAGE 3 - Enroute   //  Stops on the way    ///  
 STAGE 4 - Landmarks
-STAGE 5 - Things to do      ///
+STAGE 5 - Activity  ////Things to do /// Events     ///  , Bulletin
 STAGE 6 - Payment 
-STAGE 7 - Concluding stage - Thank You similar   ////
+STAGE 7 - Adios   ////Concluding stage - Thank You similar   ////  Amigos
 
-single logo :
+single logo : dome
 font-family nav : 
 font-family header :
+tr height:
+
 
  <!--                          OUTSIDE INSIDE
         VISITED STATE COLOR = #0e0e0e #be9e44
