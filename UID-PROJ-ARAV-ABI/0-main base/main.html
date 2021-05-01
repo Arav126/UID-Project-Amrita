@@ -24,7 +24,7 @@
 
     <body style="padding: 0px; margin: 0px;">
 
-        <!-- MAIN BODY TABLE  -->
+        <!-- HEADER TABLE  -->
         <table cellpadding="0" cellspacing="0" width="100%" border="1" bgcolor="">
             <!-- cellpadding in this table doesnt affect any other row since all rows are individual tables on their own -->
 
@@ -94,34 +94,30 @@
                         <td width="" bgcolor="d8c60">
                             STAGE 7
                         </td>
-                    </tr>
-                       
+                    </tr> 
                 </table>
-
             </tr>
-
-            <!-- HOME-ROW3 -->
-            <tr>
-                <!-- CELL1 -->
-                <td width="100%">
-                    <table cellpadding="0" cellspacing="0" width="100%" border="1" bgcolor="">
-                        <tr>
-                            <td width="100%">
-                                INSERT CONTENT HERE
-                                <br><br><br><br><br><br><br><br><br>
-                                <br><br><br><br><br><br><br><br><br>
-                            </td>
-                        </tr>            
-                    </table>                    
-                </td>
-            </tr>
-
         </table>
 
-        <!-- FOOTER TABLES -->
+        <!-- MAIN CONTENT table -->
 
+        <!-- INSERT MAIN TABLE HERE DIRECTLY IN CASE OF LAYOUTS  -->
+        <table cellpadding="0" cellspacing="0" width="100%" border="1" bgcolor="">
+            <tr>
+                <td width="100%">
+                    INSERT CONTENT HERE
+                    <br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br>
+                </td>
+            </tr>            
+        </table>
+
+
+        <!-- FOOTER TABLES -->
+        <!-- sign and to top table -->
         <table cellpadding="0" cellspacing="0" width="100%" border="0" bgcolor="#0e0e0e">
-            <tr height=200">
+            <!-- bgcolor="#0e0e0e"  -->
+            <tr height="">
                 <td width="95%" bgcolor="ffffff">
                     <!-- empty -->
                 </td>
@@ -130,8 +126,21 @@
                         <!-- NEED TO DECIDE FONT FAMILY  -->
                         <a href="#">
                             <ion-icon name="chevron-up"></ion-icon>
-                            <div style="font-size: 20px; font-family: sans-serif;transform: rotate(90deg); color: #be9e44;">
-                                &nbsp;&nbsp;To Top
+                        </a>
+                    </center>
+                </td>
+
+            </tr>
+            <tr height=90">
+                <td width="95%" bgcolor="ffffff">
+                    <!-- empty -->
+                </td>
+                <td width="5%">
+                    <center>
+                        <!-- NEED TO DECIDE FONT FAMILY  -->
+                        <a href="#">
+                            <div style="font-size: 25px; font-family: cardo; transform: rotate(90deg); color: #be9e44;">
+                                To Top
                             </div>
                         </a>
                     </center>
@@ -139,7 +148,10 @@
             </tr>
         </table>
 
-        <table cellpadding="0" cellspacing="0" width="100%" border="0" bgcolor="#0e0e0e">
+
+        <!-- MAIN FOOTER TABLE  -->
+        <table cellpadding="0" cellspacing="0" width="100%" border="1" bgcolor="">
+            <!-- bgcolor:#0e0e0e -->
             <tr height="80">
                 <td width="33.33%">
                     <center><hr width=50%></center>
@@ -181,7 +193,7 @@
             <tr height="180">
                 <td colspan="3">
                     <!-- when width defined in perc or anything, rem space is left as white space -->
-                    <hr style="width: 1px; height: 20vh">
+                    <hr style="width: 1px; height: 15vh">
                 </td>
             </tr>
         </table>
