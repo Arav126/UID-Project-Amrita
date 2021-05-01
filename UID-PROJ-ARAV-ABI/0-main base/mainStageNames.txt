@@ -1,9 +1,26 @@
 NAMES
 
-STAGE 1 - Car Rentals 
+STAGE 1 - Car Rentals       
 STAGE 2 - Resorts
-STAGE 3 - Stops on the way
+STAGE 3 - Stops on the way    ///
 STAGE 4 - Landmarks
-STAGE 5 - Things to do
+STAGE 5 - Things to do      ///
 STAGE 6 - Payment 
-STAGE 7 - Bitch lasagna
+STAGE 7 - Concluding stage - Thank You similar   ////
+
+single logo :
+font-family nav : 
+font-family header :
+
+ <!--                          OUTSIDE INSIDE
+        VISITED STATE COLOR = #0e0e0e #be9e44
+        ACTIVE STATE COLOR = #be9e44 #0e0e0e
+        UNVISITED STATE COLOR = #FFEFCA #be9e44
+        -->
+
+
+1. black background - 0e0e0e || with header
+2. remove circle
+
+
+put it in a circle - ask her abt borders.
