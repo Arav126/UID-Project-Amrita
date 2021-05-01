@@ -17,3 +17,10 @@ font-family header :
         ACTIVE STATE COLOR = #be9e44 #0e0e0e
         UNVISITED STATE COLOR = #FFEFCA #be9e44
         -->
+
+
+1. black background - 0e0e0e || with header
+2. remove circle
+
+
+put it in a circle - ask her abt borders.
