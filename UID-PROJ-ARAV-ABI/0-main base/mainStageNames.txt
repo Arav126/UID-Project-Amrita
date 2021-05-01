@@ -9,8 +9,9 @@ STAGE 6 - Payment
 STAGE 7 - Adios   ////Concluding stage - Thank You similar   ////  Amigos /// Gracias
 
 single logo : dome
-font-family nav : 
-font-family header :
+font-family nav/stage : ///// font-family: 'Share', cursive;
+font-family header : ///// font-family: 'Kaushan Script', cursive;
+font-family destination button: ///  font-family: 'Josefin Sans', sans-serif;
 tr height:
 
 
