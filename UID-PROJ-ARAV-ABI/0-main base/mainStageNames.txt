@@ -1,12 +1,12 @@
 NAMES
 
-STAGE 1 - Car Rentals       // Car Share
-STAGE 2 - Resorts
-STAGE 3 - Enroute   //  Stops on the way    ///  
+STAGE 1 - Car Rentals        // Car Share      
+STAGE 2 - Resorts /// Rooms&Suites
+STAGE 3 - Stops on the way    /// Enroute 
 STAGE 4 - Landmarks
-STAGE 5 - Activity  ////Things to do /// Events     ///  , Bulletin
+STAGE 5 - Things to do      ///Experience // Activity  ////Events     ///  , Bulletin
 STAGE 6 - Payment 
-STAGE 7 - Adios   ////Concluding stage - Thank You similar   ////  Amigos
+STAGE 7 - Adios   ////Concluding stage - Thank You similar   ////  Amigos /// Gracias
 
 single logo : dome
 font-family nav : 
