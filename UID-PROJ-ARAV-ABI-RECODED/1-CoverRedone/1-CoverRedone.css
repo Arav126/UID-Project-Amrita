@@ -50,6 +50,7 @@ body {
     letter-spacing: 2px;
     /* word-spacing: 1px; */
     font-family: 'Times New Roman', Times, serif;
+    /* text-transform: uppercase; */
 
     padding: 10px 25px;
     border: 2px solid;
