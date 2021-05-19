@@ -1,0 +1,60 @@
+/* container-bg-color:  ;
+
+
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* body {
+    background-color: rgb(30, 30, 30);
+} */
+
+/* img {
+    display: block;
+}  */
+
+/* icon pack  */
+
+ion-icon {
+    color: black;
+    font-size: 50px;
+    /* do multiples of 8 */
+    /* use this instead of size=large */
+  }
+
+.miniContainer {
+    width: 100%;
+    background-color: #F9F6F0 ;
+    height: 100vh;
+    /* margin: 5px auto; */
+
+    display: grid;
+    grid-template-columns: 1fr repeat(2,2fr);
+    grid-template-rows: 0.5fr repeat(2,1.5fr) 0.5fr;
+
+    grid-row-gap:20px;
+    grid-column-gap:20px;
+    
+}
+
+.miniContainer > div {
+    background-color: brown;
+}
+
+.header,.footer {
+    grid-column: 1/-1;
+}
+
+.sidebar {
+    grid-row: 2/span 2;
+}
+
