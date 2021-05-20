@@ -153,9 +153,10 @@ ion-icon {
 
 /* to affect all hr  */
 .content-text > hr {
-    width: 60%;
+    width: 55%;
     /* to center hr use this  */
     margin: auto;
+    color: #be9e44;
 
 }
 
@@ -171,6 +172,7 @@ ion-icon {
 .content-text > ion-icon {
     font-size: 50px;
     line-height: 60px;
+    /* width: stretch; */
 
 }
 
@@ -183,7 +185,8 @@ ion-icon {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
 
-    margin: 10px auto;
+    /* margin: 10px auto; */
+    line-height: 60px;
 
     padding: 12px 25px;
     border: 3px solid;

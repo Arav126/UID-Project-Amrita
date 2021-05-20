@@ -1,0 +1,154 @@
+                      /* BGCOLOR COLORinStyle
+        VISITED STATE COLOR = #0e0e0e #be9e44
+        ACTIVE STATE COLOR = #be9e44 #0e0e0e
+        UNVISITED STATE COLOR = #FFEFCA #be9e44 */
+        
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    /* this saves 50 extra lines of mentioning anchor again and agian for each change  */
+    color: inherit;
+}
+
+ion-icon {
+  color: #be9e44;
+  font-size: 50px;
+  /* do multiples of 8 */
+  /* use this instead of size=large */
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~BASE SETUP - HEADER~~~~~~~~~~~~~~~~~~~~~*/
+
+.main-header-container {
+    width: 100%;
+    background-color: #0e0e0e;
+    height: 12vh;
+    /* margin: 5px auto; */
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+
+    /* grid-row-gap:20px;
+    grid-column-gap:20px; */
+    
+}
+
+/* .logo {
+    grid-column: 1/2;
+}
+
+.title-text {
+    grid-column: 2/-1;
+} */
+
+/*~~~~~~~~~~~~~~~~~~~~~LOGO~~~~~~~~~~~~~~~~~~~~~*/
+
+.logo {
+    background-image: url("Pics/official.png");
+    background-size: cover;
+    width: 10%;
+    transform: translateX(25px) translateY(5px) scale(0.8);
+    /* padding: 20px; */
+    margin: 1px 1px;
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~TITLE TEXT~~~~~~~~~~~~~~~~~~~~~*/
+
+.title-text {
+    color: #be9e44;
+
+    margin: auto auto;
+    /* text-align: center; */
+    transform: translateX(-120%) translateY(30%);
+    
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    /* font-style: italic; */
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~ERROR --- FORMATTING STAGES~~~~~~~~~~~~~~~~~~~~~*/
+
+                      /* BGCOLOR COLORinStyle
+        VISITED STATE COLOR = #0e0e0e #be9e44
+        ACTIVE STATE COLOR = #be9e44 #0e0e0e
+        UNVISITED STATE COLOR = #FFEFCA #be9e44 */
+
+
+/* .main-header-container > div {
+    margin: auto;
+
+    color: #be9e44;
+      
+
+    font-size: 23px;
+    font-family: 'Share', cursive;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    /* border: 2px solid pink; */
+/* 
+    transition: all;
+    transition-duration: 2s;
+    transition-delay: 150ms;
+} */ */
+
+/* .div-stages > a {
+    padding: 10px 40px;
+    border: 2px solid gold;
+    display: block;
+      
+} */
+
+
+/*==========ALREADY VISITED==========*/
+
+/* .main-header-container > div:hover {
+    box-shadow: 0px 100px 0px 0px #be9e44 inset;  
+} */
+
+
+/*~~~~~~~~~~~~~~~~~~~~~FORMATTING STAGES~~~~~~~~~~~~~~~~~~~~~*/
+
+                       /* BGCOLOR COLORinStyle
+    VISITED STATE COLOR = #0e0e0e #be9e44
+    ACTIVE STATE COLOR = #be9e44 #0e0e0e
+    UNVISITED STATE COLOR = #FFEFCA #be9e44 */
+    /* gg */
+
+
+.main-stages-container {
+    /* width: 100%; */
+    background-color: #0e0e0e;
+    height: 12vh;
+    /* margin: 5px auto; */
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+
+    /* grid-row-gap:20px;
+    grid-column-gap:20px; */
+    
+}
