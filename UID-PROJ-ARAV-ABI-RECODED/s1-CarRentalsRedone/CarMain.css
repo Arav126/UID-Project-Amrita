@@ -412,7 +412,7 @@ img{
 .sub-col:hover .sub-text-bottom{
     left: 0px;
     bottom: 0px;
-    transition: 0.8s;
+    transition: 0.4s;
     width: 100%;
 
 }
