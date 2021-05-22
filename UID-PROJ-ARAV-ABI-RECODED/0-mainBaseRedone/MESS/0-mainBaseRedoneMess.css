@@ -152,3 +152,48 @@ ion-icon {
     grid-column-gap:20px; */
     
 }
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~TO-TOP~~~~~~~~~~~~~~~~~~~~~*/
+
+.to-top {
+    background-color: white;
+}
+
+.to-top > a{
+    background-color: teal;
+
+    transform: translateX(390%);
+    /* position: absolute;top: 0px;bottom: 0px;right: 0px; */
+
+    padding-bottom: 50px;
+    border: 1px solid white;
+
+    z-index: -10;
+    
+}
+.to-top >ion-icon {
+    border: 1px solid black;
+    transform: translateX(450%) translateY(260%);
+    transition: all;
+    transition-duration: 2s;
+    transition-delay: 150ms;
+}
+.to-top > ion-icon:hover ~ a {z-index: 10;}
+
+
+
+.to-top > a > span{
+    display: block;
+    transform: rotate(90deg) translateX(10px);
+
+    color: #be9e44;
+    font-family: cardo;
+    font-size: 22px;
+    /* font-family: 'Share', cursive; */
+    font-weight: 500;
+}
