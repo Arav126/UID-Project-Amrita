@@ -220,14 +220,14 @@ DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS C
 .to-top > a{
     background-color: #0e0e0e;
     padding: 6px 4px;
-    transform: translateX(384%);
-    /* highly non feasible  */
-    /* position: absolute;top: 0px;bottom: 0px;right: 0px; *//* padding-bottom: 1px; */
+
+    justify-self: right;
+    transition: all 2s 150ms;
 }
 
 .to-top > a > span{
     display: block;
-    transform: rotate(90deg) translateX(30%) translateY(10%);
+    transform: rotate(90deg);
 
     color: transparent;
     font-family: cardo;
@@ -236,12 +236,16 @@ DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS C
     /* font-family: 'Share', cursive; */
     font-weight: 500;
 
-    transition: all;
-    transition-duration: 2s;
-    transition-delay: 150ms;
+    transition: all 2s 150ms;
 }
 
-.to-top > a > ion-icon:hover ~ span {color: #be9e44;}
+.to-top ion-icon {transition: all 2s 150ms;}
+
+.to-top > a:hover {padding: 6px 4px;}
+
+.to-top > a:hover > ion-icon {transform: translateY(-10px);}
+
+.to-top > a:hover > ion-icon ~ span {color: #be9e44;transform: rotate(90deg) translateX(10px) translateY(2px);}
 
 /*~~~~~~~~~~~~~~~~~~~~~title-text-bottom~~~~~~~~~~~~~~~~~~~~~*/
 

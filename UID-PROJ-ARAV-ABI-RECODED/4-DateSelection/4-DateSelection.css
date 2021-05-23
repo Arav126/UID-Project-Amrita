@@ -46,7 +46,7 @@ body {
 .dateContainer {
     width: 50%;
     background-color: #303030 ;
-    height: 60vh;
+    height: 65vh;
     margin: 150px auto;
 
     /* no point sice it already shows required vh  */
@@ -91,7 +91,7 @@ body {
     font-size: 20px;
 }
 
-.name {
+.name-entry {
     padding: 8px 12px;
     /* margin: ; */
     border:2px solid #ee1d3d;
@@ -103,7 +103,7 @@ body {
     
 }
 
-.name:focus {
+.name-entry:focus {
     padding: 8px 40px;
     /* border-radius: 50px; */
     
@@ -122,3 +122,23 @@ body {
     height: 50px;
 
 } */
+
+.dateContainer > span {
+    padding: 8px 3px;
+}
+
+.number-selection {
+    padding: 3px 1px;
+}
+
+.footer-text {text-transform: uppercase;}
+
+.table-avg-costs td {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.table-avg-costs th {
+    text-align: center;
+    color: whitesmoke;
+}
