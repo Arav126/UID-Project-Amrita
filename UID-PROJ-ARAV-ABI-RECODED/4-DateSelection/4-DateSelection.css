@@ -46,8 +46,11 @@ body {
 .dateContainer {
     width: 50%;
     background-color: #303030 ;
-    height: 65vh;
+    height: 68vh;
     margin: 150px auto;
+    /* padding-top:20px ; */
+    
+    align-content: center;
 
     /* no point sice it already shows required vh  */
     /* align-items: center;
@@ -63,7 +66,13 @@ body {
 
     /* border: 2px solid red; */
     border-radius: 40px;
+    transition: all 1s 150ms;
     
+}
+.dateContainer:hover {
+    /* border: 2px solid #ee1d3d; */
+    box-shadow: 0px 0px 20px #ee1d3d;
+
 }
 
 .header-text {
@@ -72,9 +81,20 @@ body {
     color: #ee1d3d;
 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    font-size: 28px;
+    font-size: 30px;
     font-style: italic;
+    /* padding: 50px 1px; */
 
+
+}
+
+.borderBottom {
+    border-bottom: 2px solid #ee1d3d;
+    
+    position: absolute;
+    /* top: 50%; */
+    left: 40%;
+    right: 40%;
 }
 
 .main {

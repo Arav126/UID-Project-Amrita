@@ -116,22 +116,22 @@ skin - #D7B08B
 
 
 /* ACTIVE STATE : 4TH STAGE */
+/*==========ACTIVE STAGE==========*/
+
+/* CHANGE REQUIRED1 */
+.s4 {color: #0e0e0e;background-color:#be9e44 ;}
+/* no hover animation for current stage obiviously  */
+
 /*==========TO BE VISITED STAGE==========*/
 
 /* for all consecutive stages except active state  */
-/* CHANGE REQUIRED1 */
+/* CHANGE REQUIRED2 */
 .s5,.s6 {color: #be9e44;background-color: #FFEFCA;}
 
 /* only for the consecutive stage from active  */
-/* CHANGE REQUIRED2 */
-.s5:hover,
-.s5:active {color: #0e0e0e;box-shadow: 250px 0px 0px 0px #be9e44 inset;}
-
-/*==========ACTIVE STAGE==========*/
-
 /* CHANGE REQUIRED3 */
-.s4 {color: #0e0e0e;background-color:#be9e44 ;}
-/* no hover animation for current stage obiviously  */
+.s5:hover {color: #0e0e0e;box-shadow: 250px 0px 0px 0px #be9e44 inset;}
+/* .s5:hover ~ .s4 {color: #be9e44;box-shadow: 100px 0px 0px 0px #0e0e0e inset;} doesnt work  */
 
 /*==========ALREADY VISITED STAGE==========*/
 
@@ -256,7 +256,7 @@ DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS C
 .h-rule > hr {
     width:50%;
     height: 1px;
-    color: #A03650;
+    border-color: #A03650;
 } 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~main-footer-container-2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -317,7 +317,7 @@ DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS C
 }
 
 .h-rule-2 > hr{
-    color: #A03650;
+    border-color: #A03650;
     width: 1px;
     height: 16vh;
 }
