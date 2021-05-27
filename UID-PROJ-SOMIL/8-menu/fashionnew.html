@@ -1,0 +1,270 @@
+<html>
+  <head>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 5%;
+	padding: 0;
+}
+.head{
+  font-family: "Dancing Script", cursive;
+	font-size: 60px;
+	color: black;
+	position: relative;
+  margin-left: 30%;
+}
+.out{
+  margin-top: 10%;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+  align-content: center;
+  margin-left: 0%;
+}
+
+.container:hover {
+	cursor: pointer;
+}
+
+.container img {
+	filter: opacity(70%);
+	width: 235px;
+	height: 235px;
+	border-radius: 50%;
+	
+	box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+	margin-bottom: 1rem;
+	transition: filter 0.4s ease-in-out;
+}
+
+.container:hover img {
+	filter: none;
+}
+
+.title {
+	font-family: "Dancing Script", cursive;
+	font-size: 3rem;
+	color: black;
+	position: relative;
+  margin-left: 20%
+}
+
+.title::after {
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 4px;
+	background-color: black;
+	left: 50%;
+	bottom: -10px;
+	transition: all 0.4s ease-in-out;
+}
+
+.container:hover .title::after {
+	width: 100%;
+	left: 0;
+}
+
+.out {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+body{
+  background-image: url(fn7.jpg);
+  background-attachment: fixed;
+}
+.hello {
+  display: flex;
+  
+  position: relative;
+  margin: 20px auto;
+  width: 100%;
+  height: 500px;
+  background: #ffe6e6;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+}
+
+.hello:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+.hello:hover::before, .hello:hover::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: #ff9090;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+@keyframes clockwise {
+  0% {
+    top: -8px;
+    left: 0;
+  }
+  12% {
+    top: -3px;
+    left: 3px;
+  }
+  25% {
+    top: 0;
+    left: 8px;    
+  }
+  37% {
+    top: 3px;
+    left: 3px;
+  }
+  50% {
+    top: 8px;
+    left: 0;    
+  }
+  62% {
+    top: 3px;
+    left: -3px;
+  }
+  75% {
+    top: 0;
+    left: -8px;
+  }
+  87% {
+    top: -3px;
+    left: -3px;
+  }
+  100% {
+    top: -8px;
+    left: 0;    
+  }
+}
+form{
+  width: 40%;
+  box-sizing: border-box;
+}
+fieldset{
+  margin-top: 0%;
+}
+input[type=submit]
+{
+  font-size: 100%;
+}
+.last{
+  background:#ffe6e6;
+  font-family: 'Inconsolata', monospace;
+  font-weight:bold;
+  color:gray;
+  text-align:center;
+  -webkit-font-smoothing: antialiased;
+}
+.box-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:10%;
+}
+.box{
+  padding:30px;
+  margin:2%;
+  background:white;
+  width:100%;
+  height: 500px;
+  border:1px solid #d6d6d6;
+  box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+  border-radius:3px;
+  transition:.2s all; 
+}
+.box-wrap:hover .box{
+  filter:blur(3px);
+  opacity:0.5;
+  transform: scale(.99);
+  box-shadow:none;
+}
+.box-wrap:hover .box:hover{
+  transform:scale(1);
+  filter:blur(0px);
+  opacity:1;
+  box-shadow:0 10px 20px 0px rgba(0,0,0,0.125);
+}
+</style>
+</head>
+<body>
+  <div class="head">FASHION ADVICE</div>
+<div class="out">
+  
+  <div class="container">
+    <img src="f8.jpg" />
+    <div class="title">BRIDAL</div>
+  </div>
+  <div class="container">
+    <img src="f11.jpg" />
+    <div class="title">PARTY</div>
+  </div>
+  <div class="container">
+    <img src="fn6.jpg" />
+    <div class="title">CASUALS</div>
+  </div>
+  <div class="container">
+    <img src="fn5.jpg" />
+    <div class="title">PICNIC</div>
+  </div>
+</div>
+<div class="hello">
+  <form class="form-horizontal">
+    <fieldset>
+    <legend>FILTERS</legend>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="radios">GENDER</label>
+      <div class="col-md-4">
+      <div class="radio">
+        <label for="radios-0">
+          <input type="radio" name="radios" id="radios-0" value="M" checked="checked">
+          MALE
+        </label>
+      </div>
+      <div class="radio">
+        <label for="radios-1">
+          <input type="radio" name="radios" id="radios-1" value="F">
+          FEMALE
+        </label>
+      </div>
+      <div class="radio">
+        <label for="radios-2">
+          <input type="radio" name="radios" id="radios-2" value="O">
+          OTHERS
+        </label>
+      </div>
+      </div>
+    </div>
+  <label for="vol">Price Range<br><br></label>
+  <label for="vol">₹0 to ₹2000</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <input type="submit">
+  </form>
+</fieldset>
+</div>
+<div class="last">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<div class="box-wrap">
+  <div class="box">
+    <p>ALOO</p>
+  </div>
+  <div class="box">
+    <p>GOBHI</p>
+  </div>
+  <div class="box">
+    <p>BHINDI</p>
+  </div>
+</div>
+</div>
+</body>
+</html>

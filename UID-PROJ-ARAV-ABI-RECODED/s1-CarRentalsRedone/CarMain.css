@@ -87,7 +87,7 @@ img{
     opacity: .5;
 }
 .main-two:hover .p2{
-    right: -21px;;
+    right: -21px;
     bottom: 200px;
     transition: 0.8s;
     opacity: 1;
@@ -317,7 +317,7 @@ img{
     grid-template-rows: 300px 300px;
 }
 .sub-col{
-    overflow: hidden;
+    overflow:hidden;
     position: relative;
     backgrond-color: black;
 }
