@@ -1,0 +1,213 @@
+ALL CSS PROPERTIES AND CSS CLASSES USED IN WEBPAGE 
+
+ 
+
+ARAV 
+
+Padding:, Margin: 
+
+Fontsize, Fontfamily, Letterspacing, Wordspacing, Texttransform, fontstyle, textalign 
+
+Color 
+
+Height,width 
+
+Background-color, background-image – url , linear gradient,backgroundsize,backgroundattachment, backgrounposition 
+
+Opacity,filter-blur,visibility 
+
+Pointer –  
+
+ 
+
+Display – block,inline,grid,none 
+
+All grid props – display:grid  gridtemplaterows gridrows rowgap  
+
+Boxshadow 
+
+Border - borderbottom, borderradius 
+
+Transform – translate, rotate,scale 
+
+Position:absolute,fixed,relative , zindex 
+
+Transition 
+
+ 
+
+Classes used - :hover ,:active,:link,:visited,:focus,:checked 
+
+Selectors used – space,>,~,+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ABI 
+
+Padding-top, bottom, right, left 
+
+Margin-^same 
+
+Border- bottom, top, radius 
+
+Width-100%, auto 
+
+Height-^same 
+
+Content- to define specific content to change when hovered 
+
+Display-grid, flex, block, inline block 
+
+Grid -Grid-template-columns, Grid-template-rows, Grid-gap, Grid-column, Grid-row, Grid-area 
+
+Background-image- Background-attachment, Background-repeat, Background-color 
+
+Opacity, Filter 
+
+Overflow 
+
+Position 
+
+Position- right, left, bottom, top 
+
+Transition 
+
+Transform- Scale () 
+
+Text-align 
+
+Box-shadow 
+
+Letter-spacing, Line-Height, text-transform 
+
+Sudo-classes -hover, active, visited  
+
+Hover: Before, Hover: after 
+
+Cursor-pointer 
+
+Selecting child elements - nth-child(n) 
+
+Selectors- space, ~ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SOMIL 
+
+Padding 
+
+Filters 
+
+Margin 
+
+Background 
+
+Transform, transition 
+
+Box shadow, box-sizing 
+
+Webkit 
+
+<div id=””> 
+
+<marquee> 
+
+@keyframes 
+
+Fieldset 
+
+Grid----grid-templates -row, grid-templates -column 
+
+Display 
+
+Z-index 
+
+Animation 
+
+Content: ‘’; 
+
+Letter spacing 
+
+Align items, Justify items 
+
+Cursor type 
+
+Scroll behaviour 
+
+Pseudo classes: before,after,hover 
+
+Flex Box(with list) 

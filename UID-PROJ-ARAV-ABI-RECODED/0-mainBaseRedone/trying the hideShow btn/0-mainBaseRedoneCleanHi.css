@@ -28,7 +28,7 @@ a{
     /* margin: 6px auto; not a gud idea to remention color in body*/
 
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
     
 }
@@ -329,11 +329,39 @@ body {
     /* position: relative; */
 }
 
-.main-header-container{
+/* .main-header-container{
     position: sticky;
-    /* bottom: 98%; */
+
     top: 0%;
     left: 0%;
     right: 0%;
+} */
 
+/*~~~~~~~~~~~~~~~~~~~~~to hide/show ~~~~~~~~~~~~~~~~~~~~~*/
+
+.trigger-main-stages-container{
+
+    position: relative;
+}
+
+.trigger-main-stages-container > ion-icon {
+    font-size: 50px;
+    color: #be9e44;
+    /* justify-items: left; */
+
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+.main-stages-container {
+    /* with respect to entire vh */
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.main-header-container > .trigger-main-stages-container > ion-icon:hover ~ .main-stages-container{
+    position: relative;
+    z-index: 10;
 }
