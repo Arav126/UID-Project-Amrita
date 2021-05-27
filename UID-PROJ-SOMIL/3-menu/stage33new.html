@@ -3,6 +3,7 @@
         <title>
             BELUM CAVES
         </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body{
                 background-image: url(sn1.jpg);
@@ -10,6 +11,7 @@
                 background-size: cover;
                 background-attachment: fixed;
                 background-position: 150% 150%;
+                margin: 0%;
             }
             .text{
                 position: relative;
@@ -25,18 +27,105 @@
                 opacity: 0.5;
                 font-size: 50%;
                 background-color:black;
-                height: 125px;
+                height: 110px;
             }
+
+            html{
+                scroll-behavior: smooth;
+            }
+            #section2{
+                margin-top: 10%;
+                width: 100%;
+                background-image:url(sn3.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                height: 800px;
+            }
+            #section3{
+                margin-top: 10%;
+                width: 100%;
+                background-image:url(sn4.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                height: 800px;
+                border-left: 1265px solid black ;
+                border-top: 600px solid transparent;
+                border-collapse: collapse;
+                
+            }
+            .last{
+                position: relative;
+                top: 50px;
+  font-family: 'Inconsolata', monospace;
+  font-weight:bold;
+  font-size: xx-large;
+  color:black;
+  text-align:center;
+  -webkit-font-smoothing: antialiased;
+}
+.box-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:10%;
+}
+.box{
+  padding:30px;
+  margin:2%;
+  
+  width:100%;
+  height: 500px;
+  border:1px solid #d6d6d6;
+  box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+  border-radius:3px;
+  transition:.2s all; 
+}
+.box-wrap:hover .box{
+  filter:blur(3px);
+  opacity:0.5;
+  transform: scale(.99);
+  box-shadow:none;
+}
+.box-wrap:hover .box:hover{
+  transform:scale(1);
+  filter:blur(0px);
+  background-color: whitesmoke;
+  opacity:0.9;
+  box-shadow:0 10px 20px 0px rgba(0,0,0,0.125);
+}
+
         </style>
     </head>
     <body>
-        <marquee height="130px" behavior="scroll" direction="down" scrollamount="730" onmouseover="this.stop();" onmouseout="this.start();">
+        <marquee height="130px" behavior="scroll" direction="down" scrollamount="700" onmouseover="this.stop();" onmouseout="this.start();">
             <center><div class="text">BELUM CAVES</div></center>
             </marquee>
             <div class="content">
-                <div class="text"><center>ABOUT</center></div>
-                <div class="text"><center>TIMINGS</center></div>
+                <div class="text"><center><a href="#section2">ABOUT</a></center></div>
+                <div class="text"><center><a href="#section3">TIMINGS</a></center></div>
                 <div class="text"><center>TICKET</center></div>
             </div>
+            <div id="section2">
+                <div class="last">
+                    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+                    <div class="box-wrap">
+                      <div class="box">
+                        <p>WHY SPECIAL</p>
+                        <p><font size="4">The Belum Caves is the largest and longest cave system open to the public on the Indian subcontinent, known for its speleothems, such as stalactite and stalagmite formations. The Belum Caves have long passages, galleries, spacious caverns with fresh water and siphons.</font> </p>
+                      </div>
+                      <div class="box">
+                        <p>DISCOVERY</p>
+                        <p><font size="4">Even though the Belum Caves were known to local people, the first records of site come from the expedition report of British geologist and archaeologist Robert Bruce Foote, in 1884. Thereafter, the Belum Caves remained unnoticed for almost a century until a German team headed by Herbert Daniel Gebauer conducted detailed exploration of the caves in 1982 and 1983.</font></p>
+                      </div>
+                      <div class="box">
+                        <p>HISTORY</p>
+                        <p><font size="4">Belum Caves are geologically and historically important caves. There are indications that Jains and Buddhists monks occupied these caves centuries ago. Many Buddhists relics were found inside the caves. The caves were being used to dump wastes from nearby places until 1988. Local people of nearby settlements, notably Policemen and residents of Belum Village co-operated with the Government of Andhra Pradesh and developed the cave site as a tourist attraction.</font></p>
+                      </div>
+                    </div>
+                    </div>
+            </div>
+            <div id="section3"></div>
     </body>
 </html>
