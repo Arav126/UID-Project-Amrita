@@ -18,10 +18,14 @@
         <div class="main-header-container">
             <div class="logo"><img src="Pics/official.png"></div>
             <div class="title-text title-text-top">Trip to the Tee</div>
-            <div class="trigger-main-stages-container"><ion-icon name="chevron-down"></ion-icon></div>
+            <div class="trigger-main-stages-container">
+                <a href="javascript:void(0);"  onclick="geeksforgeeks()">
+                    <ion-icon name="chevron-down"></ion-icon>
+                </a>
+            </div>
         </div>
 
-        <div class="main-stages-container">
+        <div class="main-stages-container" id="menus">
             <div class="div-stages s1"><a href="#" target="_self">Car Rentals</a></div>
             <div class="div-stages s2"><a href="#" target="_self">Suites</a></div>
             <div class="div-stages s3"><a href="#" target="_self">Enroute</a></div>
@@ -32,6 +36,7 @@
 
         <div class="main-content-container">
             INSERT CONTENT/GRID HERE !
+            <!-- <iframe src="/s2-ResortsRedone/5-ResortsRedone.html" frameborder="0" height="1000px" width="100%"></iframe> -->
 
         </div>
 
@@ -68,6 +73,19 @@
         <!-- SCRIPT INSERTS -->
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
         </script>
+
+<script>
+        
+    // Function to toggle the bar
+    function geeksforgeeks() {
+        var x = document.getElementById("menus");
+        if (x.style.display === "grid") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "grid";
+        }
+    }
+</script>
 
     </body>
 </html>
