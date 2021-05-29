@@ -63,7 +63,10 @@ ion-icon {
 /*~~~~~~~~~~~~~~~~~~~~~IMAGE INSERTION~~~~~~~~~~~~~~~~~~~~~*/
 
 body {
-    background-image: url("Pics/beige-wallpaper.jpg") ;   
+    background-image: url("../tq/AnotherSecretDeer-mobile.mp4") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .menu {
