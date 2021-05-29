@@ -28,19 +28,22 @@ a{
     /* margin: 6px auto; not a gud idea to remention color in body*/
 
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
     
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~LOGO~~~~~~~~~~~~~~~~~~~~~*/
+.logo {position: relative;}
 
 .logo > img{
     background-size: cover;
     width: 10%;
-    transform: translateX(25px) translateY(5px) scale(0.8);
-    /* padding: 20px; */
-    margin: auto 5px;
+
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    transform: scale(1.2);
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~title-text~~~~~~~~~~~~~~~~~~~~~*/
@@ -50,7 +53,6 @@ a{
 
     margin: auto auto;
     /* text-align: center; */
-    
     
     font-family: 'Kaushan Script', cursive;
     font-size: 40px;
@@ -63,7 +65,7 @@ a{
 }
 
 .title-text-top {
-    transform: translateX(-145%) ;
+    /* transform: translateX(-145%) ; */
     /* cuz used again at footer  */
 }
 
@@ -74,7 +76,23 @@ a{
     cursor:not-allowed;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~main-header-container~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~trigger-main-stages-container~~~~~~~~~~~~~~~~~~~~~*/
+
+.main-header-container{
+    position: relative;
+}
+
+.main-header-container ion-icon {
+    font-size: 50px;
+    color: #be9e44;
+
+    position: absolute;
+    right: 4%;
+    top: 20%;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~main-stages-container~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .main-stages-container {
     width: 100%;
@@ -324,16 +342,13 @@ DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS C
 
 /*~~~~~~~~~~~~~~~~~~~~~to make title stay~~~~~~~~~~~~~~~~~~~~~*/
 
-body {
-    /* overflow: scroll; */
-    /* position: relative; */
-}
-
-.main-header-container{
+/* .main-header-container{
     position: sticky;
-    /* bottom: 98%; */
+
     top: 0%;
     left: 0%;
     right: 0%;
+} */
 
-}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~abi additions~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+

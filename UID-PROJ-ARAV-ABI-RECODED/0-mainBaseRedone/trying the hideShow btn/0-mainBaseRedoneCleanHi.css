@@ -24,13 +24,30 @@ a{
 .main-header-container {
     width: 100%;
     background-color: #0e0e0e;
-    height: 12vh;
+    height: 20vh;
     /* margin: 6px auto; not a gud idea to remention color in body*/
 
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr 1fr;
     
+}
+
+.logo {
+    grid-column: 1/span 2;
+}
+
+.title-text-top{
+    grid-column: 3/span 2;
+}
+
+.trigger-main-stages-container {
+    grid-column: 5/-1;
+}
+
+.main-stages-container{
+    grid-column: 1/-1;
+    grid-row: 2/3;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~LOGO~~~~~~~~~~~~~~~~~~~~~*/
@@ -81,7 +98,7 @@ a{
     background-color: #0e0e0e;
     height: 8vh;
 
-    display: grid;
+    display: none;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 1fr;
 
@@ -354,12 +371,12 @@ body {
     z-index: 10;
 } */
 
-.trigger-main-stages-container{
+.main-header-container{
 
     position: relative;
 }
 
-.trigger-main-stages-container ion-icon {
+.main-header-container ion-icon {
     font-size: 50px;
     color: #be9e44;
 
@@ -367,3 +384,6 @@ body {
     right: 10%;
     top: 30%;
 }
+
+
+#trigger:checked ~ .main-stages-container{display: grid;}
