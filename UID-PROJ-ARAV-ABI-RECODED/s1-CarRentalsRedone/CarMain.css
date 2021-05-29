@@ -87,11 +87,8 @@ img{
     opacity: .5;
 }
 .main-two:hover .p2{
-<<<<<<< Updated upstream
     right: -21px;
-=======
 
->>>>>>> Stashed changes
     bottom: 200px;
     transition: 0.8s;
     opacity: 1;
@@ -151,7 +148,6 @@ img{
     transition: 0.8s;
 
 }
-<<<<<<< Updated upstream
 .main-three:hover{
     transition: 0.8s;
 }
@@ -163,9 +159,7 @@ img{
 .main-three:hover h3{
     border-bottom:2px solid black;
 }
-=======
 
->>>>>>> Stashed changes
 
 .main-four{
     grid-row: 2/span 1;
@@ -325,7 +319,7 @@ img{
 .sub-col{
     overflow:hidden;
     position: relative;
-    backgrond-color: black;
+    /* backgrond-color: black; */
 }
 .sub-one{
     grid-row: 1/span 1;
