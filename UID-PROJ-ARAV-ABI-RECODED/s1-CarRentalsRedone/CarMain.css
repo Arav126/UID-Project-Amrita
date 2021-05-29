@@ -148,10 +148,7 @@ img{
 
 }
 .main-three:hover{
-
     transition: 0.8s;
-    opacity: 0.3;
-
 }
 .main-three:hover h2,
 .main-three:hover h3,
