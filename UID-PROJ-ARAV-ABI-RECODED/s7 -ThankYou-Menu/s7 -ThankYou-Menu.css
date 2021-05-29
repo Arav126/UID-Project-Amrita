@@ -1,0 +1,71 @@
+/* container-bg-color: #F9F6F0 ;
+
+
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* body {
+    background-color: rgb(30, 30, 30);
+} */
+
+/* img {
+    display: block;
+}  */
+
+/* icon pack  */
+
+ion-icon {
+    color: black;
+    font-size: 50px;
+    /* do multiples of 8 */
+    /* use this instead of size=large */
+  }
+
+/*~~~~~~~~~~~~~~~~~~~~~BASIC SETUP~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.graciasContainer {
+    /* width: 100%; */
+    background-color: transparent ;
+    height: 95vh;
+    margin: 5px 15px;
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:  0.5fr 0.3fr 0.5fr 4fr;
+
+    grid-row-gap:10px;
+    grid-column-gap:20px;
+    
+}
+
+.header-text-1,.header-text-2,.header-text-3 {
+    grid-column: 1/-1;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~HEADER-TEXT~~~~~~~~~~~~~~~~~~~~~*/
+
+.header {
+    
+    
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~IMAGE INSERTION~~~~~~~~~~~~~~~~~~~~~*/
+
+body {
+    background-image: url("Pics/beige-wallpaper.jpg") ;   
+}
+
+.menu {
+    background-color: ;
+}
