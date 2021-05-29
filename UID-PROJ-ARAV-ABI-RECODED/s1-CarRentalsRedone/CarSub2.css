@@ -22,10 +22,11 @@ img{
     grid-template-rows: 610px 250px;
     grid-gap: 40px; 
     background-color: black;
-    background-image: url(seltos-1.jpg);
+    background-image: url(verna-1.jpg);
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    opacity: 0.75;
+    opacity: 0.65;
 }
 .main-grid div{
     overflow: hidden;
@@ -52,7 +53,7 @@ img{
    
 }
 .main-head-text h1::before{
-    content: 'KIA SELTOS GT Line';
+    content: 'HUNDAI VERNA';
     color: white ;
     position: absolute;
     width: 0;
@@ -118,7 +119,7 @@ img{
     grid-template-columns: 650px auto;
     grid-template-rows: 430px;
     /* grid-gap:5px;  */
-    background-color: grey;
+    background-color: black;
     opacity: 0.85;
 }
 .sub-grid-two{
@@ -126,6 +127,7 @@ img{
     grid-template-columns: auto 650px;
     grid-template-rows: 430px ;
     opacity: 0.85;
+    background-color: black;
 }
 .sub-text{
     color: white;
@@ -158,7 +160,7 @@ img{
 .sub-img{
     width: auto;
     height: 100%;
-    opacity: 1;
+    opacity: 0.75;
     transition:  all 0.2s ease-in;
 }
 .sub-one{
@@ -198,7 +200,7 @@ img{
     position: absolute;
     bottom: -300px;
     right: 0px;
-    opacity: 0.6;
+    opacity: 1;
     transition: 0.5s;
     background-image: linear-gradient(to bottom,transparent,black);
 }
