@@ -111,6 +111,7 @@ a{
     justify-items: center;
     align-items: center;      
 
+    /* CHANGGGGGGGGGGEEEEEEEEEEEE RRRREEEEEQQQQQUUUIIIIRRREEEDDDD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     font-size: 23px;
     font-family: 'Share', cursive;
     font-weight: 600;
@@ -322,7 +323,12 @@ DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS C
 .socials > a > ion-icon {
     /* opacity: 0.7; */
 }
-.socials > a > ion-icon:hover {color: #A03650;}
+
+.socials > a:nth-child(1) > ion-icon:hover {color: #4267B2;}
+.socials > a:nth-child(2) > ion-icon:hover {color: #E60023;}
+.socials > a:nth-child(3) > ion-icon:hover {color: #FF0000;}
+.socials > a:nth-child(4) > ion-icon:hover {color: #1DA1F2;}
+.socials > a:nth-child(5) > ion-icon:hover {color: #bc2a8d;}
 
 /*~~~~~~~~~~~~~~~~~~~~~copyrights~~~~~~~~~~~~~~~~~~~~~*/
 
