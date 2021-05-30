@@ -34,9 +34,13 @@ ion-icon {
 
 /*~~~~~~~~~~~~~~~~~~~~~BASE NO CHANGE~~~~~~~~~~~~~~~~~~~~~*/
   
+body {
+    background-color: #f9f6f0;
+}
+
 .destContainer {
     width: 95%;
-    background-color: #F9F6F0 ;
+    background-color: #feefad;
     height: 95vh;
     margin: 15px auto;
 
@@ -44,10 +48,14 @@ ion-icon {
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 0.3fr repeat(3,1fr);
 
+    border-radius: 20px;
+    
+
     /* grid-row-gap:20px;
     grid-column-gap:20px; */
     
 }
+
 
 .header-text {
     grid-column: 1/-1;
@@ -207,5 +215,21 @@ doesn't work without mentioning that it is a child element */
 }
 
 .footer-content1 {
-    fam
+    margin: auto;
+    
+    font-family: 'Charm', cursive;
+    font-size: 21px;
+    
 }
+
+.footer-content2 {
+    margin: 50px 30px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+
+    grid-column: 5/-1;
+}
+
