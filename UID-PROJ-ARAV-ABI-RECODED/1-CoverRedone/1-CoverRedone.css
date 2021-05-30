@@ -63,6 +63,7 @@ body {
     transition-delay: 200ms;
     /* transition-timing-function: ease-out; */
 
+    cursor: not-allowed;
 }
 
 .btnCover:hover {
@@ -77,3 +78,81 @@ body {
 }
 
 
+.btnGG {
+    position: fixed;
+    top: 20%;
+    left: 45%;
+
+    font-family: sans-serif;
+    font-size: 30px;
+
+    text-decoration: none;
+
+    color: whitesmoke;
+
+    padding: 10px 25px;
+    /* border: 2px solid; */
+
+    border-top: 10px solid;
+    border-left: 10px solid;
+
+    box-shadow: 10px 10px 0px whitesmoke;
+
+    transition: all;
+    transition-duration: 1.5s;
+    transition-delay: 200ms;
+
+    
+}
+
+.btnGG:hover {
+
+    color: #0e0e0e;
+    background-color: #fff;
+    opacity: 0.8;
+
+    /* background-image: linear-gradient(to bottom right, aqua,teal); */
+    /* background-color: rgb(18, 209, 209); */
+    /* background-color: teal;
+    color: whitesmoke; */
+
+    border: 2px solid whitesmoke;
+
+    box-shadow: 0px 0px 0px whitesmoke;
+}
+
+.title-text {
+    /* color: #be9e44; */
+    color: whitesmoke;
+
+
+    position: fixed;
+    top: 2%;
+    left: 42%;
+    
+    font-family: 'Kaushan Script', cursive;
+    font-size: 45px;
+    /* font-style: italic; */
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+
+
+    opacity: 0.8;
+}
+
+.content-text {
+    position: fixed;
+    top: 13%;
+    left: 40%;
+
+    color: whitesmoke;
+    background-color: #046f8ac1;
+
+    font-family: serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    padding: 2px 10px;
+
+}
