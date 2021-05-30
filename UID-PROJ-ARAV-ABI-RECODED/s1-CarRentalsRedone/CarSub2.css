@@ -22,7 +22,7 @@ img{
     grid-template-rows: 610px 250px;
     grid-gap: 40px; 
     background-color: black;
-    background-image: url(verna-1.jpg);
+    background-image: url(genesis-1.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@ img{
    
 }
 .main-head-text h1::before{
-    content: 'HUNDAI VERNA';
+    content: 'HUNDAI genesis g90';
     color: white ;
     position: absolute;
     width: 0;
