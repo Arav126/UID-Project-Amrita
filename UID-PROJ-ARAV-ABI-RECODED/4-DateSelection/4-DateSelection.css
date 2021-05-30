@@ -86,15 +86,31 @@ body {
     /* padding: 50px 1px; */
 
 
+    position: relative;
+
+    transition: all 2s ease-in-out 0.15s;
 }
 
-.borderBottom {
-    border-bottom: 2px solid #ee1d3d;
-    
+.borderBottom{
+    transition: all 2s ease-in-out 0.15s;
+
+    border-bottom: 3px solid #ee1d3d;
+
     position: absolute;
-    /* top: 50%; */
     left: 40%;
     right: 40%;
+    bottom: -10px;
+
+}
+
+.header-text:hover > .borderBottom {
+    
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: -10px;
+
+    
 }
 
 .main {
@@ -153,12 +169,7 @@ body {
 
 .footer-text {text-transform: uppercase;}
 
-.table-avg-costs td {
-    text-align: center;
-    color: whitesmoke;
-}
-
-.table-avg-costs th {
+.table-avg-costs td, .table-avg-costs th {
     text-align: center;
     color: whitesmoke;
 }

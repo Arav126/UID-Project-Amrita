@@ -3,6 +3,7 @@
         <title>
             BELUM CAVES
         </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body{
                 background-image: url(sn1.jpg);
@@ -10,6 +11,7 @@
                 background-size: cover;
                 background-attachment: fixed;
                 background-position: 150% 150%;
+                margin: 0%;
             }
             .text{
                 position: relative;
@@ -25,18 +27,250 @@
                 opacity: 0.5;
                 font-size: 50%;
                 background-color:black;
-                height: 125px;
+                height: 110px;
             }
+
+            html{
+                scroll-behavior: smooth;
+            }
+            #section2{
+                margin-top: 10%;
+                width: 100%;
+                background-image:url(sn3.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                height: 800px;
+
+            }
+            #section3{
+                width: 100%;
+                
+                
+            }
+            .dia{
+              background-image:url(sn4.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                height: 800px;
+              border-left: 1100px solid black ;
+                border-top: 500px solid transparent;
+            }
+            .diatxt{
+              float: left;
+              font-size: 300%;
+              color: black;
+            }
+            .last{
+                position: relative;
+                top: 50px;
+                font-family: 'Inconsolata', monospace;
+                font-weight:bold;
+                font-size: xx-large;
+                color:black;
+                text-align:center;
+              -webkit-font-smoothing: antialiased;
+                }
+.box-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:10%;
+}
+.box{
+  padding:30px;
+  margin:2%;
+  
+  width:100%;
+  height: 500px;
+  border:1px solid #d6d6d6;
+  box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+  border-radius:3px;
+  transition:.2s all; 
+}
+.box-wrap:hover .box{
+  filter:blur(3px);
+  opacity:0.5;
+  transform: scale(.99);
+  box-shadow:none;
+}
+.box-wrap:hover .box:hover{
+  transform:scale(1);
+  filter:blur(0px);
+  background-color: whitesmoke;
+  opacity:0.9;
+  box-shadow:0 10px 20px 0px rgba(0,0,0,0.125);
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  color: white;
+}
+
+
+
         </style>
     </head>
     <body>
-        <marquee height="130px" behavior="scroll" direction="down" scrollamount="730" onmouseover="this.stop();" onmouseout="this.start();">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="stage32.html">SRI RANGANAYKA TEMPLES</a>
+        <a href="stage33new.html">BELUM CAVES</a>
+        <a href="stage31.html">BACK TO MAP</a>
+      </div>
+      
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+        <marquee height="130px" behavior="scroll" direction="down" scrollamount="700" onmouseover="this.stop();" onmouseout="this.start();">
             <center><div class="text">BELUM CAVES</div></center>
             </marquee>
             <div class="content">
-                <div class="text"><center>ABOUT</center></div>
-                <div class="text"><center>TIMINGS</center></div>
-                <div class="text"><center>TICKET</center></div>
+                <div class="text"><center><a href="#section2">ABOUT</a></center></div>
+                <div class="text"><center><a href="#section3">TIMINGS</a></center></div>
+                <div class="text"><center><a href="#section3">TICKET</a></center></div>
             </div>
+            <div id="section2">
+                <div class="last">
+                    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+                    <div class="box-wrap">
+                      <div class="box">
+                        <p>WHY SPECIAL</p>
+                        <p><font size="4">The Belum Caves is the largest and longest cave system open to the public on the Indian subcontinent, known for its speleothems, such as stalactite and stalagmite formations. The Belum Caves have long passages, galleries, spacious caverns with fresh water and siphons.</font> </p>
+                      </div>
+                      <div class="box">
+                        <p>DISCOVERY</p>
+                        <p><font size="4">Even though the Belum Caves were known to local people, the first records of site come from the expedition report of British geologist and archaeologist Robert Bruce Foote, in 1884. Thereafter, the Belum Caves remained unnoticed for almost a century until a German team headed by Herbert Daniel Gebauer conducted detailed exploration of the caves in 1982 and 1983.</font></p>
+                      </div>
+                      <div class="box">
+                        <p>HISTORY</p>
+                        <p><font size="4">Belum Caves are geologically and historically important caves. There are indications that Jains and Buddhists monks occupied these caves centuries ago. Many Buddhists relics were found inside the caves. The caves were being used to dump wastes from nearby places until 1988. Local people of nearby settlements, notably Policemen and residents of Belum Village co-operated with the Government of Andhra Pradesh and developed the cave site as a tourist attraction.</font></p>
+                      </div>
+                    </div>
+                    </div>
+            </div>
+            <div id="section3">
+              <div class="diatxt"><br><br><br>
+                &nbsp;&nbsp;<span style="background-color:#e4a800;">TIMINGS</span>
+                <br><br>
+                <table style="width: 100%; height: 200px; margin-left: 3.5%;" border="0" bgcolor=#e4a800>
+                  <tbody>
+                  <tr>
+                  <td><font size="5"><b>DAYS</b></font></td>
+                  <td colspan="2"><font size="5"><b>STATUS</b></font></td>
+                  </tr>
+                  <tr>
+                  <td>WEEKDAYS</td>
+                  <td colspan="2">OPEN FROM 7 A.M. TO 6 P.M.</td>
+                  </tr>
+                  <tr>
+                  <td>WEEKENDS</td>
+                  <td colspan="2">OPEN FROM 7A.M. TO 12 NOON</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  <br><br>
+                  &nbsp;&nbsp;<span style="background-color:#e4a800;">TICKET INFO</span>
+                <br><br>
+                  <div>
+                    <table style="margin-left: 3.5%; width: 120%; height: 350px; top: -5%;" border="0" bgcolor="#e4a800" >
+                      <tbody>
+                      <tr>
+                      <td colspan="3"><strong><span style="font-size: xx-large;">Entry Fee</span></strong></td>
+                      </tr>
+                      <tr>
+                      <td><strong>S.No.</strong></td>
+                      <td><strong>Tourist Type</strong></td>
+                      <td ><strong>Amount (Rs.) (Inclusive of ASI &amp; ADA fees)</strong></td>
+                      </tr>
+                      <tr>
+                      <td ><br><br>1.</td>
+                      <td style="height: 90px; top: 5%;"><br><br>Foreign tourist</td>
+                      <td rowspan="3">
+                      <table style="height: 283px; width:100% ; margin-top: 1%;"border="0" >
+                      <tbody>
+                      <tr >
+                      <td style="width: 40%; height: 15px;">ENTRY FEE</td>
+                      <td style="width: 241.333px; height: 15px;">Additional for visiting main mausoleum (Optional)</td>
+                      </tr>
+                      <tr >
+                      <td style="width: 40%; height: 25.6667px;">1100/-</td>
+                      <td style="width: 241.333px; height: 25.6667px;">200/-</td>
+                      </tr>
+                      <tr >
+                      <td style="width: 40%; height: 77px;"><br>540/-</td>
+                      <td style="width: 241.333px; height: 77px;"><br>200/-</td>
+                      </tr>
+                      <tr >
+                      <td style="width: 238px; height: 70px;">50/-</td>
+                      <td style="width: 241.333px; height: 70px;">200/-</td>
+                      </tr>
+                      </tbody>
+                      </table>
+                      </td>
+                      </tr>
+                      <tr>
+                      <td>2.</td>
+                      <td style="height:100px;" >Citizens of SAARC and BIMSTEC Countries</td>
+                      </tr>
+                      <tr>
+                      <td>3.</td>
+                      <td>Domestic/Indian/OCI Cardholder</td>
+                      </tr>
+                      </tbody>
+                      </table>
+                </div><br>
+                <iframe style="width: 168.9%; height: 195px; overflow: hidden; border:0px; background-color: black;" src="movingimg.html" width="100" height="100" scrolling="no"></iframe>
+              </div>
+              <div class="dia"></div>
+            </div>
+            
     </body>
 </html>
