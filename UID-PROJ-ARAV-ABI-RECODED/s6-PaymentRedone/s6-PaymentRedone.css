@@ -32,14 +32,15 @@ ion-icon {
   }
 
 .payContainer {
-    width: 100%;
+    width: 70%;
     background-color: #F9F6F0 ;
-    height: 100vh;
-    /* margin: 5px auto; */
+    height: 90vh;
+    margin: 40px auto;
+    /* padding: 40px; */
 
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 25% 10% 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 1fr;
 
     /* grid-row-gap:20px;
     grid-column-gap:20px; */
@@ -61,7 +62,7 @@ ion-icon {
     grid-column: 1/-1;
     text-align: left;
 
-    width: 70%;
+    width: 80%;
     margin: 30px auto;
 }
 
@@ -75,7 +76,7 @@ li {
     letter-spacing: 1px;
 
     padding: 18px 5%;
-    border-top: 0.01px solid rgba(0, 0, 0, 0.251);
+    border-top: 0.01px solid whitesmoke;
 
     /* border-bottom: 0.01px solid rgba(0, 0, 0, 0.251); */
     /* removing border bottom atleast remove partial error. but kept it seperately again for last item to remove lil error  */
@@ -86,17 +87,40 @@ li {
 }
 
 .list-last-item {
-    border-bottom: 0.01px solid rgba(0, 0, 0, 0.251);
+    border-bottom: 0.01px solid rgba(245, 245, 245, 0.646);
 }
 
 li:hover {
     transform: translateY(-10px);
     border: 0px;
-    box-shadow: 10px 10px 30px 10px rgba(128, 128, 128, 0.728);
+    box-shadow: 10px 10px 30px 10px #303030 ;
 }
 
 li:active {
     transform: translateY(0px);
     border: 0px;
     box-shadow: 0px 0px 0px transparent;
+}
+
+
+/* adjusting colors  */
+
+body {
+    /* background-image: linear-gradient(to bottom,#EC505F,#A10B22) ; */
+    background-color: #303030 ;
+}
+
+.payContainer {
+    /* background-image: linear-gradient(to bottom, rgb(199, 24, 199),rgba(196, 80, 196, 0.625)); */
+
+    background-color: #d5203bb8;
+    /* background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.796),rgb(0, 0, 0)); */
+    color: whitesmoke;
+    border-radius: 20px;
+
+    transition: all 1s 150ms;
+}
+
+.payContainer:hover {
+    box-shadow: 0px 0px 50px 5px #A10B22;
 }
