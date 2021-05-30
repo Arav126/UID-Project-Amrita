@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        body{
+            margin: 0%;
+            padding:0%;
+            background-color:white;
+            
+        }
+        .video{
+        position: relative;
+        }
+        
+        .videotext{
+        position: absolute;
+        text-align: center;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        font-family:'Roboto Mono', monospace;
+        color: antiquewhite;
+        font-size: 80;
+        font-weight: 600;
+        top: 70%;
+        width: 70%;
+        }
+        .videosubtext{
+            position:absolute;
+            text-align: center;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            font-family: 'KoHo', sans-serif;
+            color: floralwhite;
+            font-size: 20;
+            font-weight: 300;
+            top:90%;
+            width:80%;
+        }
+
+        .arts{
+        height: 100vh;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-top: 2%;
+        margin-bottom: 8%;
+        padding: 0%;
+        grid-column-gap: 2%;
+        grid-row-gap: 2%;
+
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
+        }
+
+        .gridimg {
+            position: relative;
+            width: auto;
+            height: 100%;
+            margin: 0 auto;
+            transition: transform .2s;
+        }
+
+        .gridimg h1{
+            position: absolute;
+            text-align: center;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top:50%;
+            font-family: 'KoHo', sans-serif;
+            color: floralwhite;
+            font-size: 300%;
+    }
+
+    .gridimg:hover{
+        transform: scale(0.9);  
+        z-index: 10; 
+    }
+        
+        
+    </style>
+    <body>
+        <div class="video">
+            <video width="100%" autoplay loop muted>
+            <source src="arts-video1.mp4" type="video/mp4" />
+            </video> 
+            <div class="videotext">
+                ARTS & HISTORY
+            </div>
+            <div class="videosubtext">
+                There's something for everyone when it comes to sightseeing around Hyderabad.
+            </div>
+        </div>  
+
+        <div class="arts">
+            <div class="gridimg 1"><img src="arts5.jpg" width="100%"></div>
+            <div class="gridimg 2"><a href="https://www.hyderabadtourism.travel/qutub-shahi-tombs-hyderabad" target="_blank"><img src="arts1.jpg" width="100%"><H1>QUTUB SHAHI<BR>TOMBS</H1></a></div>
+            <div class="gridimg 3"><a href="https://www.hyderabadtourism.travel/charminar-hyderabad" target="_blank"><img src="arts2.jpg" width="100%"><H1>CHARMINAR</H1></a></div>
+            <div class="gridimg 4"><a href="https://www.hyderabadtourism.travel/birla-mandir-hyderabad" target="_blank"><img src="arts3.jpg" width="100%"><H1>BIRLA MANDIR</H1></a></div>
+            <div class="gridimg 5"><a href="https://www.hyderabadtourism.travel/golconda-fort-hyderabad" target="_blank"><img src="arts4.jpg" width="100%"><H1>GOLCONDA FORT</H1></a></div>
+            <div class="gridimg 6"><a href="https://www.hyderabadtourism.travel/lad-bazar-hyderabad" target="_blank"><img src="arts6.jpg" width="100%"><H1>LAAD BAZAAR</H1></a></div>
+        </div>
+</html>

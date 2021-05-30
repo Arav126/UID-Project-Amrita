@@ -27,22 +27,23 @@ img{
         font-size: 500%;
         }
 
-    .bottomimage{
-        position: relative;
-    }
-
-    .bottomimage h1{
-        position:absolute;
-        text-align: center;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        top:40%;
-        width: 90%;
-        font-family: 'Roboto Mono', monospace;
-        color: antiquewhite;
-        font-size: 400%;
-    }
+        .video2{
+            position: relative;
+            }
+            
+            .videotext2{
+            position: absolute;
+            text-align: center;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            font-family:'Roboto Mono', monospace;
+            color: antiquewhite;
+            font-size: 400%;
+            font-weight: 600;
+            top: 40%;
+            width: 70%;
+            }
     
     .htext2{
         position:absolute;
@@ -175,17 +176,4 @@ img{
 
     }
 
-    .tteimg:hover ~h1{
-        position:relative;
-        top: -200px;
-        color: white;
-
-    }
-
-    .tte h1{
-        position: relative;
-        top:-1000px;
-        color: transparent;
-        transition: all 2s;
-    }
    
