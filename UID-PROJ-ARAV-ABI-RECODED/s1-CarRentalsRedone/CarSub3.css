@@ -22,7 +22,8 @@ img{
     grid-template-rows: 610px 250px;
     grid-gap: 40px; 
     background-color: black;
-    background-image: url(seltos-1.jpg);
+    background-image: url(jaguar-1.jpg);
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     opacity: 0.75;
@@ -52,7 +53,7 @@ img{
    
 }
 .main-head-text h1::before{
-    content: 'KIA SELTOS GT Line';
+    content: 'JAGUAR XF';
     color: white ;
     position: absolute;
     width: 0;
@@ -116,7 +117,7 @@ img{
 .sub-grid-one{
     display: grid;
     grid-template-columns: 650px auto;
-    grid-template-rows: 430px;
+    grid-template-rows: 450px;
     /* grid-gap:5px;  */
     background-color: grey;
     opacity: 0.85;
@@ -124,7 +125,7 @@ img{
 .sub-grid-two{
     display: grid;
     grid-template-columns: auto 650px;
-    grid-template-rows: 430px ;
+    grid-template-rows: 470px ;
     opacity: 0.85;
 }
 .sub-text{
