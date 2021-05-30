@@ -169,12 +169,7 @@ body {
 
 .footer-text {text-transform: uppercase;}
 
-.table-avg-costs td {
-    text-align: center;
-    color: whitesmoke;
-}
-
-.table-avg-costs th {
+.table-avg-costs td, .table-avg-costs th {
     text-align: center;
     color: whitesmoke;
 }
