@@ -84,19 +84,19 @@ body {
     left: 45%;
 
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 25px;
 
     text-decoration: none;
 
     color: whitesmoke;
 
-    padding: 10px 25px;
+    padding: 12px 25px;
     /* border: 2px solid; */
 
-    border-top: 10px solid;
-    border-left: 10px solid;
+    border-top: 8px solid;
+    border-left: 8px solid;
 
-    box-shadow: 10px 10px 0px whitesmoke;
+    box-shadow: 8px 8px 0px whitesmoke;
 
     transition: all;
     transition-duration: 1.5s;
@@ -131,7 +131,7 @@ body {
     left: 42%;
     
     font-family: 'Kaushan Script', cursive;
-    font-size: 45px;
+    font-size: 50px;
     /* font-style: italic; */
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -144,12 +144,12 @@ body {
 .content-text {
     position: fixed;
     top: 13%;
-    left: 40%;
+    left: 41%;
 
     color: whitesmoke;
     background-color: #046f8ac1;
 
-    font-family: serif;
+    font-family: 'Charm', cursive;
     font-size: 18px;
     letter-spacing: 1px;
 
