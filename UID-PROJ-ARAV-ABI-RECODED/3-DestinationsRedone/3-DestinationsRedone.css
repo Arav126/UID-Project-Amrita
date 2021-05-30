@@ -198,3 +198,14 @@ doesn't work without mentioning that it is a child element */
     /* height: 2px; */
     transform: translateY(5px);
 }
+
+.footer-img1{
+    background-image: url("Pics/main-bottom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.footer-content1 {
+    fam
+}
