@@ -1,0 +1,366 @@
+/*~~~~~~~~~~~~~~~~~~~~~BASE SETUP~~~~~~~~~~~~~~~~~~~~~*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    /* this saves 50 extra lines of mentioning anchor again and agian for each change  */
+    color: inherit;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~main-header-container~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~CONTAINER SETUP - HEADER~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.main-header-container {
+    width: 100%;
+    background-color: #0e0e0e;
+    height: 12vh;
+    /* margin: 6px auto; not a gud idea to remention color in body*/
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~LOGO~~~~~~~~~~~~~~~~~~~~~*/
+.logo {position: relative;}
+
+.logo > img{
+    background-size: cover;
+    width: 10%;
+
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    transform: scale(1.2);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~title-text~~~~~~~~~~~~~~~~~~~~~*/
+
+.title-text {
+    color: #be9e44;
+
+    margin: auto auto;
+    /* text-align: center; */
+    
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    /* font-style: italic; */
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+
+    opacity: 0.7;
+}
+
+.title-text-top {
+    /* transform: translateX(-145%) ; */
+    /* cuz used again at footer  */
+}
+
+.title-text:link,
+.title-text:hover,
+.title-text:active {
+    opacity: 1;
+    cursor:not-allowed;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~trigger-main-stages-container~~~~~~~~~~~~~~~~~~~~~*/
+
+.main-header-container{
+    position: relative;
+}
+
+.main-header-container ion-icon {
+    font-size: 50px;
+    color: #be9e44;
+
+    position: absolute;
+    right: 4%;
+    top: 20%;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~main-stages-container~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.main-stages-container {
+    width: 100%;
+    background-color: #0e0e0e;
+    height: 8vh;
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+
+}
+
+.main-stages-container > div {
+    /* margin: auto; works but need grid for animations*/
+    display: grid;
+    justify-items: center;
+    align-items: center;      
+
+    /* CHANGGGGGGGGGGEEEEEEEEEEEE RRRREEEEEQQQQQUUUIIIIRRREEEDDDD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    font-size: 23px;
+    font-family: 'Share', cursive;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    transition: all;
+    transition-duration: 2s;
+    transition-delay: 150ms;
+}
+
+/* 
+COLORS 
+                     BGCOLOR  COLOR
+VISITED STATE COLOR = #0e0e0e #be9e44   ---- default
+ACTIVE STATE COLOR = #be9e44 #0e0e0e
+UNVISITED STATE COLOR = #FFEFCA #be9e44
+red - #A03650
+skin - #D7B08B
+ */
+/* cursor:not-allowed; instead just remove href attribut of anchor */
+
+
+/* ACTIVE STATE : 4TH STAGE */
+/*==========ACTIVE STAGE==========*/
+
+/* CHANGE REQUIRED1 */
+.s3 {color: #0e0e0e;background-color:#be9e44 ;}
+/* no hover animation for current stage obiviously  */
+
+/*==========TO BE VISITED STAGE==========*/
+
+/* for all consecutive stages except active state  */
+/* CHANGE REQUIRED2 */
+.s4,.s5,.s6 {color: #be9e44;background-color: #FFEFCA;}
+
+/* only for the consecutive stage from active  */
+/* CHANGE REQUIRED3 */
+.s4:hover {color: #0e0e0e;box-shadow: 250px 0px 0px 0px #be9e44 inset;}
+/* .s5:hover ~ .s4 {color: #be9e44;box-shadow: 100px 0px 0px 0px #0e0e0e inset;} doesnt work  */
+
+/*==========ALREADY VISITED STAGE==========*/
+
+/* all clases before active class  */
+/* CHANGE REQUIRED4 */
+.s1,.s2 {color: #be9e44;background-color: #0e0e0e;}
+.s1:hover,.s2:hover {color: #0e0e0e;box-shadow: 0px 100px 0px 0px #be9e44 inset;}
+
+/* IMP - NO NEED TO REMOVE 5 OR 6 IF ITS ALREADY WHITE, CUZ NO CHANGE
+DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS COMMENT IS ENOUGH*/
+
+/* SELF SUFFICIENT ---- NO CHANGE REQUIRED  */
+/* for s1  */
+.s1:hover ~ .s2 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s1:hover ~ .s3 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s1:hover ~ .s4 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s1:hover ~ .s5 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s1:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+
+/* for s2  */
+.s2:hover ~ .s3 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s2:hover ~ .s4 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s2:hover ~ .s5 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s2:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+
+/* for s3  */
+.s3:hover ~ .s4 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s3:hover ~ .s5 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s3:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+
+/* for s4  */
+.s4:hover ~ .s5 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s4:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+
+/* for s5  */
+.s5:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+
+/* for all clickable stages --- doesnt make sense */
+/* .div-stages:hover {border-bottom: 6px solid #A03650;} */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~main-content-container~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* just dummy no need too define anything */
+/* .main-content-container {height: 120vh; font-size: 30px;text-align: center; background-color: #A03650;} */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~main-footer-container~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~BASIC SETUP~~~~~~~~~~~~~~~~~~~~~*/
+
+.main-footer-container {
+    width: 100%;
+    background-color: #0e0e0e;
+    height: 22vh;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+}
+
+.main-footer-container > div {
+    /* margin: auto; works but need grid for animations*/
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~ICONS~~~~~~~~~~~~~~~~~~~~~*/
+
+.main-footer-container ion-icon{
+    color: #be9e44;
+    font-size: 50px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~WHITESPACE~~~~~~~~~~~~~~~~~~~~~*/
+/* to avoid rementioning black in every div  */
+.whitespace{color: white; background-color: white;}
+
+/*~~~~~~~~~~~~~~~~~~~~~TO-TOP~~~~~~~~~~~~~~~~~~~~~*/
+
+.to-top {
+    background-color: white;
+}
+
+.to-top > a{
+    background-color: #0e0e0e;
+    padding: 6px 4px;
+
+    justify-self: right;
+    transition: all 2s 150ms;
+}
+
+.to-top > a > span{
+    display: block;
+    transform: rotate(90deg);
+
+    color: transparent;
+    font-family: cardo;
+    font-size: 22px;
+    /* text-transform: uppercase; */
+    /* font-family: 'Share', cursive; */
+    font-weight: 500;
+
+    transition: all 2s 150ms;
+}
+
+.to-top ion-icon {transition: all 2s 150ms;}
+
+.to-top > a:hover {padding: 6px 4px;}
+
+.to-top > a:hover > ion-icon {transform: translateY(-10px);}
+
+.to-top > a:hover > ion-icon ~ span {color: #be9e44;transform: rotate(90deg) translateX(10px) translateY(2px);}
+
+/*~~~~~~~~~~~~~~~~~~~~~title-text-bottom~~~~~~~~~~~~~~~~~~~~~*/
+
+.title-text-bottom {
+    padding: 5px 1px;
+}
+
+.h-rule > hr {
+    width:50%;
+    height: 1px;
+    border-color: #A03650;
+} 
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~main-footer-container-2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* cuz of display grid used for alignment takes each icon as a gird item  */
+
+/*~~~~~~~~~~~~~~~~~~~~~BASIC SETUP~~~~~~~~~~~~~~~~~~~~~*/
+.main-footer-container-2 {
+    width: 100%;
+    background-color: #0e0e0e;
+    height: 40vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr) 4fr;
+
+}
+
+.main-footer-container-2 > div {
+    margin: auto; 
+    /* works but need grid for animations */
+    /* display: grid;
+    justify-items: center;
+    align-items: center; */
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~ICONS~~~~~~~~~~~~~~~~~~~~~*/
+
+.main-footer-container-2 ion-icon{
+    color: #be9e44;
+    font-size: 55px;
+
+    transition: all;
+    transition-duration: 1s;
+    transition-delay: 150ms;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~socials~~~~~~~~~~~~~~~~~~~~~*/
+
+.socials {
+    padding: 10px 1px;
+    letter-spacing: 10px;
+}
+
+.socials > a > ion-icon {
+    /* opacity: 0.7; */
+}
+
+.socials > a:nth-child(1) > ion-icon:hover {color: #4267B2;}
+.socials > a:nth-child(2) > ion-icon:hover {color: #E60023;}
+.socials > a:nth-child(3) > ion-icon:hover {color: #FF0000;}
+.socials > a:nth-child(4) > ion-icon:hover {color: #1DA1F2;}
+.socials > a:nth-child(5) > ion-icon:hover {color: #bc2a8d;}
+
+/*~~~~~~~~~~~~~~~~~~~~~copyrights~~~~~~~~~~~~~~~~~~~~~*/
+
+.copyrights {
+    color: grey;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.h-rule-2 > hr{
+    border-color: #A03650;
+    width: 1px;
+    height: 16vh;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~to make title stay~~~~~~~~~~~~~~~~~~~~~*/
+
+/* .main-header-container{
+    position: sticky;
+
+    top: 0%;
+    left: 0%;
+    right: 0%;
+} */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~abi additions~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
