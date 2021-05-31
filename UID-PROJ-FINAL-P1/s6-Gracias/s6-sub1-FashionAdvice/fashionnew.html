@@ -1,5 +1,6 @@
   <html>
   <head>
+    <title>Fashion Advice</title>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 
@@ -199,6 +200,29 @@ form{
   height: inherit;
   max-height: inherit;
 }
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  position: relative;
+  left: 64%;
+  background-color: #720c53;
+  color: white;
+}
+
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -252,8 +276,8 @@ form{
       </div>
     </div>
   <label for="vol">Price Range<br><br></label>
-  <label for="vol">₹0 to ₹2000</label>
-  <input type="range" id="vol" name="vol" min="0" max="50">
+  <label for="vol">₹100 to ₹2000</label>
+  <input type="range" id="vol" name="vol" min="100" max="2000">
  
   </form>
 </fieldset>
@@ -290,5 +314,7 @@ form{
   </div>
 </div>
 </div>
+<a href="../s6-Menu-ThankYou/s7-ThankYou-Menu.html" class="previous">&laquo; Previous</a>
+<a href="../s6-sub2-Feedback/8feedback/8feedback.html" class="next">Next &raquo;</a>
 </body>
 </html>
