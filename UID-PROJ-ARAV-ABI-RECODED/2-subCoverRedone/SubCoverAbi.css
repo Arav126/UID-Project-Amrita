@@ -12,7 +12,7 @@ a{
 body{
     background-color: lavender;
     padding: 30px;
-    background-image: url(background.jpg);
+    /* background-image: url(background.jpg); */
     background-size: cover;
 }
 
@@ -29,7 +29,7 @@ ion-icon {
 
     display: grid;
     grid-template-columns: 300px 400px 1fr 1fr;
-    grid-template-rows: 1fr .5fr;
+    grid-template-rows: .8fr .5fr;
     
 
     grid-gap: 30px;
@@ -43,15 +43,25 @@ ion-icon {
 }
 .one-text {
     position: absolute;
-    top: 18%;
-    right: 8%;
+    top: 22%;
+    right: 7%;
 }
 .one-text h2{
-    color: black;
+    color: #183d59;
+
     /* background-color: #F8F0C6; */
-    font-size: 60px;
+    font-size: 65px;
+    letter-spacing: .5px;
     text-transform: uppercase;
-    text-shadow: 0 0 20px white;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff,
+                 0 0 140px #fff,
+                 0 0 160px #fff;
+    opacity: 0.85;
+    font-weight: 700;
 }
 
 
@@ -65,15 +75,43 @@ ion-icon {
 .main-three{
     grid-column: 2/ span 1;
     grid-row: 2/ span 1;
-    background-color: black;
+    background-color: #235981;
     opacity: 0.7;
-    
+    position: relative;
+    border-radius: 7px;
+}
+.three-text{
+    position: absolute;
+    top: 45%;
+    left: 29%;
+    /* right: 50%; */
+}
+.three-text h2{
+    color: whitesmoke;
+    font-size: 45px;
+}
+.main-three:hover h2{
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 80px #fff,
+    0 0 120px #fff,
+    0 0 140px #fff,
+    0 0 160px #fff;
+    transform: scale(1.1);
+}
+.main-three:hover{
+    transform: translateY(-30px);
+    box-shadow: 0 0 20px black,
+                 0 0 40px black,
+                 0 0 40px black;
+
 }
 .main-four{
     grid-column: 3/span 2;
     grid-row: 2/ span 1;
-    background-color: black;
-    opacity: 0.7;
+    background-color: #235981;
+    opacity: 0.8;
 }
 .main-five{
     grid-column: 4/span 1;
