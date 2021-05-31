@@ -12,7 +12,7 @@ a{
 body{
     background-color: lavender;
     padding: 30px;
-    /* background-image: url(background.jpg); */
+    background-image: url(background.jpg);
     background-size: cover;
 }
 
@@ -28,7 +28,7 @@ ion-icon {
     /* margin: 5px auto; */
 
     display: grid;
-    grid-template-columns: 300px 400px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: .8fr .5fr;
     
 
@@ -40,65 +40,103 @@ ion-icon {
     grid-column: 1/-1;
     grid-row: 1/-1;
     position: relative;
+    text-align: center;
 }
 .one-text {
     position: absolute;
-    top: 22%;
-    right: 7%;
+    top: 80px;
+    right: 115px;
 }
-.one-text h2{
-    color: #183d59;
-
-    /* background-color: #F8F0C6; */
-    font-size: 65px;
-    letter-spacing: .5px;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #fff,
-                 0 0 40px #fff,
+.one-text-quote{
+    position: absolute;
+    top: 270px;
+    right: 270px;
+}
+.one-text-quote h2 span{
+    font-size: 30px;
+}
+.one-text-quote h2{
+    color: white;
+    background-color: #235881af;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding: 35px;
+    text-shadow: 0 0 10px #fff;
+                 /* 0 0 20px #fff; */
+                 /* 0 0 40px #fff,
                  0 0 80px #fff,
                  0 0 120px #fff,
                  0 0 140px #fff,
-                 0 0 160px #fff;
-    opacity: 0.85;
+                 0 0 160px #fff; */
+    opacity: 0.8;
+    /* font-weight: 700; */
+    box-shadow: 0 0 20px black,
+                 0 0 40px black;
+                 border-radius: 7px;
+}
+.one-text h2{
+    color: white;
+    background-color: #235881af;
+
+    padding: 10px 20px;
+    /* background-color: #F8F0C6; */
+    font-size: 65px;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+
+    text-shadow: 0 0 7px #fff;
+                 /* 0 0 20px #fff; */
+                 /* 0 0 40px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff,
+                 0 0 140px #fff,
+                 0 0 160px #fff; */
+    opacity: 0.8;
     font-weight: 700;
+    box-shadow: 0 0 20px black,
+                 0 0 40px black;
+                 border-radius: 7px;
 }
 
 
-.main-two{
-    grid-column: 1/span 1;
-    grid-row: 2/ span 1;
-    background-color: transparent;
-    opacity: 0.7;
 
-}
 .main-three{
-    grid-column: 2/ span 1;
+    grid-column: 1/ span 1;
     grid-row: 2/ span 1;
-    background-color: #235981;
-    opacity: 0.7;
+    background-color: #235881af;
+    box-shadow: 0 0 20px black;
     position: relative;
+    opacity: 0.8;
+
     border-radius: 7px;
 }
 .three-text{
     position: absolute;
-    top: 45%;
-    left: 29%;
+    top: 42%;
+    left: 35%;
     /* right: 50%; */
 }
 .three-text h2{
+    letter-spacing: 1px;
+
+    font-weight: 700;
+
     color: whitesmoke;
-    font-size: 45px;
+    font-size: 55px;
+    opacity: 1;
+    box-shadow: 0;
+    text-shadow: 0 0 7px #fff;
 }
 .main-three:hover h2{
-    text-shadow: 0 0 10px #fff,
+    text-shadow: 0 0 5px #fff,
+    /* 0 0 10px #fff, */
+    /* 0 0 15px #fff, */
     0 0 20px #fff,
-    0 0 40px #fff,
-    0 0 80px #fff,
-    0 0 120px #fff,
-    0 0 140px #fff,
-    0 0 160px #fff;
+    /* 0 0 15px #fff, */
+    /* 0 0 px #fff, */
+    0 0 25px #fff;
     transform: scale(1.1);
+    opacity: 1;
 }
 .main-three:hover{
     transform: translateY(-30px);
@@ -108,16 +146,35 @@ ion-icon {
 
 }
 .main-four{
-    grid-column: 3/span 2;
+    grid-column: 2/span 1;
     grid-row: 2/ span 1;
-    background-color: #235981;
+    background-color: #235881af;
     opacity: 0.8;
+    position: relative;
+    border-radius: 7px;
+
+
+    box-shadow: 0 0 20px black;
+
 }
-.main-five{
-    grid-column: 4/span 1;
-    grid-row: 2/ span 1;
-    background-color: transparent;
+.four-text{
+    position: absolute;
+    top: 42%;
+    left: 5%;
+    /* right: 50%; */
 }
+.four-text h2{
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-size: 55px;
+    opacity: 1;
+    box-shadow: 0;
+    text-shadow: 0 0 7px #fff;
+
+
+}
+
 img{
     height: 100%;
     width: 100%;
