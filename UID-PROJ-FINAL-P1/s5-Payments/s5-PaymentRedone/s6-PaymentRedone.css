@@ -4,7 +4,7 @@
 
 
 */
-*{
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,13 +34,13 @@ ion-icon {
 .payContainer {
     width: 70%;
     background-color: #F9F6F0 ;
-    height: 90vh;
+    height: 150vh;
     margin: 40px auto;
     /* padding: 40px; */
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 1fr;
+    grid-template-rows: 8% 1fr 1% 8% 1fr;
 
     /* grid-row-gap:20px;
     grid-column-gap:20px; */
@@ -93,7 +93,7 @@ li {
 li:hover {
     transform: translateY(-10px);
     border: 0px;
-    box-shadow: 10px 10px 30px 10px #303030 ;
+    box-shadow: 10px 10px 30px 10px #0e0e0e;
 }
 
 li:active {
@@ -107,20 +107,49 @@ li:active {
 
 body {
     /* background-image: linear-gradient(to bottom,#EC505F,#A10B22) ; */
-    background-color: #303030 ;
+    background-color: #0e0e0e;
 }
 
 .payContainer {
     /* background-image: linear-gradient(to bottom, rgb(199, 24, 199),rgba(196, 80, 196, 0.625)); */
 
-    background-color: #d5203bb8;
+    background-color: #880808;
     /* background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.796),rgb(0, 0, 0)); */
     color: whitesmoke;
     border-radius: 20px;
 
     transition: all 1s 150ms;
 }
+li > a {color: whitesmoke;}
 
 .payContainer:hover {
-    box-shadow: 0px 0px 50px 5px #A10B22;
+    box-shadow: 0px 0px 20px whitesmoke;
 }
+
+.header-text{position: relative;}
+
+.borderBottom{
+    transition: all 2s ease-in-out 0.15s;
+
+    border-bottom: 3px solid whitesmoke;
+
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    bottom: -10px;
+
+}
+
+.header-text:hover > .borderBottom {
+    
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: -10px;
+
+    
+}
+
+.tableContainer th {text-align: center;}
+.tableContainer td {text-align: center;}
+.tableContainer {margin-top: 30px;}
