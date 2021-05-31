@@ -4,7 +4,7 @@
 
 
 */
-*{
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,13 +34,13 @@ ion-icon {
 .payContainer {
     width: 70%;
     background-color: #F9F6F0 ;
-    height: 90vh;
+    height: 150vh;
     margin: 40px auto;
     /* padding: 40px; */
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 1fr;
+    grid-template-rows: 8% 1fr 1% 8% 1fr;
 
     /* grid-row-gap:20px;
     grid-column-gap:20px; */
@@ -149,3 +149,7 @@ li > a {color: whitesmoke;}
 
     
 }
+
+.tableContainer th {text-align: center;}
+.tableContainer td {text-align: center;}
+.tableContainer {margin-top: 30px;}
