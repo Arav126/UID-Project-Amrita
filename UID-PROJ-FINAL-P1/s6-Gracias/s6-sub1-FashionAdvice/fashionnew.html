@@ -224,8 +224,8 @@ form{
   </div>
 </div>
 <div class="hello">
-  <form>
-    <fieldset>
+  <form >
+    <fieldset style="width: 100%;">
     <legend>FILTERS</legend>
 
     <div>
@@ -244,7 +244,7 @@ form{
         </label>
       </div>
       <div >
-        <label for="radios-2">
+        <label for="checkbox-1">
           <input type="checkbox" name="check" id="checkbox-1" value="O">
           CHILDREN
         </label>
@@ -254,8 +254,26 @@ form{
   <label for="vol">Price Range<br><br></label>
   <label for="vol">₹0 to ₹2000</label>
   <input type="range" id="vol" name="vol" min="0" max="50">
-  <input type="submit">
+ 
   </form>
+</fieldset>
+<form >
+  <fieldset style="width: 100%;">
+  <legend>FILTERS</legend>
+
+  <div>
+    <label for="size">Choose Your size:</label>
+  <select id="size" name="size" style="width: 50%;">
+    <option value="select">Select</option>
+    <option value="small">S</option>
+    <option value="medium">M</option>
+    <option value="large">L</option>
+    <option value="extralarge">XL</option>
+  </select>
+  <input type="submit" formtarget="_self">
+    </div>
+    </div>
+</form>
 </fieldset>
 </div>
 <div class="last">
