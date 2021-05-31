@@ -81,7 +81,7 @@ body {
 .btnGG {
     position: fixed;
     top: 20%;
-    left: 45%;
+    left: 46.5%;
 
     font-family: sans-serif;
     font-size: 25px;
@@ -93,10 +93,12 @@ body {
     padding: 12px 25px;
     /* border: 2px solid; */
 
-    border-top: 8px solid;
-    border-left: 8px solid;
+    border-top: 7px solid;
+    border-left: 7px solid;
 
-    box-shadow: 8px 8px 0px whitesmoke;
+    box-shadow: 7px 7px 0px whitesmoke;
+
+    opacity: 0.8;
 
     transition: all;
     transition-duration: 1.5s;
@@ -109,7 +111,7 @@ body {
 
     color: #0e0e0e;
     background-color: #fff;
-    opacity: 0.8;
+    opacity: 0.7;
 
     /* background-image: linear-gradient(to bottom right, aqua,teal); */
     /* background-color: rgb(18, 209, 209); */
