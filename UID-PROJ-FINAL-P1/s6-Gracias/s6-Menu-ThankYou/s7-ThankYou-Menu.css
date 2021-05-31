@@ -94,7 +94,7 @@ body {
 }
 
 .header-text-1 > span {
-    font-style: oblique;
+    /* font-style: oblique; */
     color:whitesmoke;
 
     border-bottom: 2px solid whitesmoke;
