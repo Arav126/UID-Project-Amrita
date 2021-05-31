@@ -1,0 +1,28 @@
+4 + 7 + 1 + 4 + 6 + 2 + 4 = 28pages
+
+what is present in page, what does the page do?,
+elements used in page - forms,nested table.
+1-2questions.
+
+WE DID IT
+
+1-Arav
+2-Abi
+3-Arav
+4-Arav
+s1-7pgs - Abi
+s2-Arav
+s3-4pgs-Somil
+s4-6pgs-Rishi
+s5-2pgs-Arav
+-------------
+arav-6
+abi-8
+somil-4
+rishi-6
+-------------
+s6-arav-abi-1pg
+s6-sub1-somil
+s6-sub2-rishi
+s6-sub3-duolingo
+
