@@ -49,6 +49,7 @@ img{
 
 .main-two:hover h1{
     opacity: 1;
+    font-size: 70px;
     transition: 0.8s;
     left: 50px;
     bottom: 400px;
