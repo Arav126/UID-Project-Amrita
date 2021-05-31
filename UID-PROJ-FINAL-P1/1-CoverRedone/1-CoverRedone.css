@@ -28,9 +28,10 @@ ion-icon {
 body { 
     padding: 0;
     margin: 0;
-    background-image:url('../../../UID-LARGE-FILES/waterLoop/pg1-HawaiWaterLooLiveWallpaper-gif.gif');
+    background-image:url('Pics/water-loop-hawaii-new.jpg');
+    background-size: cover;
     /* background-color: black; */
-    background-repeat:repeat;
+    background-repeat:no-repeat;
     /* background-size: 0% -100%;  */
 }
 
