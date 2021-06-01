@@ -206,7 +206,7 @@ body {
 
 .submit-btn{
     position: absolute;
-    right: -40%;
+    right: -30%;
 }
 
 .footer-btn {
@@ -235,4 +235,9 @@ body {
 
 #active-ref-credit:checked ~ a {
     /* cant do the text switch cuz i separated them into two divs/grid-items/left and right  */
+}
+
+.footer-text > span {
+    position: relative;
+    bottom: -40px;
 }
