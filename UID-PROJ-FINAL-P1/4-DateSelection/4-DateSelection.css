@@ -103,7 +103,7 @@ body {
 
 }
 
-.header-text:hover > .borderBottom {
+.dateContainer:hover .borderBottom {
     
     position: absolute;
     left: 20%;

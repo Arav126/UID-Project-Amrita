@@ -140,7 +140,7 @@ li > a {color: whitesmoke;}
 
 }
 
-.header-text:hover > .borderBottom {
+.payContainer:hover .borderBottom {
     
     position: absolute;
     left: 15%;
