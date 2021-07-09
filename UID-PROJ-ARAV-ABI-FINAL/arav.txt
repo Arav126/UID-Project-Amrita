@@ -1,0 +1,8 @@
+2 = add css
+4 = add js
+s5-sub = add js
+s6-feedback = add css / checked state / focus state / lil js
+
+trivia - if time permits
+
+try putting it on website - if time permits
