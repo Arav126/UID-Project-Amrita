@@ -46,6 +46,24 @@
     #sidebar.active {
       left: 0;
     }
+
+    .head-section img{
+      transform: translateX(-20%) translateY(20%) skewX(3deg);
+      
+    }
+
+    #sidebar > ul > li:nth-child(1) {
+      background-color: red;
+    }
+    #sidebar > ul > li:nth-child(2) {
+      background-color: blue;
+    }
+    #sidebar > ul > li:nth-child(3) {
+      background-color: green;
+    }
+    #sidebar > ul > li:nth-child(4) {
+      background-color: grey;
+    }
   </style>
 
 
@@ -66,12 +84,25 @@
               <li>Vaccination</li>
             </ul>
           </div>
+          <div class="head-section">
+            <center>
+              <img src="covid.png" height=70px; width=70px; >
+              <span style="font-family: 'Nunito', sans-serif; color: azure; font-size:400%">COVID-19</span>
+              <br>
+              <span style="font-family: 'Nunito', sans-serif; color: azure; line-height: 2%;">Updates and Guidelines</span>
+            </center>
+          </div>
+          
+
           <script>
             function show() {
               document.getElementById('sidebar').classList.toggle('active');
             }
           </script>
-        <center><span style="display: inline;"><img src="covid.png" height=70px; width=70px; ></span><h1 style="font-family: 'Nunito', sans-serif; color: azure; font-size:400%">COVID-19</h1><br><h3 style="font-family: 'Nunito', sans-serif; color: azure; line-height: 2%;">Updates and Guidelines</h3></center>
+        
+          
+          
+        
         
     </body>
 
