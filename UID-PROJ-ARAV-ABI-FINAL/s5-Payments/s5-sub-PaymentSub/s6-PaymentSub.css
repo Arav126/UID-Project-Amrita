@@ -46,7 +46,7 @@ body {
 .payContainer {
     width: 65%;
     background-color: #303030 ;
-    height: 88%;
+    height: 90vh;
     margin: 40px auto;
     /* padding: 20px 50px;
     affects entire container not individual grid items */
@@ -240,4 +240,11 @@ body {
 .footer-text > span {
     position: relative;
     bottom: -40px;
+}
+
+#tick{
+    color: red;
+    font-size: 30px;
+    position: relative;
+    bottom: -2%;
 }

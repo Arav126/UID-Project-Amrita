@@ -43,11 +43,12 @@ body {
     background-color: #feefada1;
     
     height: 95vh;
-    margin: 15px auto;
+    margin: 0px auto;
+    /* margin-bottom: 0px; */
 
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 0.3fr repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr)s;
 
     border-radius: 10px;
     
@@ -56,32 +57,73 @@ body {
     grid-column-gap:20px; */
     
 }
+.destContainer:nth-child(2) {
+    /* grid-template-rows: repeat(3,1fr)s; */
+    /* margin-top: 0px; */
 
-
-.header-text {
-    grid-column: 1/-1;
 }
 
 .p1 {
     grid-column: 1/span 2;
-    grid-row: 2/span 2;
+    grid-row: 1/span 2;
 }
 .p2 {
     grid-column: 3/span 2;
-    grid-row: 2/span 2;
+    grid-row: 1/span 2;
 }
 .p3 {
     grid-column: 5/span 2;
-    grid-row: 2/span 2;
+    grid-row: 1/span 2;
+}
+.footer-content1 {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
 }
 .footer-img1 {
     grid-column: 2/span 3;
+    grid-row: 3/span 1;
+}
+.footer-content2 {
+    grid-column: 5/span 2;
+    grid-row: 3/span 1;
 }
 
+/* copy */
+/* .p1:nth-child(2) {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+.p2:nth-child(2) {
+    grid-column: 3/span 2;
+    grid-row: 1/span 2;
+}
+.p3:nth-child(2) {
+    grid-column: 5/span 2;
+    grid-row: 1/span 2;
+}
+.footer-content1:nth-child(2) {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+}
+.footer-img1:nth-child(2) {
+    grid-column: 2/span 3;
+    grid-row: 3/span 1;
+}
+.footer-content2:nth-child(2) {
+    grid-column: 5/span 2;
+    grid-row: 3/span 1;
+} */
+/* end of copy  */
+
+
+
+/* individual sub grids  */
 .p1,.p2,.p3 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
+
+    
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~INSERTING IMAGES~~~~~~~~~~~~~~~~~~~~~*/
@@ -117,6 +159,8 @@ body {
     text-align: center;
 
     padding: 15px;
+
+    transition: all 1s ease 100ms;
     
 
 }
@@ -147,7 +191,7 @@ body {
     transition-delay: 150ms;
 }
 
-.cuts:hover {
+.p1:hover>.cuts, .p2:hover>.cuts, .p3:hover>.cuts {
     opacity: 1;
 }
 
@@ -188,6 +232,7 @@ doesn't work without mentioning that it is a child element */
         
 .header-text {
     margin: auto;
+    text-align: center;
 
     font-family: Perpetua;
     text-transform: uppercase;
@@ -206,7 +251,7 @@ doesn't work without mentioning that it is a child element */
 
 .header-text > hr {
     margin: auto;
-    width: 70%;
+    width: 20%;
     /* height: 2px; */
     transform: translateY(5px);
     border-color: #0e0e0e;

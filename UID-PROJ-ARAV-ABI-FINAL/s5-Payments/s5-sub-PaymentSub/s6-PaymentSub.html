@@ -7,9 +7,13 @@
         <title>
             Trying Out
         </title>
+
         <link rel="stylesheet" type="text/css" href="s6-PaymentSub.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        
+
+
     </head>
 
     <body>
@@ -53,8 +57,9 @@
                     
                     <label for="cvv">
                         <span>CVV:</span><br>
-                        <input type="password" id="cvv" class="cvv-no"><br><br>
+                        <input type="password" id="cvv" class="cvv-no" onchange="cvvCheck()">
                     </label>
+                    <ion-icon name="checkmark-sharp" id="tick"></ion-icon>
                     
     
                     
@@ -100,6 +105,11 @@
 
         </form>
         
+        <!-- SCRIPT INSERTS -->
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+        </script>
+        <script src="s6-PaymentSub.js"></script> 
+
     </body>
 </html>
 
