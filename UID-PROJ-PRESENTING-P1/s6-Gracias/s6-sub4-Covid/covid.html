@@ -1,0 +1,113 @@
+<html>
+<title>COVID-19</title>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+
+<style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #sidebar {
+      position: absolute;
+      width: 300px;
+      height: 100%;
+      background: #00b9bf;
+      left: -300px;
+      transition: .4s;
+    }
+
+    #sidebar ul li {
+      list-style: none;
+      color: #fff;
+      font-size: 20px;
+      padding: 26px 24px;
+      border: black;
+    }
+
+    #sidebar .toggle-btn {
+      position: absolute;
+      top: 30px;
+      left: 330px;
+    }
+
+    .toggle-btn span {
+      width: 45px;
+      height: 4px;
+      background: #00b9bf;
+      display: block;
+      margin-top: 4px;
+    }
+
+    #sidebar.active {
+      left: 0;
+    }
+
+    .head-section img{
+      transform: translateX(-20%) translateY(20%) skewX(3deg);
+      
+    }
+
+    #sidebar > ul > li:nth-child(1) {
+      background-color: red;
+    }
+    #sidebar > ul > li:nth-child(2) {
+      background-color: blue;
+    }
+    #sidebar > ul > li:nth-child(3) {
+      background-color: green;
+    }
+    #sidebar > ul > li:nth-child(4) {
+      background-color: grey;
+    }
+  </style>
+
+
+
+</head>
+    
+    <body style="background-color: #0b0e13;">
+        <div id="sidebar">
+            <div class="toggle-btn" onclick ="show()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul>
+              <li>Cases</li>
+              <li>Travel Restrictions</li>
+              <li>Tourist Guidelines</li>
+              <li>Vaccination</li>
+            </ul>
+          </div>
+          <div class="head-section">
+            <center>
+              <img src="covid.png" height=70px; width=70px; >
+              <span style="font-family: 'Nunito', sans-serif; color: azure; font-size:400%">COVID-19</span>
+              <br>
+              <span style="font-family: 'Nunito', sans-serif; color: azure; line-height: 2%;">Updates and Guidelines</span>
+            </center>
+          </div>
+          
+
+          <script>
+            function show() {
+              document.getElementById('sidebar').classList.toggle('active');
+            }
+          </script>
+        
+          
+          
+        
+        
+    </body>
+
+      
+        
+
+    </html>
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+
+<html> 
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Date Selection
+        </title>
+        <link rel="stylesheet" type="text/css" href="4-DateSelection.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="dateContainer">
+            <div class="header-text">Start your trip by filling this form <div class="borderBottom"></div> </div>
+
+            <div class="main">
+                <span>Your name : </span><br>
+                <input class="name-entry" type="text" name="name-field"><br><br>
+
+                <span>When do you plan on beginning your trip?</span><br>
+                <input class="dept-date-selection" type="date" name="departure-date"><br><br>
+
+                <span>Number of travelers -</span><br>
+                <!-- <input class="number-selection" type="number"><br><br> -->
+                <select class="number-selection" name="no-of-travellers" id="travellers" size="1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                </select><br><br>
+                
+                <div class="table-avg-costs">
+                    <center>
+                        <table table cellpadding="0" cellspacing="0" width="75%" border="1" bordercolor="#ee1d3d" bgcolor="" align="center">
+                            <tr><th width="20%">Passengers</th><th width="20%">Hyderabad</th><th width="20%">A&amp;N</th><th width="20%">Germany</th></tr>
+                            <tr><td>1</td><td>&#8377;15,000 - &#8377;20,000</td><td>-</td><td>-</td></tr>
+                            <tr><td>2</td><td>&#8377;30,000 - &#8377;45,000</td><td>-</td><td>-</td></tr>
+                            <tr><td>4</td><td>&#8377;60,000 - &#8377;70,000</td><td>-</td><td>-</td></tr>
+                        </table>
+                    </center>                    
+                </div>
+
+            </div>
+
+            <div class="footer-text header-text">
+                <a href="../s1-CarRental/Car-Rentals-Main/BASE/0-mainBaseRedoneClean.html" class="btn card">Dive in</a> <br><br>
+                <span>
+                    Enjoy your trip customization experience !
+                </span>
+            </div>
+            
+
+
+        </div>
+    </body>
+</html>
+
+
+<!-- add passenger ques
+add table with costs average - customization -->

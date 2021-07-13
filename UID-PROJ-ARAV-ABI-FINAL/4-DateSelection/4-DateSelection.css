@@ -1,0 +1,210 @@
+/* container-bg-color: #F9F6F0 ;
+
+
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* img {
+    display: block;
+}  */
+
+/* icon pack  */
+
+ion-icon {
+    color: black;
+    font-size: 50px;
+    /* do multiples of 8 */
+    /* use this instead of size=large */
+  }
+
+/* <!--                  BGCOLOR COLORinStyle
+        VISITED STATE COLOR = #0e0e0e #be9e44
+        ACTIVE STATE COLOR = #be9e44 #0e0e0e
+        UNVISITED STATE COLOR = #FFEFCA #be9e44
+        --> */
+
+/*~~~~~~~~~~~~~~~~~~~~~BASE NO CHANGE~~~~~~~~~~~~~~~~~~~~~*/
+  
+body {
+    background-color: rgb(30, 30, 30);
+    /* height: 60vh; */
+}
+
+
+.dateContainer {
+    width: 50%;
+    background-color: #303030 ;
+    height: 80vh;
+    margin: 100px auto;
+    /* padding-top:20px ; */
+    
+    align-content: center;
+
+    /* no point sice it already shows required vh  */
+    /* align-items: center;
+    justify-content: center; */
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.5fr;
+
+    /* grid-row-gap:20px;
+    grid-column-gap:20px; */
+
+    /* border: 2px solid red; */
+    border-radius: 40px;
+    transition: all 1s 150ms;
+    
+}
+.dateContainer:hover {
+    /* border: 2px solid #ee1d3d; */
+    box-shadow: 0px 0px 20px #ee1d3d;
+
+}
+
+.header-text {
+    margin: auto;
+
+    color: #ee1d3d;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 30px;
+    font-style: italic;
+    /* padding: 50px 1px; */
+
+
+    position: relative;
+
+    transition: all 2s ease-in-out 0.15s;
+}
+
+.borderBottom{
+    transition: all 2s ease-in-out 0.15s;
+
+    border-bottom: 3px solid #ee1d3d;
+
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    bottom: -10px;
+
+}
+
+.dateContainer:hover .borderBottom {
+    
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: -10px;
+
+    
+}
+
+.main {
+    margin: 20px 50px;
+    text-align: left;
+    line-height: 25px;
+
+}
+
+.main > span {
+    color: whitesmoke;
+    
+    font-family: serif;
+    font-size: 20px;
+}
+
+.name-entry {
+    padding: 8px 12px;
+    /* margin: ; */
+    border:2px solid #ee1d3d;
+    box-shadow: 0px 0px 1px #ee1d3d;
+
+    transition: all;
+    transition-duration: 0.5s;
+    transition-delay: 100ms;
+    
+}
+
+.name-entry:focus {
+    padding: 8px 40px;
+    /* border-radius: 50px; */
+    
+}
+
+.deptdate {
+    /* height: 50px; */
+    /* padding: 8px 12px; */
+
+    /* cant do anything */
+
+    /* transform: scale(1.5); */
+}
+
+/* .deptdate:focus {
+    height: 50px;
+
+} */
+
+.dateContainer > span {
+    padding: 8px 3px;
+}
+
+.number-selection {
+    padding: 4px 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.footer-text {text-transform: uppercase;}
+
+.table-avg-costs td, .table-avg-costs th {
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+.btn {
+    color: whitesmoke;
+
+    font-family: sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+    transition: all 0.8s ease 150ms;
+}
+
+.card {
+    background-color:#75232D;
+    /* margin: 1px 100px; not responsive, code breaks in other screens*/
+
+    position: relative;
+    right: -35%;
+    /* top: -30px; */
+    
+    padding: 15px 35px;
+    box-shadow: 5px 5px rgba(255, 255, 255,0.2);
+}
+
+.card:hover {
+    background-color:#a12e3b;
+    box-shadow: 0px 0px rgba(255, 255, 255,0.2);
+}
+
+.footer-text >span {
+    font-size: 20px;
+}

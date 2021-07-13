@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* body {
+    background-color: rgb(30, 30, 30);
+} */
+
+/* img {
+    display: block;
+}  */
+
+/* icon pack  */
+
+ion-icon {
+    color: black;
+    font-size: 50px;
+    /* do multiples of 8 */
+    /* use this instead of size=large */
+}
+
+body { 
+    padding: 0;
+    margin: 0;
+    background-image:url('Pics/water-loop-hawaii-new.jpg');
+    background-size: cover;
+    /* background-color: black; */
+    background-repeat:no-repeat;
+    /* background-size: 0% -100%;  */
+}
+
+.btnCover {
+    position: fixed;
+    top: 82%;
+    left: 35%;
+
+    /* transform: translateX(50%) translateY(70%); */
+
+    /* text-align: center; */
+
+    color: whitesmoke;
+    background-color: transparent;
+
+    font-size: 40px;
+    letter-spacing: 2px;
+    /* word-spacing: 1px; */
+    font-family: 'Times New Roman', Times, serif;
+    /* text-transform: uppercase; */
+
+    padding: 10px 25px;
+    border: 2px solid;
+    border-radius: 0px;
+
+    /* box-shadow: 0px 10px 10px grey; */
+
+    transition: all;
+    transition-duration: 2s;
+    transition-delay: 200ms;
+    /* transition-timing-function: ease-out; */
+
+    cursor: not-allowed;
+}
+
+.btnCover:hover {
+    color: #0e0e0e;
+    background-color: #fff;
+    opacity: 0.6;
+
+    transform: scale(1.1);
+
+    border-radius: 20px;
+
+}
+
+
+.btnGG {
+    position: fixed;
+    top: 20%;
+    left: 46.5%;
+
+    font-family: sans-serif;
+    font-size: 25px;
+
+    text-decoration: none;
+
+    color: whitesmoke;
+
+    padding: 12px 25px;
+    /* border: 2px solid; */
+
+    border-top: 7px solid;
+    border-left: 7px solid;
+
+    box-shadow: 7px 7px 0px whitesmoke;
+
+    opacity: 0.8;
+
+    transition: all;
+    transition-duration: 1.5s;
+    transition-delay: 200ms;
+
+    
+}
+
+.btnGG:hover {
+
+    color: #0e0e0e;
+    background-color: #fff;
+    opacity: 0.7;
+
+    /* background-image: linear-gradient(to bottom right, aqua,teal); */
+    /* background-color: rgb(18, 209, 209); */
+    /* background-color: teal;
+    color: whitesmoke; */
+
+    border: 2px solid whitesmoke;
+
+    box-shadow: 0px 0px 0px whitesmoke;
+}
+
+.title-text {
+    /* color: #be9e44; */
+    color: whitesmoke;
+
+
+    position: fixed;
+    top: 2%;
+    left: 42%;
+    
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    /* font-style: italic; */
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+
+
+    opacity: 0.8;
+}
+
+.content-text {
+    position: fixed;
+    top: 13%;
+    left: 41%;
+
+    color: whitesmoke;
+    background-color: #046f8ac1;
+
+    font-family: 'Charm', cursive;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    padding: 2px 10px;
+
+}
