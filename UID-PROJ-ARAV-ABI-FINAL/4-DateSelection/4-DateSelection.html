@@ -13,7 +13,7 @@
     </head>
 
     <body>
-        <div class="dateContainer">
+        <div class="dateContainer" id="parentContainer">
             <div class="header-text">Start your trip by filling this form <div class="borderBottom"></div> </div>
 
             <div class="main">
@@ -23,37 +23,123 @@
                 <span>When do you plan on beginning your trip?</span><br>
                 <input class="dept-date-selection" type="date" name="departure-date"><br><br>
 
-                <span>Number of travelers -</span><br>
+                <span>Number of travellers -</span><br>
                 <!-- <input class="number-selection" type="number"><br><br> -->
-                <select class="number-selection" name="no-of-travellers" id="travellers" size="1">
+                <select class="number-selection" name="traveller" id="no-of-traveller" size="1" onchange="travellerCount()">
                     <option value="1">1</option>
                     <option value="2">2</option>
+                    <option value="3">3</option>
                     <option value="4">4</option>
                 </select><br><br>
                 
                 <div class="table-avg-costs">
                     <center>
-                        <table table cellpadding="0" cellspacing="0" width="75%" border="1" bordercolor="#ee1d3d" bgcolor="" align="center">
-                            <tr><th width="20%">Passengers</th><th width="20%">Hyderabad</th><th width="20%">A&amp;N</th><th width="20%">Germany</th></tr>
-                            <tr><td>1</td><td>&#8377;15,000 - &#8377;20,000</td><td>-</td><td>-</td></tr>
-                            <tr><td>2</td><td>&#8377;30,000 - &#8377;45,000</td><td>-</td><td>-</td></tr>
-                            <tr><td>4</td><td>&#8377;60,000 - &#8377;70,000</td><td>-</td><td>-</td></tr>
+                        <table table cellpadding="0" cellspacing="0" width="40%" border="1" bordercolor="#ee1d3d" bgcolor="" align="center">
+                            <tr><th width="20%">Passengers</th><th width="20%">Price</th></tr>
+                            <tr><td>1</td><td>&#8377;15,000 - &#8377;20,000</td></tr>
+                            <tr><td>2</td><td>&#8377;30,000 - &#8377;45,000</td></tr>
+                            <tr><td>3</td><td>&#8377;30,000 - &#8377;45,000</td></tr>
+                            <tr><td>4</td><td>&#8377;60,000 - &#8377;70,000</td></tr>
                         </table>
                     </center>                    
                 </div>
 
             </div>
 
-            <div class="footer-text header-text">
+            <!-- <div class="footer-text header-text">
                 <a href="../s1-CarRental/Car-Rentals-Main/BASE/0-mainBaseRedoneClean.html" class="btn card">Dive in</a> <br><br>
                 <span>
                     Enjoy your trip customization experience !
                 </span>
-            </div>
+            </div> -->
             
+            <div id="traveller1" class="traveller-all">
+                <span class="span-text">#1 Traveler </span><br>
+                <span class="span-text">First Name: </span>
+                <input class="name-entry" type="text" name="name-field">
+                <span class="tab"></span>
+                <span class="span-text">Last Name: </span>
+                <input class="name-entry" type="text" name="name-field">
+                <span class="tab"></span>
+                <span class="span-text">Date of Birth: </span>
+                <input type="date">
+                <span class="tab"></span>
+                <span class="span-text">Gender: </span>
+                <div class="gender-div">
+                    <input type="radio" id="active-gender-m" style="display: none;" name="gender" value="m">
+                    <input type="radio" id="active-gender-f" style="display: none;" name="gender" value="f">
+                    <div class="male"> <label for="active-gender-m">Male</label></div>
+                    <div class="female"> <label for="active-gender-f">Female</label></div>
+                </div>
+            </div>
 
+            <!-- ===========================COPIES -->
+            <div id="traveller2" class="traveller-all">
+                <span class="span-text">#2 Traveler </span><br>
+                <span class="span-text">First Name: </span>
+                <input class="name-entry" type="text" name="name-field">
+                <span class="tab"></span>
+                <span class="span-text">Last Name: </span>
+                <input class="name-entry" type="text" name="name-field">
+                <span class="tab"></span>
+                <span class="span-text">Date of Birth: </span>
+                <input type="date">
+                <span class="tab"></span>
+                <span class="span-text">Gender: </span>
+                <div class="gender-div">
+                    <input type="radio" id="active-gender-m" style="display: none;" name="gender" value="m">
+                    <input type="radio" id="active-gender-f" style="display: none;" name="gender" value="f">
+                    <div class="male"> <label for="active-gender-m">Male</label></div>
+                    <div class="female"> <label for="active-gender-f">Female</label></div>
+                </div>
+            </div>
+            <div id="traveller3" class="traveller-all">
+                <span class="span-text">#3 Traveler </span><br>
+                <span class="span-text">First Name: </span>
+                <input class="name-entry" type="text" name="name-field">
+                <span class="tab"></span>
+                <span class="span-text">Last Name: </span>
+                <input class="name-entry" type="text" name="name-field">
+                <span class="tab"></span>
+                <span class="span-text">Date of Birth: </span>
+                <input type="date">
+                <span class="tab"></span>
+                <span class="span-text">Gender: </span>
+                <div class="gender-div">
+                    <input type="radio" id="active-gender-m" style="display: none;" name="gender" value="m">
+                    <input type="radio" id="active-gender-f" style="display: none;" name="gender" value="f">
+                    <div class="male"> <label for="active-gender-m">Male</label></div>
+                    <div class="female"> <label for="active-gender-f">Female</label></div>
+                </div>
+            </div>
+            <div id="traveller4" class="traveller-all">
+                <span class="span-text">#4 Traveler </span><br>
+                <span class="span-text">First Name: </span>
+                <input class="name-entry" type="text" name="name-field">
+                <span class="tab"></span>
+                <span class="span-text">Last Name: </span>
+                <input class="name-entry" type="text" name="name-field">
+                <span class="tab"></span>
+                <span class="span-text">Date of Birth: </span>
+                <input type="date">
+                <span class="tab"></span>
+                <span class="span-text">Gender: </span>
+                <div class="gender-div">
+                    <input type="radio" id="active-gender-m" style="display: none;" name="gender" value="m">
+                    <input type="radio" id="active-gender-f" style="display: none;" name="gender" value="f">
+                    <div class="male"> <label for="active-gender-m">Male</label></div>
+                    <div class="female"> <label for="active-gender-f">Female</label></div>
+                </div>
+            </div>
 
         </div>
+
+         <!-- SCRIPT INSERTS -->
+         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+         </script>
+ 
+         <script src="4-DateSelection.js"></script>
+ 
     </body>
 </html>
 

@@ -1,8 +1,5 @@
 /* container-bg-color: #F9F6F0 ;
 
-
-
-
 */
 *{
     margin: 0;
@@ -14,11 +11,18 @@ a{
     text-decoration: none;
 }
 
+:root {
+    --darker-black: #0e0e0e;
+    --lighter-black: #303030 ; 
+    --smoke :#FFEFCA;
+    --gold: #be9e44;
+    --red: #ee1d3d;
+  }
 
-
-/* img {
-    display: block;
-}  */
+.tab {
+    display: inline-block;
+    margin-left: 15px;
+}
 
 /* icon pack  */
 
@@ -44,22 +48,18 @@ body {
 
 
 .dateContainer {
-    width: 50%;
+    width: 80%;
     background-color: #303030 ;
-    height: 80vh;
-    margin: 100px auto;
+    height: 100vh;
+    margin: 50px auto;
     /* padding-top:20px ; */
     
     align-content: center;
 
-    /* no point sice it already shows required vh  */
-    /* align-items: center;
-    justify-content: center; */
-
-
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.5fr;
+    grid-template-rows: 0.2fr 1.5fr;
+    grid-auto-rows: 1fr;
 
     /* grid-row-gap:20px;
     grid-column-gap:20px; */
@@ -75,6 +75,16 @@ body {
 
 }
 
+/* MAIN GRID IDEA  */
+.traveller-all {
+    padding: 10px 40px;
+}
+
+#traveller2,#traveller3,#traveller4{
+    display: none;
+}
+
+/* HEADER TEXT  */
 .header-text {
     margin: auto;
 
@@ -91,6 +101,7 @@ body {
     transition: all 2s ease-in-out 0.15s;
 }
 
+/* BORDER BOTTOM  */
 .borderBottom{
     transition: all 2s ease-in-out 0.15s;
 
@@ -104,79 +115,98 @@ body {
 }
 
 .dateContainer:hover .borderBottom {
-    
     position: absolute;
     left: 20%;
     right: 20%;
     bottom: -10px;
-
-    
 }
 
+/* MAIN GRID ITEM  */
 .main {
-    margin: 20px 50px;
+    margin: 10px 1px;
     text-align: left;
     line-height: 25px;
 
+    text-align: center;
+
 }
 
-.main > span {
+.main > span, .span-text {
     color: whitesmoke;
-    
+    line-height: 2;
+
     font-family: serif;
     font-size: 20px;
+    /* padding: 4px 3px; */
+
+
+    /* border: 2px solid white; */
 }
 
+/* .name-entry class  */
+
 .name-entry {
-    padding: 8px 12px;
-    /* margin: ; */
+    padding: 6px 10px;
+
     border:2px solid #ee1d3d;
-    box-shadow: 0px 0px 1px #ee1d3d;
+    box-shadow: 0px 0px 5px #ee1d3d;
 
     transition: all;
     transition-duration: 0.5s;
     transition-delay: 100ms;
-    
 }
 
 .name-entry:focus {
-    padding: 8px 40px;
+    padding: 6px 30px;
     /* border-radius: 50px; */
     
 }
 
+/* deptdate class  */
 .deptdate {
-    /* height: 50px; */
-    /* padding: 8px 12px; */
-
     /* cant do anything */
-
-    /* transform: scale(1.5); */
 }
 
-/* .deptdate:focus {
-    height: 50px;
-
-} */
-
-.dateContainer > span {
-    padding: 8px 3px;
-}
-
+/* .number-selection class  */
 .number-selection {
     padding: 4px 15px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
 }
 
-.footer-text {text-transform: uppercase;}
 
 .table-avg-costs td, .table-avg-costs th {
     text-align: center;
     color: whitesmoke;
 }
 
+/* .gender-div */
 
+.gender-div {
+    display: inline-flex;
+}
+
+.gender-div > div {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    /* word-spacing: 100px; */
+
+    background-color: var(--red);
+    color: var(--smoke);
+
+    border: 2px solid var(--darker-black);
+    padding: 4px 15px;
+}
+
+#active-gender-m:checked ~ .male{background-color: blue;}
+#active-gender-f:checked ~ .female{background-color: blue;}
+
+
+
+/* ===================================================================================== */
+/* footer button  */
 .btn {
     color: whitesmoke;
 
@@ -205,6 +235,8 @@ body {
     box-shadow: 0px 0px rgba(255, 255, 255,0.2);
 }
 
+/* footer text  */
 .footer-text >span {
     font-size: 20px;
 }
+.footer-text {text-transform: uppercase;}
