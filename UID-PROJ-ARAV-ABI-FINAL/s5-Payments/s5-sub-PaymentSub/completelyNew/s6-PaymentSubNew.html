@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+
+<html> 
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Trying Out
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="s6-PaymentSubNew.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        
+
+
+    </head>
+
+    <body>
+        <form action="../../s6-Gracias/s6-Menu-ThankYou/s7-ThankYou-Menu.html" method="GET">
+
+            <div class="payContainer">
+                <div class="header-text header-text-font">
+                    Payment Gateway
+                    <div class="borderBottom"></div>
+                </div>
+
+                <div class="card-section">
+                    <div class="credit-div">
+                        <input type="radio" id="active-ref-credit" style="display: none;" name="card-type">
+                        <a href="#" class="card btn">
+                            <label for="active-ref-credit">Credit Card</label>
+                        </a>
+                    </div>
+
+                    <div class="debit-div">
+                        <input type="radio" id="active-ref-debit" style="display: none;" name="card-type">
+                        <a href="#" class="card btn">
+                            <label for="active-ref-debit">Debit Card</label>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="type-of-card-parent">
+                    <span>Type of card:</span><br>
+                    <select name="card" id="card-type" class="type-of-card">
+                        <option value="visa">Visa 💳</option>
+                        <option value="mcard">MasterCard 💳</option>
+                        <option value="amex">American Express 💳</option>
+                        <option value="rupay">rupay 💳</option>
+                    </select>
+                </div>
+
+                <div class="card-name-parent">
+                    <label for="name-on-card">
+                        <span>Name on card:</span><br>
+                        <input class="card-name" id="name-on-card" type="text" name="cardName">
+                    </label>
+                </div>
+
+                <div class="cvv-class">
+                    <label for="cvv">
+                        <span>CVV:</span><br>
+                        <input type="password" id="cvv" class="cvv-no" onchange="cvvCheck()">
+                    </label>
+                </div>
+    
+                <div class="expiry-class">
+                    <label for="expiry">
+                        <span>Expiry date:</span> <br>
+                        <input type="month" id="expiry" class="exp-date">
+                    </label>
+                </div>
+
+                <div class="no-on-card">
+                    <label for="card-nos">
+                        <span>Card Number:</span><br>
+                        <span>
+                            <input class="card-no" id="card-nos" type="text" name="card-number">
+                            <!-- &mdash;
+                            <input class="card-no" id="card-nos" type="text" name="card-number">
+                            &mdash;
+                            <input class="card-no" id="card-nos" type="text" name="card-number">
+                            &mdash;
+                            <input class="card-no" id="card-nos" type="text" name="card-number"> 
+                        
+                            looks good but type text has default props which can not be changed-->
+                        </span>
+
+                        <!-- input number type can't use css here  -->
+                    </label>
+                </div>
+
+                
+                <div></div>
+                <div class="footer-text header-text-font">
+                    <input type="reset" value="Reset" class="footer-btn btn">
+                    <input type="submit" name="submit" value="Proceed" class="footer-btn btn">
+                </div>
+            </div>
+        </form>
+        
+        <!-- SCRIPT INSERTS -->
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+        </script>
+        <script src="s6-PaymentSubNew.js"></script> 
+
+    </body>
+</html>
+
