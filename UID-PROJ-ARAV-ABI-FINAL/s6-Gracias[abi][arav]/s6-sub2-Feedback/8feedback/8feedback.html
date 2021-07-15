@@ -52,6 +52,13 @@ a:hover {
   background-color: #0c5f74;
   color: white;
 }
+
+#final-text{
+  font-size: 20px;
+
+  display: none;
+  color: rgb(37, 147, 37);
+}
   </style>
     
 
@@ -147,21 +154,24 @@ a:hover {
     <input type="radio"  id="e2" name="recrb" value="n" />No
   </label> 
   <label for="Comments">Comments:</label><br>
-  <textarea name="textarea" cols="48" rows="3"></textarea>
-
+  <textarea name="textarea" cols="48" rows="3" onchange="enableClass()"></textarea>
+  <div id="final-text">Thank you for your feedback. Have a nice day !</div>
   
   </pre>
   </form>
   </div>
 
-
-
-
-
- 
   <pre><p style="font-size:150%; text-align: center;">          Thank you for your feedback! We wish you a safe journey and a pleasant trip! Enjoy :).</p></pre>
   <a href="../../s6-sub1-FashionAdvice/fashionnew.html" class="previous">&laquo; PREVIOUS</a>
   <a href="../../s6-sub3-Duolingo/duolingo.html" class="next">DUOLINGO &raquo;</a>
+
+  <script>
+    function enableClass() {
+      var end = document.getElementById('final-text');
+      end.style.display = "block";
+
+    }
+  </script>
 </body>
 </html>
   
