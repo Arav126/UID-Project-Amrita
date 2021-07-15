@@ -9,6 +9,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     </head>
 
+    <script>
+        var loc=ris;
+        var star=4;
+        star=document.getElementById("dropdown2").value;
+        loc=document.getElementById("dropdown").value;
+        document.write("hello");
+    </script>
+
     <body>
         <div class="headimage">
             <img src="1912587.jpg" width="100%"> 
@@ -58,7 +66,7 @@
             </div>
 
             <div class="pic3">
-                <img src="3.jpg" width=100%>
+                <img src="5.jpg" width=100%>
             </div>
 
         </div>
@@ -67,7 +75,27 @@
             <br><br><br><br>
             <span class="hoteltext">Book a hotel with</span> <span class="tttt">  Trip to the tee</span> <br><br><br>
 
-            <div class="dropdown">
+            <form>
+
+                <label for="locations">Choose a location:</label>
+                <select id="dropdown" name="locations">
+                    <option value="Jhansi">Jhansi (+460 km)</option>
+                    <option value="Nagpur">Nagpur(+620 km)</option>
+                </select>
+
+                <label for="stars" >Choose which type of hotel</label>
+                <select id="dropdown2" name="stars">
+                    <option value="3*">3 star</option>
+                    <option value="4*">4 star</option>
+                    <option value="5*">5 star</option>
+                    
+                </select>
+
+                <input type="submit" value="Submit" id="submitbtn">
+            
+            </form> 
+          
+            <!--  <div class="dropdown">
                 <button class="dropbtn">Locations for hotels on the way</button>
                 <div class="dropdown-content">
                   <a href="#">Agra (+240 km)</a>
@@ -91,7 +119,7 @@
 
             <br><br><br>
 
-            <button type="submit" class="registerbtn">Register</button>
+            <button type="submit" class="registerbtn">Register</button> -->
 
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

@@ -1,19 +1,26 @@
 <html>
-       <head>
-           <script>
-               function OnFocusInput (input) {
-                   input.style.color = "red";
-               }
-              function OnBlurInput (input) {
-                   input.style.color = "yellow";
-               }
-           </script>
-        </head>
-        <body>
-           When the following input field has the focus its text color will be red.
-           Click into the input field!
-           <br /><br />
-           <input type="text" onfocus="OnFocusInput (this)" onblur="OnBlurInput (this)" 						value="Custom input field"/>
-        </body>
+    
+                   
+
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+<input type="button" onclick="hello()"/>
+
+
+<script>
         
+function hello(){
+    var x=document.getElementById("cars").value;
+    document.write(x);
+}
+
+</script>
+
+
 </html>

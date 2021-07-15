@@ -33,7 +33,7 @@ html{
     }
 
     .hotels{
-        background-color: black;
+        background-color: white;
         
     }
 
@@ -50,7 +50,36 @@ html{
         margin-left: 25%;
     }
 
-    .dropbtn {
+    #submitbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 30%;
+        opacity: 0.9;
+        margin-left: 30%;
+      }
+      
+    #submitbtn:hover {
+        opacity: 1;
+      }
+
+    #dropdown {
+        display: inline-block;
+        margin-left: 15%;
+        height: 50px
+    }
+
+    #dropdown2 {
+        display: inline-block;
+        margin-left: 0%;
+        height: 50px;
+    }
+    
+
+    /* .dropbtn {
         background-color: #4CAF50;
         color: white;
         padding: 16px;
@@ -94,21 +123,7 @@ html{
         background-color: #3e8e41;
     }
 
-    .registerbtn {
-        background-color: #04AA6D;
-        color: white;
-        padding: 16px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 30%;
-        opacity: 0.9;
-        margin-left: 30%;
-      }
-      
-      .registerbtn:hover {
-        opacity: 1;
-      }
+    
       
 
    
