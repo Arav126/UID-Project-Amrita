@@ -9,13 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     </head>
 
-    <script>
-        var loc=ris;
-        var star=4;
-        star=document.getElementById("dropdown2").value;
-        loc=document.getElementById("dropdown").value;
-        document.write("hello");
-    </script>
+    
 
     <body>
         <div class="headimage">
@@ -37,8 +31,8 @@
                 </map>
             </div>
 
-            <div class="caption1">
-                <img src="blank.jpg" width="100%">
+            <div class="caption">
+                Pick a landmark by clicking on it
             </div>
 
             <div class="pic1">
@@ -53,16 +47,16 @@
                 <img src="taj.jpg" width=100%>
             </div>
            
-            <div class="caption2">
-                <img src="blank2.jpg" width="100%"> 
+            <div class="caption">
+                Visit the Taj Mahal, one of the seven wonders of the world
             </div>
 
             <div class="sanchi" id=stupa>
                 <img src="sanchi.jpg" width="100%">
             </div>
 
-            <div class="caption3">
-                <img src="blank3.png" width="100%">
+            <div class="caption">
+                Sanchi is home to one of the unesco world heritage sites
             </div>
 
             <div class="pic3">
@@ -91,9 +85,17 @@
                     
                 </select>
 
-                <input type="submit" value="Submit" id="submitbtn">
+                <br><br><br><br>
+
+                <input type="submit" value="Submit" id="submitbtn" onclick="find()">
             
             </form> 
+
+            <script>
+                var loc;
+                var star;
+                function find();
+            </script>
           
             <!--  <div class="dropdown">
                 <button class="dropbtn">Locations for hotels on the way</button>

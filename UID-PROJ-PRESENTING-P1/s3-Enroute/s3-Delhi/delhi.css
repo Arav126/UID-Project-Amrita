@@ -46,12 +46,12 @@ html{
     .hoteltext{
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         font-size: 50;
-        color: white;
+        color: black;
         margin-left: 25%;
     }
 
     #submitbtn {
-        background-color: #04AA6D;
+        background-color:blue; 
         color: white;
         padding: 16px 20px;
         margin: 8px 0;
@@ -59,7 +59,7 @@ html{
         cursor: pointer;
         width: 30%;
         opacity: 0.9;
-        margin-left: 30%;
+        margin-left: 15%;
       }
       
     #submitbtn:hover {
@@ -68,15 +68,32 @@ html{
 
     #dropdown {
         display: inline-block;
-        margin-left: 15%;
         height: 50px
     }
 
     #dropdown2 {
         display: inline-block;
-        margin-left: 0%;
         height: 50px;
     }
+
+    .caption{
+        display: grid;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 200%;
+        font-weight: 400;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;}
+
+    form{
+        margin-left: 30%;
+    }
+
     
 
     /* .dropbtn {
