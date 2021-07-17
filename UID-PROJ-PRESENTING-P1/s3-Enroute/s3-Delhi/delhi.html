@@ -99,7 +99,8 @@
                     var star;
                     loc=document.getElementById("dropdown").value;
                     star=document.getElementById("dropdown2").value;
-                    if(loc.localeCompare("Jhansi") ==0){
+                    //if(loc.localeCompare("Jhansi") ==0)
+                    if(loc=="Jhansi"){
                         switch(star){
                             case '3': window.open("https://www.tripadvisor.in/Hotel_Review-s1-g679029-d1585365-Reviews-Hotel_Shrinath_Palace-Jhansi_Uttar_Pradesh.html");
                                               break;
@@ -109,12 +110,13 @@
                                               break;
                             default:window.alert("Error") ;
                             break;
+                            
                                     
                                             
                         }
                     }
 
-                    else{
+                    else if (loc=="Nagpur"){
                         switch(star){
                             case '3': window.open("https://hotel.happyeasygo.com/hotels/nagpur/hotel_5e02d11f159c9427644417a3/2021-07-17_2021-07-18/2-0?source_from=google_ads&hotelId=5e02d11f159c9427644417a3&api_source=google_ads&fclid=13031676393&visitor=fcebeb65ca2a444096bab4450c4f17ac");
                                               break;
