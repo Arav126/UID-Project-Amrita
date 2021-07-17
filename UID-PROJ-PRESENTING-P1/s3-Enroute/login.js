@@ -3,7 +3,7 @@ eField = form.querySelector(".email"),
 eIn = eField.querySelector("input"),
 pField = form.querySelector(".password"),
 pInput = pField.querySelector("input");
-form.addEventListener('submit',function(e){
+form.addEventListener('submit',function(e){  //==(e)=>{}
   e.preventDefault(); //preventing from form submitting
   if(eIn.value == "")
   {
