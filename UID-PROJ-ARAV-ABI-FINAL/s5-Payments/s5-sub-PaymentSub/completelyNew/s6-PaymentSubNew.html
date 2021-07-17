@@ -11,6 +11,12 @@
         <link rel="stylesheet" type="text/css" href="s6-PaymentSubNew.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
         
         <script src="https://kit.fontawesome.com/ac82b170ad.js" crossorigin="anonymous"></script>
 
@@ -43,58 +49,79 @@
                 </div>
 
                 <div class="type-of-card-parent">
-                    <span>Type of card:</span><br>
-                    <select name="card" id="card-type" class="type-of-card">
-                        <option value="visa">Visa 💳</option>
-                        <option value="mcard">MasterCard 💳</option>
-                        <option value="amex">American Express 💳</option>
-                        <option value="rupay">rupay 💳</option>
-                    </select>
+                    <label for="card-type">
+                        <span>Type of card:</span>
+                        <select name="card" id="card-type" class="type-of-card">
+                            <option value="visa">Visa 💳</option>
+                            <option value="mcard">MasterCard 💳</option>
+                            <option value="amex">American Express 💳</option>
+                            <option value="rupay">rupay 💳</option>
+                        </select>
+                    </label>
                 </div>
 
-                <div class="card-name-parent">
+                <div class="card-name-parent cond">
                     <label for="name-on-card">
-                        <span>Name on card:</span><br>
-                        <input class="card-name" id="name-on-card" type="text" name="cardName">
+                        <span>Name on card:</span>
+                        <input class="card-name" id="name-on-card" type="text" name="cardName"><br><br>
+                        <div>
+                            <span><i class="fas fa-times-circle"></i> Only Characters allowed</span>
+                            <!-- <span></span> -->
+                        </div>
                     </label>
+                    
                 </div>
 
-                <div class="cvv-class">
+                <div class="cvv-class cond">
                     <label for="cvv">
-                        <span>CVV:</span><br>
-                        <input type="password" id="cvv" class="cvv-no" onchange="cvvCheck()">
+                        <span>CVV:</span>
+                        <input type="password" id="cvv" class="cvv-no" onchange="cvvCheck()"><br><br>
+                        <div>
+                            <span><i class="fas fa-times-circle"></i> Only Numericals allowed</span><br>
+                            <span><i class="fas fa-times-circle"></i> Contains 3 digits</span></span>
+                        </div>
                     </label>
-                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+                    
                 </div>
     
-                <div class="expiry-class">
+                <div class="expiry-class cond">
                     <label for="expiry">
-                        <span>Expiry date:</span> <br>
-                        <input type="month" id="expiry" class="exp-date">
+                        <span>Expiry date:</span>
+                        <input type="month" id="expiry" class="exp-date"><br><br>
+                        <div>
+                            <span><i class="fas fa-times-circle"></i> Should not be expired</span>
+                        </div>
                     </label>
                 </div>
 
-                <div class="no-on-card">
+                <div class="no-on-card cond">
                     <label for="card-nos">
-                        <span>Card Number:</span><br>
-                        <span>
-                            <input class="card-no" id="card-nos" type="text" name="card-number">
-                            <!-- &mdash;
+                        <span>Card Number:</span>
+                        <input class="card-no" id="card-nos" type="text" name="card-number"><br><br>
+
+                        <!-- <span>
+                            &mdash;
                             <input class="card-no" id="card-nos" type="text" name="card-number">
                             &mdash;
                             <input class="card-no" id="card-nos" type="text" name="card-number">
                             &mdash;
                             <input class="card-no" id="card-nos" type="text" name="card-number"> 
                         
-                            looks good but type text has default props which can not be changed-->
-                        </span>
+                            looks good but type text has default props which can not be changed
+                        </span> -->
 
                         <!-- input number type can't use css here  -->
+                        <div>
+                            <span><i class="fas fa-times-circle"></i> Only Numericals allowed</span><br>
+                            <span><i class="fas fa-times-circle"></i> Contains 16 digits</span>
+                        </div>
                     </label>
+                    
                 </div>
 
                 
-                <div></div>
+                <!-- <div></div> -->
                 <div class="footer-text header-text-font">
                     <input type="reset" value="Reset" class="footer-btn btn">
                     <input type="submit" name="submit" value="Proceed" class="footer-btn btn">
@@ -110,3 +137,10 @@
     </body>
 </html>
 
+<!--
+    correct 
+    <i class="fas fa-check-circle"></i>
+    
+    wrong
+    <i class="fas fa-times-circle"></i>
+ -->
