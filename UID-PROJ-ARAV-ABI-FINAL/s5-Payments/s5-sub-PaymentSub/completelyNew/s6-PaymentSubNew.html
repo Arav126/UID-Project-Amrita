@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>
-            Trying Out
+            Payment Gateway
         </title>
 
         <link rel="stylesheet" type="text/css" href="s6-PaymentSubNew.css">
@@ -60,67 +60,54 @@
                     </label>
                 </div>
 
+                <!-- JS1 -->
                 <div class="card-name-parent cond">
                     <label for="name-on-card">
                         <span>Name on card:</span>
-                        <input class="card-name" id="name-on-card" type="text" name="cardName"><br><br>
+                        <input class="card-name" id="name-on-card" type="text" name="cardName" onchange="cardNameCheck()"><br><br>
                         <div>
                             <span><i class="fas fa-times-circle"></i> Only Characters allowed</span>
                             <!-- <span></span> -->
                         </div>
                     </label>
-                    
                 </div>
 
-                <div class="cvv-class cond">
-                    <label for="cvv">
-                        <span>CVV:</span>
-                        <input type="password" id="cvv" class="cvv-no" onchange="cvvCheck()"><br><br>
-                        <div>
-                            <span><i class="fas fa-times-circle"></i> Only Numericals allowed</span><br>
-                            <span><i class="fas fa-times-circle"></i> Contains 3 digits</span></span>
-                        </div>
-                    </label>
-                    <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
-                    
-                </div>
-    
+                <!-- JS2 -->
                 <div class="expiry-class cond">
                     <label for="expiry">
                         <span>Expiry date:</span>
-                        <input type="month" id="expiry" class="exp-date"><br><br>
+                        <input type="month" id="expiry" class="exp-date" onchange="expiryCheck()"><br><br>
                         <div>
                             <span><i class="fas fa-times-circle"></i> Should not be expired</span>
                         </div>
                     </label>
                 </div>
 
+                <!-- JS3 -->
                 <div class="no-on-card cond">
                     <label for="card-nos">
                         <span>Card Number:</span>
-                        <input class="card-no" id="card-nos" type="text" name="card-number"><br><br>
-
-                        <!-- <span>
-                            &mdash;
-                            <input class="card-no" id="card-nos" type="text" name="card-number">
-                            &mdash;
-                            <input class="card-no" id="card-nos" type="text" name="card-number">
-                            &mdash;
-                            <input class="card-no" id="card-nos" type="text" name="card-number"> 
-                        
-                            looks good but type text has default props which can not be changed
-                        </span> -->
-
-                        <!-- input number type can't use css here  -->
+                        <input class="card-no" id="card-nos" type="text" name="card-number" onchange="cardNoCheck()"><br><br>
                         <div>
                             <span><i class="fas fa-times-circle"></i> Only Numericals allowed</span><br>
                             <span><i class="fas fa-times-circle"></i> Contains 16 digits</span>
                         </div>
                     </label>
-                    
                 </div>
 
-                
+                <!-- JS4 -->
+                <div class="cvv-class cond">
+                    <label for="cvv">
+                        <span>CVV:</span>
+                        <input type="password" id="cvv" class="cvv-no" onchange="cvvCheck()"><br><br>
+                        <div>
+                            <span class="cvv-text"><i class="fas fa-times-circle"></i> Only Numericals allowed</span><br>
+                            <span class="cvv-text"><i class="fas fa-times-circle"></i> Contains 3 digits</span></span>
+                        </div>
+                    </label>
+                    <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+                </div>
+
                 <!-- <div></div> -->
                 <div class="footer-text header-text-font">
                     <input type="reset" value="Reset" class="footer-btn btn">
@@ -132,7 +119,7 @@
         <!-- SCRIPT INSERTS -->
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
         </script>
-        <script src="s6-PaymentSubNew.js"></script> 
+        <script src="s6-PaymentSubNew.js"></script>
 
     </body>
 </html>
