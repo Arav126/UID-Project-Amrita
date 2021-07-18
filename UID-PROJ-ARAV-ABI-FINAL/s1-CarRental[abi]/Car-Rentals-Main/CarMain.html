@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
+    <script>
+        var show=function(t)
+        {t.style.display="block"},hide=function(t)
+        {t.style.display="none"},toggle=function(t)
+        {"block"!==window.getComputedStyle(t).display?show(t):hide(t)};document.addEventListener("click",function(t)
+        {if(t.target.classList.contains("toggle"))
+        {t.preventDefault();var e=document.querySelector(t.target.hash);e&&toggle(e)}},!1);
+    </script>
     <head>
+        <!------------ MAIN PAGE HEAD LINKS------------>
+
         <link rel="stylesheet" href="CarMain.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
         <title>Car Rentals</title>
+        
+
+        <script>
+            var show=function(t)
+            {t.style.display="block"},hide=function(t)
+            {t.style.display="none"},toggle=function(t)
+            {"block"!==window.getComputedStyle(t).display?show(t):hide(t)};document.addEventListener("click",function(t)
+            {if(t.target.classList.contains("toggle"))
+            {t.preventDefault();var e=document.querySelector(t.target.hash);e&&toggle(e)}},!1);
+        </script>
     </head>
     <body>
         <div class="main-grid">
@@ -124,11 +144,14 @@
                 </div>
             </div>
         </div>
+        
         <div class="btw-text">
             <h2>WHAT OUR CUSTOMERS SAY</h2>
             <h3> <b>Awesome Service Experience</b></h3>
-            <p>YI have leased the services of Luxorides for including my family functions.<br>Luxoride group is useful as always. Cars are consistently accessible on time. Highly fulfilled by the services.</p>
+            <p>I have leased the services of Luxorides for including my family functions.<br>Luxoride group is useful as always. Cars are consistently accessible on time. Highly fulfilled by the services.</p>
         </div>
+
+        
         <div class="final-grid">
             <div class="final-one"></div>
             <div class="final-two"></div>
