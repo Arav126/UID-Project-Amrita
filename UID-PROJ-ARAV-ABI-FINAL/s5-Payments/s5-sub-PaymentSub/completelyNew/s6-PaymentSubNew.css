@@ -35,13 +35,13 @@ ion-icon {
 /*~~~~~~~~~~~~~~~~~~~~~BASE NO CHANGE~~~~~~~~~~~~~~~~~~~~~*/
   
 body {
-    background-color: rgb(30, 30, 30);
+    background-color: var(--darker-black);
 }
 
 /* Parent Container  */
 .payContainer {
-    width: 65%;
-    background-color: #303030 ;
+    width: 70%;
+    background-color: #1a1a1a ;
 
     height: 120vh;
     margin: 20px auto;
@@ -50,7 +50,7 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr repeat(1fr,5);
+    grid-template-rows: 0.3fr 1fr 0.5fr repeat(1fr,3);
 
     /* border: 2px solid red; */
     border-radius: 40px;
@@ -77,15 +77,41 @@ body {
     grid-template-rows: 1fr;
 }
 
-.credit-div, .debit-div {
+.footer-text {
+    grid-column: 2/-1;
+    grid-row: 6/7;
+}
+.no-on-card {
+    /* grid-column: 1/span 1; */
+    /* works if parent has grid in it */
+}
+
+.type-of-card-parent {
+    grid-column: 1/-1;
+}
+
+.credit-div, .debit-div, .type-of-card-parent {
     display: grid;
     align-items: center;
     justify-content: center;
 
 }
+.card-name-parent,.cvv-class,.expiry-class,.no-on-card {
+    display: grid;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
 
-.no-on-card {
-    grid-column: 1/-1;
+    /* gap: 30px; */
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
 }
 
 
@@ -149,7 +175,7 @@ body {
 }
 
 .card-name,.card-no, .cvv-no {
-    padding: 8px 12px;
+    padding: 11px 20px;
     /* margin: ; */
     border:2px solid #ee1d3d;
     
@@ -157,23 +183,27 @@ body {
     transition: all 0.5s ease 0.100s;
 }
 
-.card-name:focus,.card-no:focus, .cvv-no:focus {
+/* .card-name:focus,.card-no:focus, .cvv-no:focus {
     opacity: 1;
-    box-shadow: 0px 0px 6px #ee1d3d;
-    padding: 8px 40px;
-    /* border-radius: 50px; */
-}
+    box-shadow: 0px 0px 6px var(--some-white),0px 0px 10px 5px var(--some-white);
+    padding: 11px 40px;   
+
+} */
 
 .type-of-card, .exp-date {
     border:2px solid #ee1d3d;
     padding: 10px 18px;
     font-size: 16px;
 
+    opacity: 0.7;
+
     transition: all 0.5s 0.100s;
 }
 
 .type-of-card:focus, .exp-date:focus {
     box-shadow: 0px 0px 6px #ee1d3d;
+
+    opacity: 1;
 }
 
 
@@ -206,14 +236,18 @@ body {
 }
 
 .footer-btn {
-    background-color: rgba(0, 128, 128, 0.712);
+    /* background-color: rgba(0, 128, 128, 0.712); */
+    background-color:#75232D;
+
     padding: 10px 30px;
     border-radius: 40px;
 }
 
 .footer-btn:hover {
-    background-color: rgb(0, 128, 128);
-    box-shadow: 0px 0px 10px teal;
+    /* background-color: rgb(0, 128, 128); */
+    background-color:var(--red);
+    box-shadow: 0px 0px 10px var(--red);
+    opacity: 0.8;
 
 }
 
@@ -228,4 +262,31 @@ body {
     /* font-size: 28px; */
     font-weight: 700;
 }
+
+/*~~~~~~~~~~~~~~~~~~~~~SMOL ADDITIONS~~~~~~~~~~~~~~~~~~~~~*/
+
+.cond > label > div > span {
+    font-size: 18px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    letter-spacing: .5px;
+    word-spacing: 1px;
+
+    color: var(--red);
+
+    opacity: 0.85;
+    
+    margin-left: 40px;
+    /* margin-top:100px ; */
+
+    
+}
+
+.cond > label > span {
+    font-size: 30px;
+    font-family: 'Oxygen', sans-serif;
+    /* font-weight: 300; */
+}
+
+
 
