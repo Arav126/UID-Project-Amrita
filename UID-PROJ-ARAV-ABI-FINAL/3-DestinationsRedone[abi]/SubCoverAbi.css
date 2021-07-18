@@ -26,17 +26,19 @@ body{
     font-size: 35px;
     color: rgb(255, 234, 208);
     position: absolute;
-    top:45%;
-    right: 33%;
+    top:42%;
+    right: 32%;
     z-index: 10;
-    transition: all 0.4s;
+    transition: all 0.7s;
     opacity: 0.75;
     letter-spacing: 0.5px;
+    font-weight: 200;
+
 }
 .main img{
     height: 100%;
     width:  100%;
-    transition: all 0.4s;
+    transition: all 0.7s;
 }
 .main:hover img{
     transform: scale(1.15);
@@ -45,9 +47,89 @@ body{
 .main:hover .main-text{
     opacity: 0.8;
     font-size: 30px;
-    top: 22%;
+    top: 28%;
+    letter-spacing: 1px;
 
+
+}
+.sub-text-1{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(255, 234, 208);
+    position: absolute;
+    top:56%;
+    right: 26%;
+    z-index: 10;
+    transition: all 0.5s;
+    opacity: 0.8;
+    letter-spacing: 0.7px;
+}
+.main:hover .sub-text-1{
+    opacity: 0;
 }
 /* .main-text:hover{
     letter-spacing: 1px;
+} */
+.sub-text-2{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(255, 234, 208);
+    position: absolute;
+    top:43%;
+    right: 25%;
+    z-index: 10;
+    transition: all 0.7s;
+    opacity: 0;
+    letter-spacing: 0.7px;
+    line-height: 25px;
+}
+.main:hover .sub-text-2{
+    opacity: 0.7;
+}
+.button{
+    
+    opacity: 0;
+    
+}
+.main:hover .button{
+    /* background-color: rgb(255, 234, 208); */
+    text-align: center;
+    padding: 10px 40px;
+    /* box-shadow: 0px 0px 15px rgb(255, 234, 208); */
+    border: 3px solid rgb(255, 234, 208);
+    /* text-shadow: 0px 0px 5px rgb(10, 10, 10),0px 0px 10px rgb(10, 10, 10),0px 0px 15px rgbrgb(10, 10, 10); */
+    font-size: 22px;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(255, 234, 208);
+    position: absolute;
+    top:65%;
+    right:41%;
+    z-index: 10;
+    transition: all 0.5s;
+    opacity: 0.8;
+    letter-spacing: 0.7px;
+    line-height: 25px;
+}
+
+.button:hover{
+    /* background-color: rgb(255, 234, 208); */
+    transform: scale(1.1);
+
+    box-shadow: 0px 0px 15px rgb(255, 234, 208),0px 0px 20px rgb(255, 234, 208),0px 0px 25px rgb(255, 234, 208)
+    ,0px 0px 30px rgb(255, 234, 208),0px 0px 10px rgb(255, 234, 208);
+    text-shadow: 0px 0px 10px rgb(255, 234, 208),0px 0px 12px rgb(255, 234, 208),0px 0px 15px rgb(255, 234, 208),0px 0px 20px rgb(255, 234, 208),0px 0px 25px rgb(255, 234, 208);
+    
+    font-size: 30px;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+/* .button:hover img{
+    transform: scale(1);
+    opacity: 0.6;
+    
 } */
