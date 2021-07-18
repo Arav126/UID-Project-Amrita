@@ -23,7 +23,7 @@
     </head>
 
     <body>
-        <form action="../../s6-Gracias/s6-Menu-ThankYou/s7-ThankYou-Menu.html" method="GET">
+        <form action="https://www.youtube.com/" method="GET" name="payForm">
 
             <div class="payContainer">
                 <div class="header-text header-text-font">
@@ -64,9 +64,9 @@
                 <div class="card-name-parent cond">
                     <label for="name-on-card">
                         <span>Name on card:</span>
-                        <input class="card-name" id="name-on-card" type="text" name="cardName" onchange="cardNameCheck()"><br><br>
+                        <input class="card-name" id="name-on-card" type="text" name="cardNameName" onchange="cardNameCheck()"><br><br>
                         <div>
-                            <span><i class="fas fa-times-circle"></i> Only Characters allowed</span>
+                            <span id="card-name-cond-1"><i class="fas fa-times-circle" id="card-name-cond-1-icon"></i> Only Characters allowed</span>
                             <!-- <span></span> -->
                         </div>
                     </label>
@@ -76,9 +76,9 @@
                 <div class="expiry-class cond">
                     <label for="expiry">
                         <span>Expiry date:</span>
-                        <input type="month" id="expiry" class="exp-date" onchange="expiryCheck()"><br><br>
+                        <input type="month" id="expiry" class="exp-date" name="expiryName" onchange="expiryCheck()"><br><br>
                         <div>
-                            <span><i class="fas fa-times-circle"></i> Should not be expired</span>
+                            <span id="expiry-cond-1"><i class="fas fa-times-circle" id="expiry-cond-1-icon"></i> Should not be expired</span>
                         </div>
                     </label>
                 </div>
@@ -87,10 +87,10 @@
                 <div class="no-on-card cond">
                     <label for="card-nos">
                         <span>Card Number:</span>
-                        <input class="card-no" id="card-nos" type="text" name="card-number" onchange="cardNoCheck()"><br><br>
+                        <input type="text" class="card-no" id="card-nos" name="cardNoName" onchange="cardNoCheck()"><br><br>
                         <div>
-                            <span><i class="fas fa-times-circle"></i> Only Numericals allowed</span><br>
-                            <span><i class="fas fa-times-circle"></i> Contains 16 digits</span>
+                            <span id="card-no-cond-1"><i class="fas fa-times-circle" id="card-no-cond-1-icon"></i> Only Numericals allowed</span><br>
+                            <span id="card-no-cond-2"><i class="fas fa-times-circle" id="card-no-cond-2-icon"></i> Contains 16 digits</span>
                         </div>
                     </label>
                 </div>
@@ -101,8 +101,8 @@
                         <span>CVV:</span>
                         <input type="password" id="cvv" class="cvv-no" onchange="cvvCheck()"><br><br>
                         <div>
-                            <span class="cvv-text"><i class="fas fa-times-circle"></i> Only Numericals allowed</span><br>
-                            <span class="cvv-text"><i class="fas fa-times-circle"></i> Contains 3 digits</span></span>
+                            <span id="cvv-cond-1"><i class="fas fa-times-circle" id="cvv-cond-1-icon"></i> Only Numericals allowed</span><br>
+                            <span id="cvv-cond-2"><i class="fas fa-times-circle" id="cvv-cond-2-icon"></i> Contains 3 digits</span></span>
                         </div>
                     </label>
                     <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
@@ -110,15 +110,16 @@
 
                 <!-- <div></div> -->
                 <div class="footer-text header-text-font">
-                    <input type="reset" value="Reset" class="footer-btn btn">
-                    <input type="submit" name="submit" value="Proceed" class="footer-btn btn">
+                    <input type="reset" value="Reset" class="footer-btn btn" onclick="location.reload();">
+                    <!-- location.reload() - just reloads the pg inc. js, beautiful hack. -->
+                    <input type="submit" name="submit" value="Proceed" class="footer-btn btn" id="submit-btn-id" disabled>
+                    <!-- make two classes for enabled and disabled -->
                 </div>
             </div>
         </form>
         
         <!-- SCRIPT INSERTS -->
-        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
-        </script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         <script src="s6-PaymentSubNew.js"></script>
 
     </body>

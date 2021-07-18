@@ -24,6 +24,14 @@ a{
 
 /* icon pack  */
 
+:root {
+    --darker-black: #0e0e0e;
+    --lighter-black: #303030 ; 
+    --smoke :#FFEFCA;
+    --gold: #be9e44;
+    --red: #ee1d3d;
+  }
+
 ion-icon {
     color: black;
     font-size: 50px;
@@ -199,4 +207,13 @@ ion-icon {
 
 .btnResort:hover {
     border-radius: 100px;
+}
+
+#family-room-1:checked ~ a, #family-room-2:checked ~ a,
+#couple-room-1:checked ~ a, #couple-room-2:checked ~ a,
+#single-room-1:checked ~ a, #single-room-2:checked ~ a
+{
+    background-color: var(--gold);
+    color: var(--lighter-black);
+    border-color: var(--lighter-black);
 }
