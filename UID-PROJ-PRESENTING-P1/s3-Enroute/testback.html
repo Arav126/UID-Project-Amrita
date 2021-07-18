@@ -28,7 +28,7 @@
             }
 
             .hotels{
-        background-color: white;
+                background-color: #594730;
         
     }
 
@@ -43,10 +43,11 @@
         font-size: 50;
         color: black;
         margin-left: 25%;
+        
     }
 
     #submitbtn {
-        background-color:blue; 
+        background-color: #be9e44;
         color: white;
         padding: 16px 20px;
         margin: 8px 0;
@@ -55,10 +56,13 @@
         width: 30%;
         opacity: 0.9;
         margin-left: 15%;
+        font-size: 150%;
       }
       
     #submitbtn:hover {
         opacity: 1;
+       
+        background-color:#251A13; 
       }
 
     #dropdown {
@@ -71,19 +75,7 @@
         height: 50px;
     }
 
-    .caption{
-        display: grid;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        color: black;
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        font-size: 200%;
-        font-weight: 400;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;}
+    
 
     form{
         margin-left: 30%;
@@ -95,6 +87,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="back"><center style="font-weight: bolder; font-size:620%;color: #251A13; font-family: 'Zen Tokyo Zoo',cursive;">Bombay</center>
@@ -120,13 +113,13 @@
 
             <form>
 
-                <label for="locations">Choose a location:</label>
+                <label for="locations" style="margin-left: -6.5%;"><font size="5">Choose a location:</font></label>
                 <select id="dropdown" name="locations">
                     <option value="Jhansi">Jhansi (+460 km)</option>
                     <option value="Nagpur">Nagpur(+620 km)</option>
                 </select>
 
-                <label for="stars" >Choose which type of hotel</label>
+                <label for="stars" ><font size="5">Choose which type of hotel</font></label>
                 <select id="dropdown2" name="stars">
                     <option value="3">3 star</option>
                     <option value="4">4 star</option>
