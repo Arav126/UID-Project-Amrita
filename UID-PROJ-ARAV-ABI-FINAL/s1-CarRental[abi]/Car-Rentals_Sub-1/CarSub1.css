@@ -15,7 +15,7 @@ img{
     width: 100%;
     height: 100%;
 }
-.main-grid{
+.Sub1-main-grid{
     padding: 20px 40px 40px;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -27,23 +27,23 @@ img{
     background-repeat: no-repeat;
     opacity: 0.75;
 }
-.main-grid div{
+.Sub1-main-grid div{
     overflow: hidden;
     position: relative;
     border-radius: 5px;
 }
-.main-one{
+.Sub1-main-one{
     grid-column: 1/-1;
     grid-row: 1/span 2;
 
 }
-.main-head-text{
+.Sub1-main-head-text{
     position: absolute;
     top: 13%;
     right: -37%;
     padding: 15px;
 }
-.main-head-text h1{
+.Sub1-main-head-text h1{
     color: black;
     font-size: 75px;
     text-transform: uppercase;
@@ -51,7 +51,7 @@ img{
     text-shadow: 0 0 100px white;
    
 }
-.main-head-text h1::before{
+.Sub1-main-head-text h1::before{
     content: 'KIA SELTOS GT Line';
     color: white ;
     position: absolute;
@@ -59,11 +59,11 @@ img{
     overflow: hidden;
     transition: 0.8s ;
 }
-.main-head-text h1:hover:before{
+.Sub1-main-head-text h1:hover:before{
     width: 100%;
     /* text-shadow: 0 0 20px #fff; */
 }
-.main-two{
+.Sub1-main-two{
     grid-column: 1/ span 1;
     grid-row: 2/span 2;
     background-color: black;
@@ -77,34 +77,34 @@ img{
 
     text-align: center;
 }
-.main-text{
+.Sub1-main-text{
     width: 70%;
     margin: auto;
 }
-.main-two:hover,
-.main-three:hover,
-.main-four:hover{
+.Sub1-main-two:hover,
+.Sub1-main-three:hover,
+.Sub1-main-four:hover{
     transform:translatey(-20px);
     box-shadow: 0 0 20px #000,
                 0 0 50px #000;
     opacity: .75;
     transition: all 0.1s ;
 }
-.main-text p{
+.Sub1-main-text p{
     color: white;
     font-size: 15px;
     text-align: center;
     padding-top: 30px;
     line-height: 20px;
 }
-.main-three{
+.Sub1-main-three{
     grid-column: 2/ span 1;
     grid-row: 2/span 2;
     background-color: black;
     opacity: 0.6;
     transition: 0.1s;
 }
-.main-four{
+.Sub1-main-four{
     grid-column: 3/ span 1;
     grid-row: 2/span 2;
     background-color: black;
@@ -113,7 +113,7 @@ img{
 }
 /* ------sub-stuff--------- */
 
-.sub-grid-one{
+.Sub1-sub-grid-one{
     display: grid;
     grid-template-columns: 650px auto;
     grid-template-rows: 430px;
@@ -121,23 +121,23 @@ img{
     background-color: grey;
     opacity: 0.85;
 }
-.sub-grid-two{
+.Sub1-sub-grid-two{
     display: grid;
     grid-template-columns: auto 650px;
     grid-template-rows: 430px ;
     opacity: 0.85;
 }
-.sub-text{
+.Sub1-sub-text{
     color: white;
     opacity: 0.7;
 }
-.sub-text h2{
+.Sub1-sub-text h2{
     margin-top: 120px;
     text-align: center;
     font-size: 40px;
     margin-bottom: 50px;
 }
-.sub-text p{
+.Sub1-sub-text p{
     text-align: center;
     width: 60%;
     margin: auto;
@@ -145,54 +145,54 @@ img{
     line-height: 25px;
     letter-spacing: .5px;
 }
-.sub-text:hover{
+.Sub1-sub-text:hover{
     opacity: 0.9;
 
 }
-.sub-grid-one div,
-.sub-grid-two div{
+.Sub1-sub-grid-one div,
+.Sub1-sub-grid-two div{
     overflow: hidden;
     position: relative;
 
 }
-.sub-img{
+.Sub1-sub-img{
     width: auto;
     height: 100%;
     opacity: 1;
     transition:  all 0.2s ease-in;
 }
-.sub-one{
+.Sub1-sub-one{
     grid-column: 1/span 1;
     grid-row: 1/ span 1;
     background-color: black;
 }
-.sub-two{
+.Sub1-sub-two{
     grid-column: 2/span 1;
     grid-row: 1/ span 1;
     background-color: transparent;
 }
-.sub-two:hover .sub-img{
+.Sub1-sub-two:hover .Sub1-sub-img{
     transform: scale(1.15);
     transition:  all 0.2s ease-in;  
 
 }
-.sub-three{
+.Sub1-sub-three{
     grid-column: 1/span 1;
     grid-row: 1/ span 1;
     background-color: black;
 }
 
-.sub-three:hover .sub-img{
+.Sub1-sub-three:hover .Sub1-sub-img{
     transform: scale(1.15);
     transition:  all 0.2s ease-in;   
 }
-.sub-four{
+.Sub1-sub-four{
     grid-column: 2/span 1;
     grid-row: 1/ span 1;
     background-color: black;
 }
 
-.sub-two .grad{
+.Sub1-sub-two .Sub1-grad{
     height: 100%;
     width: 100%;
     position: absolute;
@@ -203,7 +203,7 @@ img{
     background-image: linear-gradient(to bottom,transparent,black);
 }
 
-.sub-three .grad{
+.Sub1-sub-three .Sub1-grad{
     height: 100%;
     width: 100%;
     position: absolute;
@@ -214,11 +214,11 @@ img{
     background-image: linear-gradient(to top,transparent,black);
 }
 
-.sub-grid-one:hover .grad{
+.Sub1-sub-grid-one:hover .Sub1-grad{
     bottom: -130px;
     transition: 0.5s ;
 }
-.sub-grid-two:hover .grad{
+.Sub1-sub-grid-two:hover .Sub1-grad{
     top: -130px;
     transition: 0.5s ;
 }
@@ -262,7 +262,7 @@ img{
     transition: .1s;}
 .lc:hover{color: white;
     transition: .1s;}
-.end-text{
+.Sub1-end-text{
     background-color: black;
     height: 250px;
     width: 100%;
@@ -270,7 +270,7 @@ img{
     transition: .1s;
     margin-top: 70px;
 }
-.end{
+.Sub1-end{
     width: 33.33%;
     float: left;
     /* margin: 120px auto 120px; */
@@ -278,7 +278,7 @@ img{
     justify-content: center;
     align-items: center;
 }
-.end-text-col-one{
+.Sub1-end-text-col-one{
     margin: 100px 150px 120px;
     width: auto;
     padding: 10px;
@@ -286,17 +286,17 @@ img{
     border: 2px solid #777;
     transition: .1s;
 }
-.end-text-col-one h4,
-.end-text-col-three h4{
+.Sub1-end-text-col-one h4,
+.Sub1-end-text-col-three h4{
     cursor: pointer;
     font-size: 20px;
     transition: .1s;
 }
-.end-text-col-two{
+.Sub1-end-text-col-two{
     margin: 90px auto 120px;
     transition: .1s;
 }
-.end-text-col-three{
+.Sub1-end-text-col-three{
     margin: 100px 150px 120px;
     width: auto;
     padding: 10px;
@@ -305,7 +305,7 @@ img{
     transition: .1s;
     
 }
-.end-text-col-two h2{
+.Sub1-end-text-col-two h2{
     font-family: 'Kaushan Script', cursive;
     font-size: 50px;
     letter-spacing: 2px;
@@ -316,8 +316,8 @@ h4 span{
     letter-spacing: 1px;
     transition: .1s;
 }
-.end-text-col-one:hover h4 span,
-.end-text-col-three:hover h4 span{
+.Sub1-end-text-col-one:hover h4 span,
+.Sub1-end-text-col-three:hover h4 span{
     color: black;
     transition: .1s;
     text-shadow: 0 0 10px #fff,
@@ -329,7 +329,7 @@ h4 span{
                  0 0 160px #fff;
 
 }
-.end-text-col-two:hover h2{
+.Sub1-end-text-col-two:hover h2{
     color: white;
     transition: .1s;
     text-shadow: 0 0 10px #fff,
@@ -339,8 +339,8 @@ h4 span{
                  0 0 140px #fff;
 
 }
-.end-text-col-one:hover,
-.end-text-col-three:hover{
+.Sub1-end-text-col-one:hover,
+.Sub1-end-text-col-three:hover{
     border: 2px solid white;
     transition: .1s;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.911),

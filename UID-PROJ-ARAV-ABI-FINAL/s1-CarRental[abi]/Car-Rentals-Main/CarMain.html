@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <script>
-        var show=function(t)
-        {t.style.display="block"},hide=function(t)
-        {t.style.display="none"},toggle=function(t)
-        {"block"!==window.getComputedStyle(t).display?show(t):hide(t)};document.addEventListener("click",function(t)
-        {if(t.target.classList.contains("toggle"))
-        {t.preventDefault();var e=document.querySelector(t.target.hash);e&&toggle(e)}},!1);
-    </script>
+
     <head>
         <!------------ MAIN PAGE HEAD LINKS------------>
+        <!-- <link rel="stylesheet" href="CarSub1.css"> -->
 
         <link rel="stylesheet" href="CarMain.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,14 +12,16 @@
         
 
         <script>
-            var show=function(t)
-            {t.style.display="block"},hide=function(t)
-            {t.style.display="none"},toggle=function(t)
-            {"block"!==window.getComputedStyle(t).display?show(t):hide(t)};document.addEventListener("click",function(t)
-            {if(t.target.classList.contains("toggle"))
-            {t.preventDefault();var e=document.querySelector(t.target.hash);e&&toggle(e)}},!1);
+            function myFunction() {
+                <link rel="stylesheet" href="CarSub1.css"></link>
+                
+              
+              element.href.toggle("../Car-Rentals_Sub-1/CarSub1.html")
+              
+            }
         </script>
     </head>
+
     <body>
         <div class="main-grid">
             <div class="mgrid main-one">
@@ -77,7 +73,7 @@
 
         </div>
         <div class="sub-grid">
-            <div onclick="location.href='../Car-Rentals_Sub-1/CarSub1.html';" style="cursor: pointer;" class="sub-col sub-one">
+            <div class="sub-col sub-one">
                 <div class="sub-img">
                     <img src="car-1.jpg">
                 </div>
@@ -85,7 +81,7 @@
                     <h2>kia seltos</h2>
                 </div>
                 <div class="sub-text-bottom">
-                    <h2>Details</h2>
+                    <button onclick="myFunction()">Details</button>
                 </div>
             </div>
             <div onclick="location.href='../Car-Rentals_Sub-2/CarSub2.html';" style="cursor: pointer;" class="sub-col sub-two">
@@ -145,6 +141,10 @@
             </div>
         </div>
         
+        <!-- <div w3-include-html="../Car-Rentals_Sub-1/CarSub1.html"></div> 
+        <script>
+            includeHTML();
+            </script> -->
         <div class="btw-text">
             <h2>WHAT OUR CUSTOMERS SAY</h2>
             <h3> <b>Awesome Service Experience</b></h3>
