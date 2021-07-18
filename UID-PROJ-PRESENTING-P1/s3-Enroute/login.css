@@ -11,11 +11,12 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #58660a;
+  background: #c7ab5d;
+  /* check for both and decide #FFEFCA */
 }
 ::selection{
   color: #fff;
-  background: #58660a;
+  background: #be9e44;
 }
 .wrapper{
   width: 380px;
@@ -49,7 +50,7 @@ form input{
   padding: 0 45px;
   font-size: 18px;
   background: none;
-  caret-color: #58660a;
+  caret-color: #be9e44;
   border-radius: 5px;
   border: 1px solid #bfbfbf;
   border-bottom-width: 2px;
@@ -57,7 +58,7 @@ form input{
 }
 form .field input:focus,
 form .field.valid input{
-  border-color: #58660a;
+  border-color: #be9e44;
 }
 
 form .field.error input{
@@ -81,7 +82,7 @@ form .field.error input{
 }
 form input:focus ~ .icon,
 form .field.valid .icon{
-  color: #58660a;
+  color: #be9e44;
 }
 
 form .field.error input:focus ~ .icon{
@@ -108,7 +109,7 @@ form .pass-txt{
   margin-top: -10px;
 }
 .wrapper a{
-  color: #58660a;
+  color: #be9e44;
   text-decoration: none;
 }
 .wrapper a:hover{
@@ -120,11 +121,11 @@ form input[type="submit"]{
   color: #fff;
   padding: 0;
   border: none;
-  background: #58660a;
+  background: #be9e44;
   cursor: pointer;
   border-bottom: 2px solid rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 }
 form input[type="submit"]:hover{
-  background: #9e9c17;
+  background: #be9e44;
 }

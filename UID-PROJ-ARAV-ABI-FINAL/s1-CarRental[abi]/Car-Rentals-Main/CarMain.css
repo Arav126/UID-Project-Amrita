@@ -178,9 +178,9 @@ img{
 .main-six{
     grid-row: 3/span 1;
     grid-column: 2/span 1;
-    background-image: linear-gradient(to bottom,transparent,black);
+    /* background-image: linear-gradient(to bottom,transparent,black); */
     transition: 0.5s;
-    background-color: #3b3b3b;
+    background-color: #000000e8;
     opacity: 1;
 }
 .main-six:hover{
