@@ -273,6 +273,7 @@ img{
     width:auto;
     height: 330px;
     background-color: black;
+    padding-bottom: 30px;
 }
 .btw-text h2{
     color: white;
