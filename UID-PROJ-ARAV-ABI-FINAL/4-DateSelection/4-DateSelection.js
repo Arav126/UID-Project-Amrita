@@ -18,14 +18,14 @@ function travellerCount() {
             traveller2.style.display = 'none';
             traveller3.style.display = 'none';
             traveller4.style.display = 'none';//to get it right when going back to prev option
-            main.style.height = '100vh';
+            main.style.height = '95vh';
             break;
         case 2:
             traveller1.style.display = 'block';
             traveller2.style.display = 'block';
             traveller3.style.display = 'none';
             traveller4.style.display = 'none';
-            main.style.height = '150vh';
+            main.style.height = '105vh';
             alert('reached 2');
             break;
         case 3:
@@ -33,14 +33,14 @@ function travellerCount() {
             traveller2.style.display = 'block';
             traveller3.style.display = 'block';
             traveller4.style.display = 'none';
-            main.style.height = '200vh';
+            main.style.height = '120vh';
             break;
         case 4:
             traveller1.style.display = 'block';
             traveller2.style.display = 'block';
             traveller3.style.display = 'block';
             traveller4.style.display = 'block';
-            main.style.height = '250vh';
+            main.style.height = '135vh';
             break;
         default:
             alert('wrong input');

@@ -1,13 +1,42 @@
+//GLOBAL
+
+const correctColor = 'green';
+const wrongColor = 'red';
+
+var correctColor = ;
+var wrongColor = '';
+
+//JS 1
+function cardNameCheck() {
+    var cardName = document.getElementById('name-on-card').value;
 
 
+}
+
+//JS2
+function expiryCheck() {
+    var expiry = document.getElementById('expiry').value;
+
+
+}
+
+//JS3
+function cardNoCheck() {
+    var cardNo = document.getElementById('card-no').value;
+
+
+}
+
+//JS4
 function cvvCheck() {
+    alert('inside');
     var cvv = document.getElementById('cvv').value;
-    var tick = document.getElementById('tick');
+    var cvvText = document.getElementByClassName('cvv-text');
 
-    //alert(cvv);
+    alert(cvv);
     if (cvv <= 999 && cvv >= 100) {
-        tick.style.color = "green";
+        cvvText.style.color = 'green';
     } else {
-        tick.style.color = "red";
+        cvvText.style.color = wrongColor;
     }
 }
