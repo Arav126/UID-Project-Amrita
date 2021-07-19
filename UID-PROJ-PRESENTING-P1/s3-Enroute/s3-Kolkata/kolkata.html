@@ -1,0 +1,161 @@
+<html>
+    <title>Kolkata to Hyderabad</title>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="kolkata.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    </head>
+
+    
+
+    <body>
+        <div class="headimage">
+            <img src="himg.jpg" width="100%"> 
+            <div class="headimagetext">
+            KOLKATA TO HYDERABAD
+            </div>
+        </div>  
+
+        <div class="grid">
+            
+            <div class="map">
+                <img src="map.png" usemap="#image-map" width="100%">
+
+                <map name="image-map">
+                    <area href=#und coords="40,60,18" shape="circle">
+                    <area href=#lin coords="728,243,33" shape="circle">
+                    
+                </map>
+            </div>
+
+            <div class="caption">
+                Pick a landmark by clicking on it
+            </div>
+
+            <div class="pic1">
+                <img src="1.jpg" width="100%">
+            </div>
+
+            <div class="pic2">
+                <img src="2.jfif" width=100%>
+            </div>
+
+            <div class="vij" id=und>
+                <img src="und.jpg" width=100%>
+            </div>
+           
+            <div class="caption">
+                The Undavalli Caves date back to the 7th century BC and are prime example of rock-cut architecture
+            </div>
+
+            <div class="bhu" id=lin>
+                <img src="lin.jpg" width="100%">
+            </div>
+
+            <div class="caption">
+                The Lingaraja Temple is one of the oldest temples in India
+            </div>
+
+            <div class="pic3">
+                <img src="3.jpg" width=100%>
+            </div>
+
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="hotels">
+            <br><br><br><br>
+            <span class="hoteltext">Book a hotel with</span> <span class="tttt">  Trip to the tee</span> <br><br><br>
+
+            <form>
+
+                <label for="locations">Choose a location:</label>
+                <select id="dropdown" name="locations">
+                    <option value="Keonjhar">Keonjhar (+347 km)</option>
+                    <option value="Balangir">Balangir(+327 km)</option>
+                    <option value="Jagdalpur">Jagdalpur(+548 km)</option>
+                </select>
+
+                <label for="stars" >Choose which type of hotel</label>
+                <select id="dropdown2" name="stars">
+                    <option value="3">3 star</option>
+                    <option value="4">4 star</option>
+                    <option value="5">5 star</option>
+                    
+                </select>
+
+                <br><br><br><br>
+
+                <input type="button" value="Submit" id="submitbtn" onclick="find()">
+            
+            </form> 
+
+            <script>
+                
+                
+                function find(){
+                    var loc;
+                    var star;
+                    loc=document.getElementById("dropdown").value;
+                    star=document.getElementById("dropdown2").value;
+                    if(loc.localeCompare("Keonjhar") ==0){
+                        switch(star){
+                            case '3': window.open("https://www.tripadvisor.in/Hotel_Review-g1390102-d5614779-Reviews-Hotel_Sans-Keonjhar_Keonjhar_District_Odisha.html");
+                                              break;
+                            case '4': window.open("https://www.tripadvisor.in/Hotel_Review-g1390102-d5614779-Reviews-Hotel_Sans-Keonjhar_Keonjhar_District_Odisha.html");
+                                              break;
+                            case '5': window.open("https://www.tripadvisor.in/Hotel_Review-g1390102-d5614779-Reviews-Hotel_Sans-Keonjhar_Keonjhar_District_Odisha.html");
+                                              break;
+                            default:window.alert("Error") ;
+                            break;
+                                    
+                                            
+                        }
+                    }
+
+                    else if(loc.localeCompare("Balangir") ==0){
+                        switch(star){
+                            case '3': window.open("https://www.makemytrip.com/hotels/hotel-details/?city=CTBNR&country=IN&checkin=07232021&checkout=07242021&hotelId=202105201827597848&roomStayQualifier=2e0e&cmp=googlehoteldfinder_DH_IN_localuniversal_202105201827597848_11323756018&totalGuestCount=2&roomCount=1&type=CTY&_uCurrency=INR&Campaign=11323756018&locusType=city&locusId=CTBNR&mtkeys=M0T8FnqZ.i2d-520-0&gclid=Cj0KCQjwxdSHBhCdARIsAG6zhlVjhDRBqcnoEhLrXbLT2UlPb9kAItX_iGJvUG5aCfTy-UTSSEV1iIQaAsncEALw_wcB");
+                                              break;
+                            case '4': window.open("https://www.makemytrip.com/hotels/hotel-details/?city=CTBNR&country=IN&checkin=07232021&checkout=07242021&hotelId=201807131553071941&roomStayQualifier=2e0e&cmp=googlehoteldfinder_DH_IN_localuniversal_201807131553071941_10198780550&totalGuestCount=2&roomCount=1&type=CTY&_uCurrency=INR&Campaign=10198780550&locusType=city&locusId=CTBNR&mtkeys=M0C14pDFH1FtO-6vu-pb&gclid=Cj0KCQjwxdSHBhCdARIsAG6zhlXHh9CxI9VGQen3alLoI9YIBDsCugidmCqveH0qUZjjyC4ACB_DScwaAr31EALw_wcB");
+                                              break;
+                            case '5': window.open("https://www.priceline.com/relax/at/104965405/from/20210723/to/20210724/rooms/1?meta-id=Mx-SHdsM3RwjI94dLatsX8E_IxH6rP9pwAclZxQOWcKUBoQEtrg5EUGriD1NDER1aNuw8HXQIlTqD5AZtBUfyslkNd0c3mWAw1RDiVXeeN0R7wtpdeq0kHrUgqm-yKoFqTubMrFIX4WIBa2x_Bovu6-mlXEECpbfh2UR-3XffFqrvs2KYcpxoElo4rCJHHvr2zFKeVlmukZPqlPuy3_kjHkGsW3qQpVenfXf4LFBIN_pQjywl0mxb8dVEG7k9c2FRZ1h1qLAZCNw3LL6w-V_Ow&pclnId=113DC731CCF38B9EB5B41636AE5C4930D32B1D42FDF272FD29475F5FCE6D78D7548B10D3A7517576925188C496E8BF0BDDC485F8727F3891551544B0AD940139F5A1129778A79267408E232E179DAC6F&gid=2314&cityId=5000140360&cur=INR&qdp=2899&vrid=37a041340ff564f21870e0dc000fa362");
+                                              break;
+                                              default:window.alert("oops");
+                                              break;
+                        }
+                    }
+
+                    else{
+                        switch(star){
+                            case '3': window.open("https://www.makemytrip.com/hotels/hotel-details/?city=CTJGD&country=IN&checkin=07232021&checkout=07242021&hotelId=201701271834117852&roomStayQualifier=2e0e&cmp=googlehoteldfinder_DH_IN_localuniversal_201701271834117852_11323756018&totalGuestCount=2&roomCount=1&type=CTY&_uCurrency=INR&Campaign=11323756018&locusType=city&locusId=CTJGD&mtkeys=M0CIJosg.ONI-20u-Ez&gclid=Cj0KCQjwxdSHBhCdARIsAG6zhlUW3xRX8nJKDJPLxPo1Iy6V4gUFusXKy3iY_u3GQuJ3xCEFXI4tYwEaAidtEALw_wcB");
+                                              break;
+                            case '4': window.open("https://www.makemytrip.com/hotels/hotel_devansh_residency-details-jagdalpur.html");
+                                              break;
+                            case '5': window.open("https://www.makemytrip.com/hotels/champa_baag-details-jagdalpur.html");
+                                              break;
+                                              default:window.alert("oops");
+                                              break;
+                        }
+                    }
+                }
+            </script>
+          
+          
+
+            <br><br><br><br><br><br><br>
+
+        </div>
+
+        
+
+   
+
+
+        
+
+       
+    </body>
+</html>
