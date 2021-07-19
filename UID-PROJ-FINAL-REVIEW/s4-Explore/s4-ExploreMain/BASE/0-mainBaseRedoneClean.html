@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+
+<html> 
+
+    <head>
+        <title>
+            Explore
+        </title>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="0-mainBaseRedoneClean.css">
+
+    </head>
+
+    <body>
+        <div class="main-header-container">
+            <div class="logo"><img src="Pics/official.png"></div>
+            <div class="title-text title-text-top">Trip to the Tee</div>
+            <div class="trigger-main-stages-container">
+                <a href="javascript:void(0);"  onclick="geeksforgeeks()">
+                    <ion-icon name="menu"></ion-icon>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="main-stages-container" id="menus">
+            <div class="div-stages s1"><a href="../../../s1-CarRental/Car-Rentals-Main/BASE/0-mainBaseRedoneClean.html" target="_self">Car Rentals</a></div>
+            <div class="div-stages s2"><a href="../../../s2-ResortsRedone/BASE/0-mainBaseRedoneClean.html" target="_self">Suites</a></div>
+            <div class="div-stages s3"><a href="../../../s3-Enroute/s3-1-Main/BASE/0-mainBaseRedoneClean.html">Enroute</a></div>
+            <div class="div-stages s4"><a href="../BASE/0-mainBaseRedoneClean.html"">Explore</a></div>
+            <div class="div-stages s5"><a href="../../../s5-Payments/s5-PaymentRedone/BASE/0-mainBaseRedoneClean.html">Payment</a></div>
+            <div class="div-stages s6"><a>Gracias</a></div>
+        </div>
+<!-- =================================================================================== -->
+        <div class="main-content-container">
+            <iframe src="../Things to do.html" frameborder="0"></iframe>
+
+        </div>
+<!-- =================================================================================== -->
+
+        <div class="main-footer-container">
+            <div class="whitespace"></div>
+            <div class="whitespace"></div>
+            <div class="to-top">
+                <a href="#"><ion-icon name="chevron-up"></ion-icon><span>To top</span></a>
+            </div>
+
+            <div class="h-rule"><hr></div>
+            <div class="title-text title-text-bottom">Trip to the Tee</div>
+            <div class="h-rule"><hr></div>
+
+        </div>
+
+        <div class="main-footer-container-2">
+            <div class="socials">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>       
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/triptothetee/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+            <div class="copyrights">Trip to the Tee &#169; Copyright 2021</div>
+            <div class="h-rule-2"><hr></div>
+        </div>
+
+
+
+
+
+        <!-- SCRIPT INSERTS -->
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+        </script>
+        
+        <script>        
+            // Function to toggle the bar
+            function geeksforgeeks() {
+                var x = document.getElementById("menus");
+                if (x.style.display === "grid") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "grid";
+                }
+            }
+        </script>
+
+    </body>
+</html>

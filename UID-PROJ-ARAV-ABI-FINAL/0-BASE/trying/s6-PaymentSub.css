@@ -1,0 +1,250 @@
+/* container-bg-color: #F9F6F0 ;
+
+
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* img {
+    display: block;
+}  */
+
+/* icon pack  */
+
+ion-icon {
+    color: black;
+    font-size: 50px;
+    /* do multiples of 8 */
+    /* use this instead of size=large */
+  }
+
+/* <!--                  BGCOLOR COLORinStyle
+        VISITED STATE COLOR = #0e0e0e #be9e44
+        ACTIVE STATE COLOR = #be9e44 #0e0e0e
+        UNVISITED STATE COLOR = #FFEFCA #be9e44
+        --> */
+
+/*~~~~~~~~~~~~~~~~~~~~~BASE NO CHANGE~~~~~~~~~~~~~~~~~~~~~*/
+  
+body {
+    background-color: rgb(30, 30, 30);
+    /* height: 60vh; */
+}
+
+
+.payContainer {
+    width: 65%;
+    background-color: #303030 ;
+    height: 90vh;
+    margin: 40px auto;
+    /* padding: 20px 50px;
+    affects entire container not individual grid items */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+
+    /* border: 2px solid red; */
+    border-radius: 40px;
+    transition: all 1s 150ms;
+    
+}
+.payContainer:hover {
+    /* border: 2px solid #ee1d3d; */
+    box-shadow: 0px 0px 20px #ee1d3d;
+
+}
+
+.header-text {
+    grid-column: 1/-1;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~Header Text~~~~~~~~~~~~~~~~~~~~~*/
+
+.header-text {
+    margin: auto;
+
+    color: #ee1d3d;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 38px;
+    font-style: italic;
+    /* padding: 50px 1px; */
+
+
+    position: relative;
+
+    transition: all 2s ease-in-out 0.15s;
+}
+
+.payContainer:hover .borderBottom {
+    
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: -10px;
+
+    
+}
+
+.borderBottom{
+    transition: all 2s ease-in-out 0.15s;
+
+    border-bottom: 3px solid #ee1d3d;
+
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    bottom: -10px;
+
+}
+/*~~~~~~~~~~~~~~~~~~~~~Footer Text~~~~~~~~~~~~~~~~~~~~~*/
+
+.footer-text {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~MAIN CONTENT~~~~~~~~~~~~~~~~~~~~~*/
+
+.payMain {
+    margin: 1px 50px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.payMain span {
+    color: whitesmoke;
+    
+    font-family: serif;
+    font-size: 28px;
+
+    padding: 8px 3px;
+}
+
+.card-name, .card-no, .cvv-no {
+    padding: 8px 12px;
+    /* margin: ; */
+    border:2px solid #ee1d3d;
+    
+    opacity: 0.7;
+    transition: all 0.5s 0.100s;
+    
+}
+
+.card-name:focus, .card-no:focus, .cvv-no:focus {
+    opacity: 1;
+    box-shadow: 0px 0px 6px #ee1d3d;
+    padding: 8px 40px;
+    /* border-radius: 50px; */
+}
+
+.type-of-card, .exp-date {
+    border:2px solid #ee1d3d;
+    padding: 10px 18px;
+    font-size: 16px;
+
+    transition: all 0.5s 0.100s;
+}
+
+.type-of-card:focus, .exp-date:focus {
+    box-shadow: 0px 0px 6px #ee1d3d;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~HEADER AND FOOTER BTNS~~~~~~~~~~~~~~~~~~~~~*/
+
+.btn {
+    color: whitesmoke;
+
+    font-family: sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+    transition: all 0.8s ease 150ms;
+}
+
+.card {
+    background-color:#75232D;
+    /* margin: 1px 100px; not responsive, code breaks in other screens*/
+
+    position: relative;
+    right: -26%;
+    
+    padding: 15px 35px;
+    box-shadow: 5px 5px rgba(255, 255, 255,0.2);
+}
+
+.card:hover {
+    background-color:#a12e3b;
+    box-shadow: 0px 0px rgba(255, 255, 255,0.2);
+}
+
+.footer-text{
+    position: relative;
+}
+
+.reset-btn{
+    position: absolute;
+    right: -0%;
+}
+
+.submit-btn{
+    position: absolute;
+    right: -30%;
+}
+
+.footer-btn {
+    background-color: rgba(0, 128, 128, 0.712);
+    padding: 10px 30px;
+    border-radius: 40px;
+}
+
+.footer-btn:hover {
+    background-color: rgb(0, 128, 128);
+    box-shadow: 0px 0px 10px teal;
+
+}
+
+/* trigger */
+
+#active-ref-credit:checked ~ a,
+#active-ref-debit:checked ~ a{
+    box-shadow: 0px 0px transparent;
+    border: 4px solid #a12e3b;
+    background-color: rgb(30, 30, 30);
+    color: #a12e3b;
+    /* font-size: 28px; */
+    font-weight: 700;
+}
+
+#active-ref-credit:checked ~ a {
+    /* cant do the text switch cuz i separated them into two divs/grid-items/left and right  */
+}
+
+.footer-text > span {
+    position: relative;
+    bottom: -40px;
+}
+
+#tick{
+    color: red;
+    font-size: 30px;
+    position: relative;
+    bottom: -2%;
+}

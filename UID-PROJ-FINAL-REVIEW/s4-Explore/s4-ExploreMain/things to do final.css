@@ -1,0 +1,179 @@
+img{
+    display: block;
+    }
+
+    body{
+        margin: 0%;
+        padding:0%;
+        background-color:darkslategray;
+        
+    }
+
+  
+    .headimage{
+        position: relative;
+    }
+
+    .headimage .htext1{
+        position:absolute;
+        text-align: center;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top:60%;
+        width: 70%;
+        font-family: 'Roboto Mono', monospace;
+        color: antiquewhite;
+        font-size: 500%;
+        }
+
+        .video2{
+            position: relative;
+            }
+            
+            .videotext2{
+            position: absolute;
+            text-align: center;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            font-family:'Roboto Mono', monospace;
+            color: antiquewhite;
+            font-size: 400%;
+            font-weight: 600;
+            top: 40%;
+            width: 70%;
+            }
+    
+    .htext2{
+        position:absolute;
+        text-align: center;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top:80%;
+        font-family: 'KoHo', sans-serif;
+        color: floralwhite;
+        font-size: 130%;
+    }
+
+    .ttd{
+        height: 100vh;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-top: 2%;
+        margin-bottom: 8%;
+        padding: 0%;
+
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .tte{
+        height: 1vh;
+        max-width: 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
+
+    .arts{
+        position: relative;
+        width: auto;
+        height: 100%;
+        transition: transform .2s;
+        margin: 0 auto;
+    }
+
+    .attr{
+        position: relative;
+        width: auto;
+        height: 100%;
+        transition: transform .2s;
+        margin: 0 auto;
+    }
+
+    .shop{
+        position: relative;
+        width: auto;
+        height: 100%;
+        transition: transform .2s;
+        margin: 0 auto;
+    }
+    
+    .film{
+        position: relative;
+        width: auto;
+        height: 100%;
+        transition: transform .2s;
+        margin: 0 auto;
+    }
+
+    .food{
+        position: relative;
+        position: relative;
+        grid-row: 2/span 2;
+        grid-column: 1/span 2;
+        width: auto;
+        height: 100%;
+        transition: transform .2s;
+        margin: 0 auto;
+        
+
+    }
+    .advt{
+        position: relative;
+        grid-column: 3/span 2;
+        width: auto;
+        height: 100%;
+        transition: transform .2s;
+        margin: 0 auto;
+    }
+
+    .sprt{
+        position: relative;
+        width: auto;
+        height: 100%;
+        transition: transform .2s;
+        margin: 0 auto;
+    }
+
+    .entt{
+        position: relative;
+        width: auto;
+        height: 100%;
+        transition: transform .2s;
+        margin: 0 auto;
+    }
+    
+    .gridimg:hover{
+        transform: scale(1.2);  
+        z-index: 10;         
+    }
+
+    .ttd h1{
+        position: absolute;
+        text-align: center;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top:40%;
+        font-family: 'KoHo', sans-serif;
+        color: floralwhite;
+        font-size: 200%;
+        filter: brightness(200%);
+    }
+    .ttd img{
+        filter: brightness(70%);
+    }
+    
+    .tte>div>img:hover{
+        filter: brightness(50%);
+
+    }
+
+   
