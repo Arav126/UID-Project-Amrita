@@ -248,7 +248,7 @@ a:hover {
   </div>
 </div>
 <div class="hello">
-  <form >
+  <form name="form1">
     <fieldset style="width: 100%;">
     <legend>FILTERS</legend>
 
@@ -257,13 +257,13 @@ a:hover {
       <div>
       <div>
         <label for="radios-0">
-          <input type="radio" name="radios" id="radios-0" value="M" >
+          <input type="radio" name="radios" id="radios1" value="M" >
           MALE
         </label>
       </div>
       <div >
         <label for="radios-1">
-          <input type="radio" name="radios" id="radios-1" value="F">
+          <input type="radio" name="radios" id="radios2" value="F">
           FEMALE
         </label>
       </div>
@@ -281,7 +281,7 @@ a:hover {
  
   </form>
 </fieldset>
-<form >
+<form name="form2">
   <fieldset style="width: 100%;">
   <legend>FILTERS</legend>
 
@@ -294,10 +294,44 @@ a:hover {
     <option value="large">L</option>
     <option value="extralarge">XL</option>
   </select>
-  <input type="submit" formtarget="_self">
+  <input type="submit" onclick="gotopage()">
     </div>
     </div>
 </form>
+<script>
+  
+  function gotopage()
+  {
+    
+    var gen=document.form1.radios.value;
+    var genc=document.getElementById("radios1").checked;
+    var gen1=document.getElementById("checkbox-1").checked;
+  alert(gen);
+  alert(genc);
+  alert(gen1);
+    if(gen=="M" && gen1==true)
+  {
+    window.open("https://www.myntra.com/boys-clothing");
+  }
+  if(gen=="F" && gen1==true)
+  {
+    window.open("https://www.myntra.com/girls-clothing");
+  }
+  if(gen1==true && genc==false && document.getElementById("radios2").checked==false)
+  {
+    window.open("https://www.myntra.com/kids");
+  }
+  if(gen=="M" && gen1==false)
+  {
+    window.open("https://www.myntra.com/men-clothing");
+  }
+  if(gen=="F" && gen1==false)
+  {
+    window.open("https://www.myntra.com/women-clothing");
+  }
+  }
+  
+</script>
 </fieldset>
 </div>
 <div class="last">
