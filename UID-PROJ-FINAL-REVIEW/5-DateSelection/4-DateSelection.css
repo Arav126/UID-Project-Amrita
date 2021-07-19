@@ -1,0 +1,277 @@
+/* container-bg-color: #F9F6F0 ;
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root {
+    --darker-black: #0e0e0e;
+    --lighter-black: #303030 ; 
+    --smoke :#FFEFCA;
+    --gold: #be9e44;
+    --red: #ee1d3d;
+  }
+
+.tab {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/* icon pack  */
+
+ion-icon {
+    color: black;
+    font-size: 50px;
+    /* do multiples of 8 */
+    /* use this instead of size=large */
+  }
+
+/* <!--                  BGCOLOR COLORinStyle
+        VISITED STATE COLOR = #0e0e0e #be9e44
+        ACTIVE STATE COLOR = #be9e44 #0e0e0e
+        UNVISITED STATE COLOR = #FFEFCA #be9e44
+        --> */
+
+/*~~~~~~~~~~~~~~~~~~~~~BASE NO CHANGE~~~~~~~~~~~~~~~~~~~~~*/
+  
+body {
+    background-color: var(--darker-black);
+    /* height: 60vh; */
+}
+
+
+.dateContainer {
+    width: 90%;
+    background-color: #1a1a1a ;
+    height: 95vh;
+    margin: 50px auto;
+    /* padding-top:20px ; */
+    
+    align-content: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1.5fr;
+    grid-auto-rows: 1fr;
+
+    /* grid-row-gap:20px;
+    grid-column-gap:20px; */
+
+    /* border: 2px solid red; */
+    border-radius: 40px;
+    transition: all 1s 150ms;
+    
+}
+.dateContainer:hover {
+    /* border: 2px solid #ee1d3d; */
+    box-shadow: 0px 0px 20px #be9e44;
+
+}
+
+/* MAIN GRID IDEA  */
+.traveller-all {
+    padding: 10px 40px;
+}
+
+#traveller2,#traveller3,#traveller4{
+    display: none;
+}
+
+/* HEADER TEXT  */
+.header-text {
+    margin: auto;
+
+    color: #be9e44;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 30px;
+    font-style: italic;
+    /* padding: 50px 1px; */
+
+
+    position: relative;
+
+    transition: all 2s ease-in-out 0.15s;
+}
+
+/* BORDER BOTTOM  */
+.borderBottom{
+    transition: all 2s ease-in-out 0.15s;
+
+    border-bottom: 3px solid #be9e44;
+
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    bottom: -10px;
+
+}
+
+.dateContainer:hover .borderBottom {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: -10px;
+}
+
+/* MAIN GRID ITEM  */
+.main {
+    margin: 10px 1px;
+    text-align: left;
+    line-height: 25px;
+
+    text-align: center;
+
+}
+
+.main > span, .span-text {
+    color: whitesmoke;
+    line-height: 2;
+
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    /* padding: 4px 3px; */
+
+
+    /* border: 2px solid white; */
+}
+
+/* .name-entry class  */
+
+.name-entry {
+    padding: 6px 10px;
+
+    border:2px solid #be9e44;
+    box-shadow: 0px 0px 5px #be9e44;
+
+    transition: all;
+    transition-duration: 0.5s;
+    transition-delay: 100ms;
+}
+
+.name-entry:focus {
+    padding: 6px 30px;
+    /* border-radius: 50px; */
+    
+}
+
+/* deptdate class  */
+
+
+/* .number-selection class  */
+.number-selection {
+    padding: 4px 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+
+.table-avg-costs td, .table-avg-costs th {
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* .gender-div */
+
+.gender-div {
+    display: inline-flex;
+}
+
+.gender-div > div {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    /* word-spacing: 100px; */
+
+    background-color: var(--darker-black);
+    color: rgba(255, 255, 255, 0.7);
+
+    border: 5px solid var(--darker-black);
+    padding: 4px 15px;
+}
+
+#active-gender-m:checked ~ .male{background-color: #be9e44;}
+#active-gender-f:checked ~ .female{background-color: #be9e44;}
+
+
+
+/* ===================================================================================== */
+/* footer button  */
+.btn {
+    color: whitesmoke;
+
+    font-family: sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+    transition: all 0.8s ease 150ms;
+}
+
+.card {
+    background-color:#be9e44;
+    /* margin: 1px 100px; not responsive, code breaks in other screens*/
+
+    position: relative;
+    right: -35%;
+    /* top: -30px; */
+    
+    padding: 15px 35px;
+    box-shadow: 5px 5px rgba(255, 255, 255,0.2);
+}
+
+.card:hover {
+    background-color:#be9e44;
+    box-shadow: 0px 0px rgba(255, 255, 255,0.2);
+}
+
+/* footer text  */
+.footer-text >span {
+    font-size: 20px;
+}
+.footer-text {text-transform: uppercase;}
+
+
+/* copied css */
+
+.btn {
+    color: whitesmoke;
+
+    font-family: sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+    transition: all 0.8s ease 150ms;
+}
+
+.footer-btn {
+    /* background-color: rgba(0, 128, 128, 0.712); */
+    background-color:#be9e44;
+
+    padding: 10px 30px;
+    border-radius: 40px;
+}
+
+.footer-btn:hover {
+    /* background-color: rgb(0, 128, 128); */
+    background-color:#be9e44;
+    box-shadow: 0px 0px 10px #be9e44;
+    opacity: 0.8;
+
+}
+
+/* chooses all dates  */
+input[type=date] {
+    padding: 8px 20px;
+    font-size: 15px;
+    color: var(--red);
+}
