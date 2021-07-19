@@ -6,6 +6,29 @@
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
         <title>KIA SELTOS</title>
     </head>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("toggle");
+        if (x.style.display == "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+            }
+        }
+        
+        function text(selTag) {
+          var x = selTag.options[selTag.selectedIndex].text;
+         if(x=='2 Days'){
+         document.getElementById("demo").innerHTML = "COST - Rs.5000 \n Car booked!" ;}
+         else if(x=='4 Days'){
+         document.getElementById("demo").innerHTML = "COST - Rs.20000 \n Car booked!" ;}
+         else if(x=='5 Days'){
+         document.getElementById("demo").innerHTML = "COST - Rs.25000 \n Car booked!" ;}
+         else if(x=='A Week'){
+         document.getElementById("demo").innerHTML = "COST - Rs.30000 \n Car booked!" ;}
+        }
+        
+    </script>
     <body>
         <div class="Sub1-main-grid">
             <div class="Sub1-main-one">
@@ -79,7 +102,45 @@
                 </div>
             </div> 
         </div>
-        <div class="detail">
+        <div class="btw">
+            <div onclick="myFunction()" class="Sub1-form Sub1-form-btn">
+                <div class="btn" >
+                    <h4><span><a >Click here to check out the packages</a> </span></h4>
+                </div>
+            </div>
+            <div class="toggles" id="toggle">
+                <div class="detail">
+                    <h3>Choose your Package</h3>            
+                    <div class="form">
+                        <!-- <form> -->
+                            <select name="list" id="list" onchange="text(this)">
+                                <option value="none" selected disabled hidden>No of Days</option>
+                                <option>2 Days</option>
+                                <option>4 Days</option>
+                                <option>5 Days</option>
+                                <option>A Week</option>
+                              </select><br>
+                              
+                              
+                                <!-- <div class="dropdown">
+                                    <form>
+                                    <select name="list" id="list" accesskey="target">
+                                        <option value="none">Pick an option</option>
+                                        <option value="one">Option 1</option>
+                                        <option value="two">Option 2</option>
+                                        <option value="three">Option 3</option>
+                                    </select>
+                                    <input type=button value="Select" onclick="optionClicked()" />
+                                    </form>
+                                </div> -->
+                        <!-- </form> -->
+                    </div>
+                    <div class="disp-text"><p id="demo"></p></div>
+                </div> 
+            </div>
+        </div>
+        
+        <!-- <div class="detail">
             <h3>Choose your Type</h3>            
             <div class="form">
                 <form>
@@ -133,7 +194,7 @@
                     
                 </form>
             </div>
-        </div>
+        </div> -->
         <div class="Sub1-end-text">
             <div onclick="location.href='../Car-Rentals-Main/CarMain.html';" style="cursor: pointer;"class="Sub1-end Sub1-end-text-col-one">
                 <div class="btn">
@@ -149,8 +210,29 @@
                 </div>
             </div>
         </div>
-        
+        <script src="options.js"></script>
+        <link rel="stylesheet" href="dropdown.css">
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
         </script>
     </body>
 </html>
+<!-- <div class="form-1">
+                                
+                                <div class="form-sub-1">
+                                    <lable for="g1" >                            
+                                        <input type="radio" id="g1" name="gear">
+                                        Auto
+                                    </lable>
+                                </div>
+                                <div class="form-sub-2">
+                                    <lable for="g2">                            
+                                        <input type="radio" id="g2" name="gear">
+                                        Manual
+                                    </lable>
+                                </div>
+                                <div class="form-sub-3">
+                                    <lable for="g2">                            
+                                        <input type="radio" id="g2" name="gear">
+                                        Manual
+                                    </lable>
+                                </div> -->
