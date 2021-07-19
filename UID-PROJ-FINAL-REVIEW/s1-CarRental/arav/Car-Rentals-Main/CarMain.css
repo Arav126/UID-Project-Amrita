@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif ;
+}
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+img{
+    width: auto;
+    height: 100%;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 600px auto;
+    grid-template-rows: 650px 450px 400px;
+}
+.mgrid{
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+}
+.main-img{
+    width:auto;
+    height:100%;
+    opacity: 0.9;
+}
+.main-one{
+    grid-row: 1/span 1;
+    grid-column: 1/span 2;
+}
+.main-two{
+    grid-row: 1/span 1;
+    grid-column: 2/span 1;
+    opacity: 0.7;
+}
+.main-two h1{
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    bottom: 80px;
+    left: 0px;
+    padding: 0px 100px 0px;
+    text-transform: uppercase;
+    font-weight: 400;
+    opacity: .9;
+    font-weight: 400; 
+    transition: 1s;
+    letter-spacing: 0.6px;
+}
+
+.main-two:hover h1{
+    opacity: 1;
+    font-size: 70px;
+    transition: 0.8s;
+    left: 50px;
+    bottom: 400px;
+    color: white;
+}
+.main-two .p1{
+    font-size: 15px;
+    position: absolute;
+    left: 110px;
+    bottom: 60px;
+    color: #FFEFCA;
+    opacity: 0.8;
+    transition: 1s;
+    letter-spacing: 0.8px;
+
+}
+.main-two:hover .p1{
+    left: -100px;
+    bottom: -100px;
+    transition: 1s;
+    font-size: 14px;
+}
+.main-two .p2{
+    font-size: 18px;
+    color:#FFEFCA;
+    opacity: 1;
+    position: absolute;
+
+    bottom: -200px;
+    text-align: center;
+    width: 60%;
+    margin: auto 20%;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    transition: 0.8s;
+    opacity: .5;
+}
+.main-two:hover .p2{
+    right: -21px;
+
+    bottom: 200px;
+    transition: 0.8s;
+    opacity: 1;
+    color: white;
+}
+.main-two span{
+    color: #be9e44;
+    font-family: 'Kaushan Script', cursive;
+}
+.main-three{
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+    background-color: black;
+    transition: 0.8s;
+}
+.main-three h2{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding-top:120px ;
+
+    font-size: 50px;
+    opacity: .8;
+    letter-spacing: 1px;
+    transition: 0.8s;
+}
+.main-three h3{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin-left: 130px;
+    padding-top:20px ;
+    width: 54%;
+    font-weight: 100px;
+    font-size: 20px;
+    opacity: .8;
+    transition: 0.8s;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid white;
+    transition: 0.8s;
+}
+.main-three p{
+
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+    width: 60%;
+
+    margin-top: 30px;
+
+
+    font-weight: 100px;
+    font-size: 16px;
+    opacity: .8;
+    transition: 0.8s;
+    letter-spacing: 0.5px;
+    transition: 0.8s;
+
+}
+.main-three:hover{
+    transition: 0.8s;
+}
+.main-three:hover h2,
+.main-three:hover h3,
+.main-three:hover p{    
+    transition: 0.8s;
+}
+.main-three:hover h3{
+    border-bottom:2px solid black;
+}
+
+
+.main-four{
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+}
+.main-five{
+    grid-row: 3/span 1;
+    grid-column: 1/span 1;
+}
+.main-six{
+    grid-row: 3/span 1;
+    grid-column: 2/span 1;
+    /* background-image: linear-gradient(to bottom,transparent,black); */
+    transition: 0.5s;
+    background-color: #000000e8;
+    opacity: 1;
+}
+.main-six:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+.main-six h2{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding-top:120px ;
+
+    font-size: 50px;
+    opacity: .6;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.main-six h3{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin-left: 130px;
+    padding-top:20px ;
+    width: 54%;
+    font-weight: 100px;
+    font-size: 20px;
+    opacity: .6;
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid white;
+
+}
+.main-six p{
+
+    color: white;
+    text-align: center;
+    margin-left: 180px;
+    width: 60%;
+
+    margin-top: 30px;
+
+
+    font-weight: 100px;
+    font-size: 16px;
+    opacity: .6;
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+
+
+}
+.main-six:hover{
+    background-color: black;
+    transition: 0.5s;
+
+}
+.main-six:hover h2,
+.main-six:hover h3,
+.main-six:hover p{
+    color: black;
+    transition: 0.8s;
+}
+.main-six:hover h3{
+    border-bottom:2px solid black;
+}
+
+.main-six-hover-text{
+    position: absolute;
+    top: -200px;
+    right: 230px; 
+    transition: 0.5s;
+}
+.main-six:hover .main-six-hover-text{
+    top: 150px;
+    right: 230px; 
+    transition: 0.5s;
+
+}
+.main-six-hover-text h1{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.8;
+    font-weight: 300px;
+    line-height: 100px;
+    right: 150px; 
+    top: 0;
+    transition: 0.5s;
+}
+.btw-text{
+    width:auto;
+    height: 330px;
+    background-color: black;
+    padding-bottom: 30px;
+}
+.btw-text h2{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 80px;
+    text-transform: uppercase;
+    transition: 0.2s;
+    transition-timing-function: ease-in;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+.btw-text h3{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+    transition: 0.2s;
+    transition-timing-function: ease-in;
+    opacity: 0.6;
+    letter-spacing: 1px;
+
+}
+
+.btw-text p{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 35px;
+    transition: 0.2s;
+    transition-timing-function: ease-in;
+    opacity: 0.6;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+}
+.btw-text:hover h2,
+.btw-text:hover p,
+.btw-text:hover h3{
+    color: white;
+    transition: 0.1 s;
+
+    opacity: 1;
+}
+.sub-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 300px 300px;
+}
+.sub-col{
+    overflow:hidden;
+    position: relative;
+    /* backgrond-color: black; */
+}
+.sub-one{
+    grid-row: 1/span 1;
+    grid-column: 1/span 1;
+}
+.sub-two{
+    grid-row: 1/span 1;
+    grid-column: 2/span 1;
+}
+.sub-three{
+    grid-row: 1/span 1;
+    grid-column: 3/span 1;
+
+}
+.sub-four{
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+}
+.sub-five{
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+}
+.sub-six{
+    grid-row: 2/span 1;
+    grid-column: 3/span 1;
+}
+.sub-img{ 
+    width: auto;
+    height: 100%;
+    opacity: 1;
+    transform: scale(1.07);
+}
+.sub-col:hover .sub-img{
+    transform: scale(1);
+    transition: 0.4s;
+    opacity: 1;
+    transition: ease-in;
+}
+
+.sub-text-top{
+    position: absolute;
+    top:120px;
+    right: 30px;
+    margin-left: 10px;
+ 
+    width: 90%;
+
+    transition: 0.5s;
+    text-align: center;
+    /* background-color: black; */
+    box-shadow: 0px 0px 15px 5px black;
+    border-radius: 8px;
+}
+.sub-col:hover .sub-text-top{
+    top: -200px;
+
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 50px; 
+    opacity: 1;
+    transition: 0.8s;
+
+}
+.sub-text-top h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;  
+    opacity: 1;
+}
+.sub-text-bottom{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -200px;
+    background-image: linear-gradient(to bottom, transparent, black);
+    padding: 180px  25px 15px ;
+    transition: .8s;
+}
+.sub-text-bottom h2{
+    color: #fff;
+    font-weight: 300;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+.sub-col:hover .sub-text-bottom{
+    left: 0px;
+    bottom: 0px;
+    transition: 0.4s;
+    width: 100%;
+
+}

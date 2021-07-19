@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+
+<html> 
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Where from?
+        </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="SubCoverAbi.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js">
+        </script>
+    </head>
+
+    <body>
+        <div class="main-grid">
+
+            <div class="main-one col">
+                <div class="one-text">
+                    <h2>Where does your Journey begin?</h2>
+                </div>
+                <div class="one-text-quote">
+                    <h2>
+                        <span>Into the wild:&ensp;Losing the way, Finding the soul.</span><br><br>
+                        Lets get started with customizing your escape.
+                    </h2>
+                </div>
+            </div>   
+           
+            <div class="main-three col" onclick="location.href='../3-DestinationsRedone/3-DestinationsRedone.html'" style="cursor: pointer;">
+                <div class="three-text">
+                    <h2>Chennai</h2>
+                </div>
+            </div>     
+            <div class="main-four col">
+                <div class="four-text">
+                    <h2>We are still Expanding</h2>
+                </div>
+            </div>   
+            
+                       
+
+              
+        </div>
+    </body>
+</html>
