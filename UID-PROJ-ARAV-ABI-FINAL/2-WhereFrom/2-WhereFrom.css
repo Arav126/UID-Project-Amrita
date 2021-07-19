@@ -140,6 +140,10 @@ body {
 .p1 {background-image: url("Pics/HYD/main.jpg");}
 .p2 {background-image: url("Pics/GER/main.jpg");}
 .p3 {background-image: url("Pics/AN/main.jpg");}
+.p4 {background-image: url("Pics/bombay.jpg");}
+.p5 {background-image: url("Pics/assam.jpg");}
+.p6 {background-image: url("Pics/chennai.jpg");}
+/* p4,p5,p6 are additional classes, hence no need to change the props of p1,p2,p3 */
 
 /*~~~~~~~~~~~~~~~~~~~~~individual cuts~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -284,4 +288,3 @@ doesn't work without mentioning that it is a child element */
 
     grid-column: 5/-1;
 }
-
