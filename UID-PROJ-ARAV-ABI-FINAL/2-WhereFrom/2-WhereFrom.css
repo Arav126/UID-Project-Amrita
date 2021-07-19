@@ -12,6 +12,7 @@
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* body {
@@ -137,7 +138,7 @@ body {
     width: 100%; */
 }
 
-.p1 {background-image: url("Pics/HYD/main.jpg");}
+.p1 {background-image: url("Pics/delhi.jpg");}
 .p2 {background-image: url("Pics/GER/main.jpg");}
 .p3 {background-image: url("Pics/AN/main.jpg");}
 .p4 {background-image: url("Pics/bombay.jpg");}

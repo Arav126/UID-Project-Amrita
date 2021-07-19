@@ -62,15 +62,16 @@
             <!-- 
                 PATTERNS
                 (/^[A-Za-z]+$/i)
+                .*[A-Za-z][^\s]
 
 
              -->
             <div id="traveller1" class="traveller-all">
                 <span class="span-text">#1 Traveler </span><br>
                 <span class="span-text">First Name: </span>
-                <input class="name-entry" type="text" name="name-field" pattern="[A-Z]" title="only characters, case-insensitive, no spaces">
+                <input class="name-entry" type="text" name="name-field" pattern=".*[A-Za-z][^\s]" title="only characters, case-insensitive, no spaces">
                 <span class="tab"></span>
-                <span class="span-text" pattern="(/^[A-Za-z]+$/i)" title="only characters, case-insensitive, no spaces">Last Name: </span>
+                <span class="span-text" title="only characters, case-insensitive, no spaces">Last Name: </span>
                 <input class="name-entry" type="text" name="name-field">
                 <span class="tab"></span>
                 <span class="span-text">Date of Birth: </span>
