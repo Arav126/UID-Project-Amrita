@@ -144,6 +144,10 @@ body {
 .p4 {background-image: url("Pics/chennai.jpg");}
 .p5 {background-image: url("Pics/Gujarat.jpg");}
 .p6 {background-image: url("Pics/assam.jpg");}
+
+.f1 {background-image: url("Pics/mid-1.jpg");}
+.f2 {background-image: url("Pics/mid-2.jpg");}
+
 /* p4,p5,p6 are additional classes, hence no need to change the props of p1,p2,p3 */
 
 /*~~~~~~~~~~~~~~~~~~~~~individual cuts~~~~~~~~~~~~~~~~~~~~~*/
@@ -263,7 +267,7 @@ doesn't work without mentioning that it is a child element */
 }
 
 .footer-img1{
-    background-image: url("Pics/main-bottom.png");
+    /* background-image: url("Pics/main-bottom.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
