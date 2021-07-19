@@ -71,7 +71,7 @@ body {
 }
 .dateContainer:hover {
     /* border: 2px solid #ee1d3d; */
-    box-shadow: 0px 0px 20px #ee1d3d;
+    box-shadow: 0px 0px 20px #be9e44;
 
 }
 
@@ -88,7 +88,7 @@ body {
 .header-text {
     margin: auto;
 
-    color: #ee1d3d;
+    color: #be9e44;
 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-size: 30px;
@@ -105,7 +105,7 @@ body {
 .borderBottom{
     transition: all 2s ease-in-out 0.15s;
 
-    border-bottom: 3px solid #ee1d3d;
+    border-bottom: 3px solid #be9e44;
 
     position: absolute;
     left: 40%;
@@ -148,8 +148,8 @@ body {
 .name-entry {
     padding: 6px 10px;
 
-    border:2px solid #ee1d3d;
-    box-shadow: 0px 0px 5px #ee1d3d;
+    border:2px solid #be9e44;
+    box-shadow: 0px 0px 5px #be9e44;
 
     transition: all;
     transition-duration: 0.5s;
@@ -163,9 +163,7 @@ body {
 }
 
 /* deptdate class  */
-.deptdate {
-    /* cant do anything */
-}
+
 
 /* .number-selection class  */
 .number-selection {
@@ -200,8 +198,8 @@ body {
     padding: 4px 15px;
 }
 
-#active-gender-m:checked ~ .male{background-color: var(--red);}
-#active-gender-f:checked ~ .female{background-color: var(--red);}
+#active-gender-m:checked ~ .male{background-color: #be9e44;}
+#active-gender-f:checked ~ .female{background-color: #be9e44;}
 
 
 
@@ -219,7 +217,7 @@ body {
 }
 
 .card {
-    background-color:#75232D;
+    background-color:#be9e44;
     /* margin: 1px 100px; not responsive, code breaks in other screens*/
 
     position: relative;
@@ -231,7 +229,7 @@ body {
 }
 
 .card:hover {
-    background-color:#a12e3b;
+    background-color:#be9e44;
     box-shadow: 0px 0px rgba(255, 255, 255,0.2);
 }
 
@@ -257,7 +255,7 @@ body {
 
 .footer-btn {
     /* background-color: rgba(0, 128, 128, 0.712); */
-    background-color:#75232D;
+    background-color:#be9e44;
 
     padding: 10px 30px;
     border-radius: 40px;
@@ -265,8 +263,8 @@ body {
 
 .footer-btn:hover {
     /* background-color: rgb(0, 128, 128); */
-    background-color:var(--red);
-    box-shadow: 0px 0px 10px var(--red);
+    background-color:#be9e44;
+    box-shadow: 0px 0px 10px #be9e44;
     opacity: 0.8;
 
 }
