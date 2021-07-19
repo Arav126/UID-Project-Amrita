@@ -76,7 +76,7 @@ li {
     letter-spacing: 1px;
 
     padding: 18px 5%;
-    border-top: 0.01px solid whitesmoke;
+    border-top: 0.01px solid #0e0e0e;
 
     /* border-bottom: 0.01px solid rgba(0, 0, 0, 0.251); */
     /* removing border bottom atleast remove partial error. but kept it seperately again for last item to remove lil error  */
@@ -87,7 +87,7 @@ li {
 }
 
 .list-last-item {
-    border-bottom: 0.01px solid rgba(245, 245, 245, 0.646);
+    border-bottom: 0.01px solid #0e0e0e;
 }
 
 li:hover {
@@ -113,17 +113,17 @@ body {
 .payContainer {
     /* background-image: linear-gradient(to bottom, rgb(199, 24, 199),rgba(196, 80, 196, 0.625)); */
 
-    background-color: #be9e44;
+    background-color: #be9d44f5;
     /* background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.796),rgb(0, 0, 0)); */
-    color: whitesmoke;
+    color: #0e0e0e;
     border-radius: 20px;
 
     transition: all 1s 150ms;
 }
-li > a {color: whitesmoke;}
+li > a {color: #0e0e0e;}
 
 .payContainer:hover {
-    box-shadow: 0px 0px 20px whitesmoke;
+    box-shadow: 0px 0px 20px #be9e44,0px 0px 30px #be9e44,0px 0px 50px #be9e44;
 }
 
 .header-text{position: relative;}
@@ -131,7 +131,7 @@ li > a {color: whitesmoke;}
 .borderBottom{
     transition: all 2s ease-in-out 0.15s;
 
-    border-bottom: 3px solid whitesmoke;
+    border-bottom: 3px solid #0e0e0e;
 
     position: absolute;
     left: 30%;

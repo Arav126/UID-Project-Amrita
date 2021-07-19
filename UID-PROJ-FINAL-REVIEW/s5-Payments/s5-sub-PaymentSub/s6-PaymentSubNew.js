@@ -1,7 +1,7 @@
 //GLOBAL
 
-const correctColor = 'green';
-const wrongColor = 'red';
+const correctColor = '#0b0';
+const wrongColor = '#ee1d3d';
 
 var cond1,cond2;
 var cond1icon,cond2icon;
