@@ -51,29 +51,135 @@ function travellerCount() {
 }
 
 
-
-function dateCheck() {
-    var birth = document.payForm.birthName.value;
+var JS1;
+function dateCheck1() {
+    alert('called');
+    var birth = document.dateForm.birthName1.value;
     alert(birth);
     //alert(typeof(birth));
-    var now = new Date();
+    var now = new Date('2003-07-20');
     var dt1 = Date.parse(now);//present date
     var dt2 = Date.parse(birth);//expired
 
-    cond1 = document.getElementById('birth-cond-1');
-    cond1icon = document.getElementById('birth-cond-1-icon');
+    //cond1 = document.getElementById('birth-cond-1');
+    //cond1icon = document.getElementById('birth-cond-1-icon');
 
     alert(dt1 + 'lol' + dt2);
 
     if(dt2 > dt1) {
         alert('you are under 18');
         // falsePart(cond1,cond1icon,1);
+        JS1 = 0;
     } else {
         // truePart(cond1,cond1icon,1);
-        // JS2 = 1;
-        alert('cool');
+        JS1 = 1;
+        alert('you are above 18');
+    }
+    var a = document.getElementById('child1');
+     submitCheck(a);//calling submission check
+
+}
+
+// COPIES 
+
+function dateCheck2() {
+    alert('called');
+    var birth = document.dateForm.birthName2.value;
+    alert(birth);
+    //alert(typeof(birth));
+    var now = new Date('2003-07-20');
+    var dt1 = Date.parse(now);//present date
+    var dt2 = Date.parse(birth);//expired
+
+    //cond1 = document.getElementById('birth-cond-1');
+    //cond1icon = document.getElementById('birth-cond-1-icon');
+
+    alert(dt1 + 'lol' + dt2);
+
+    if(dt2 > dt1) {
+        alert('you are under 18');
+        // falsePart(cond1,cond1icon,1);
+        JS1 = 0;
+    } else {
+        // truePart(cond1,cond1icon,1);
+        JS1 = 1;
+        alert('you are above 18');
     }
 
-    // submitCheck();//calling submission check
+    var a = document.getElementById('child2');
+     submitCheck(a);//calling submission check
 
+}
+
+function dateCheck3() {
+    alert('called');
+    var birth = document.dateForm.birthName3.value;
+    alert(birth);
+    //alert(typeof(birth));
+    var now = new Date('2003-07-20');
+    var dt1 = Date.parse(now);//present date
+    var dt2 = Date.parse(birth);//expired
+
+    //cond1 = document.getElementById('birth-cond-1');
+    //cond1icon = document.getElementById('birth-cond-1-icon');
+
+    alert(dt1 + 'lol' + dt2);
+
+    if(dt2 > dt1) {
+        alert('you are under 18');
+        // falsePart(cond1,cond1icon,1);
+        JS1 = 0;
+    } else {
+        // truePart(cond1,cond1icon,1);
+        JS1 = 1;
+        alert('you are above 18');
+    }
+    var a = document.getElementById('child3');
+     submitCheck(a);//calling submission check
+
+}
+
+function dateCheck4() {
+    alert('called');
+    var birth = document.dateForm.birthName4.value;
+    alert(birth);
+    //alert(typeof(birth));
+    var now = new Date('2003-07-20');
+    var dt1 = Date.parse(now);//present date
+    var dt2 = Date.parse(birth);//expired
+
+    //cond1 = document.getElementById('birth-cond-1');
+    //cond1icon = document.getElementById('birth-cond-1-icon');
+
+    alert(dt1 + 'lol' + dt2);
+
+    if(dt2 > dt1) {
+        alert('you are under 18');
+        // falsePart(cond1,cond1icon,1);
+        JS1 = 0;
+    } else {
+        // truePart(cond1,cond1icon,1);
+        JS1 = 1;
+        alert('you are above 18');
+    }
+    var a = document.getElementById('child4');
+     submitCheck(a);//calling submission check
+
+}
+
+
+// MAIN 
+
+function submitCheck(check) {
+    var submit = document.getElementById('submit-btn');
+
+    if(JS1==1) {
+        alert('enabled');
+        // submit.disabled = false;
+        check.checked = "true";
+    } else if(JS1==0) {
+        alert('disabled');
+        // submit.disabled = true;
+        check.checked = "false";
+    }
 }

@@ -47,6 +47,9 @@
                             <tr><td>3</td><td>&#8377;30,000 - &#8377;45,000</td></tr>
                             <tr><td>4</td><td>&#8377;60,000 - &#8377;70,000</td></tr>
                         </table>
+                        <!-- Disclaimer - This site is purely made for adults <br>
+                        adult user experience and thu<br>
+                        no kids below the -->
                     </center>                    
                 </div>
 
@@ -69,18 +72,19 @@
             <div id="traveller1" class="traveller-all">
                 <span class="span-text">#1 Traveler </span><br>
                 <span class="span-text">First Name: </span>
-                <input class="name-entry" type="text" name="name-field" pattern=".*[A-Za-z][^\s]" title="only characters, case-insensitive, no spaces">
+                <input class="name-entry" type="text" name="name-field" pattern="^[a-zA-Z]*$" title="only alphabets, no numbers, no spaces">
                 <span class="tab"></span>
-                <span class="span-text" title="only characters, case-insensitive, no spaces">Last Name: </span>
-                <input class="name-entry" type="text" name="name-field">
+                <span class="span-text" >Last Name: </span>
+                <input class="name-entry" type="text" name="name-field" pattern="^[a-zA-Z]*$" title="only alphabets, no numbers, no spaces">
                 <span class="tab"></span>
                 <span class="span-text">Date of Birth: </span>
-                <input type="date" id="birth" name="birthName" onchange="dateCheck()">
+                <input type="date" id="birth" name="birthName1" onchange="dateCheck1()">
+                <input type="checkbox" name="children1" value="1" id="child1">
                 <span class="tab"></span>
                 <span class="span-text">Gender: </span>
                 <div class="gender-div">
-                    <input type="radio" id="active-gender-m" style="display: none;" name="gender" value="m">
-                    <input type="radio" id="active-gender-f" style="display: none;" name="gender" value="f">
+                    <input type="radio" id="active-gender-m" style="display: none;" name="gender1" value="m">
+                    <input type="radio" id="active-gender-f" style="display: none;" name="gender1" value="f">
                     <div class="male"> <label for="active-gender-m">Male</label></div>
                     <div class="female"> <label for="active-gender-f">Female</label></div>
                 </div>
@@ -90,18 +94,19 @@
             <div id="traveller2" class="traveller-all">
                 <span class="span-text">#2 Traveler </span><br>
                 <span class="span-text">First Name: </span>
-                <input class="name-entry" type="text" name="name-field">
+                <input class="name-entry" type="text" name="name-field" pattern="^[a-zA-Z]*$" title="only alphabets, no numbers, no spaces">
                 <span class="tab"></span>
-                <span class="span-text">Last Name: </span>
-                <input class="name-entry" type="text" name="name-field">
+                <span class="span-text" >Last Name: </span>
+                <input class="name-entry" type="text" name="name-field" pattern="^[a-zA-Z]*$" title="only alphabets, no numbers, no spaces">
                 <span class="tab"></span>
                 <span class="span-text">Date of Birth: </span>
-                <input type="date">
+                <input type="date" id="birth" name="birthName2" onchange="dateCheck2()">
+                <input type="checkbox" name="children2" value="2" id="child2">
                 <span class="tab"></span>
                 <span class="span-text">Gender: </span>
                 <div class="gender-div">
-                    <input type="radio" id="active-gender-m" style="display: none;" name="gender" value="m">
-                    <input type="radio" id="active-gender-f" style="display: none;" name="gender" value="f">
+                    <input type="radio" id="active-gender-m" style="display: none;" name="gender2" value="m">
+                    <input type="radio" id="active-gender-f" style="display: none;" name="gender2" value="f">
                     <div class="male"> <label for="active-gender-m">Male</label></div>
                     <div class="female"> <label for="active-gender-f">Female</label></div>
                 </div>
@@ -109,18 +114,19 @@
             <div id="traveller3" class="traveller-all">
                 <span class="span-text">#3 Traveler </span><br>
                 <span class="span-text">First Name: </span>
-                <input class="name-entry" type="text" name="name-field">
+                <input class="name-entry" type="text" name="name-field" pattern="^[a-zA-Z]*$" title="only alphabets, no numbers, no spaces">
                 <span class="tab"></span>
-                <span class="span-text">Last Name: </span>
-                <input class="name-entry" type="text" name="name-field">
+                <span class="span-text" >Last Name: </span>
+                <input class="name-entry" type="text" name="name-field" pattern="^[a-zA-Z]*$" title="only alphabets, no numbers, no spaces">
                 <span class="tab"></span>
                 <span class="span-text">Date of Birth: </span>
-                <input type="date">
+                <input type="date" id="birth" name="birthName3" onchange="dateCheck3()">
+                <input type="checkbox" name="children3" value="3" id="child3">
                 <span class="tab"></span>
                 <span class="span-text">Gender: </span>
                 <div class="gender-div">
-                    <input type="radio" id="active-gender-m" style="display: none;" name="gender" value="m">
-                    <input type="radio" id="active-gender-f" style="display: none;" name="gender" value="f">
+                    <input type="radio" id="active-gender-m" style="display: none;" name="gender3" value="m">
+                    <input type="radio" id="active-gender-f" style="display: none;" name="gender3" value="f">
                     <div class="male"> <label for="active-gender-m">Male</label></div>
                     <div class="female"> <label for="active-gender-f">Female</label></div>
                 </div>
@@ -128,25 +134,27 @@
             <div id="traveller4" class="traveller-all">
                 <span class="span-text">#4 Traveler </span><br>
                 <span class="span-text">First Name: </span>
-                <input class="name-entry" type="text" name="name-field">
+                <input class="name-entry" type="text" name="name-field" pattern="^[a-zA-Z]*$" title="only alphabets, no numbers, no spaces">
                 <span class="tab"></span>
-                <span class="span-text">Last Name: </span>
-                <input class="name-entry" type="text" name="name-field">
+                <span class="span-text" >Last Name: </span>
+                <input class="name-entry" type="text" name="name-field" pattern="^[a-zA-Z]*$" title="only alphabets, no numbers, no spaces">
                 <span class="tab"></span>
                 <span class="span-text">Date of Birth: </span>
-                <input type="date">
+                <input type="date" id="birth" name="birthName4" onchange="dateCheck4()">
+                <input type="checkbox" name="children4" value="4" id="child4">
                 <span class="tab"></span>
                 <span class="span-text">Gender: </span>
                 <div class="gender-div">
-                    <input type="radio" id="active-gender-m" style="display: none;" name="gender" value="m">
-                    <input type="radio" id="active-gender-f" style="display: none;" name="gender" value="f">
+                    <input type="radio" id="active-gender-m" style="display: none;" name="gender4" value="m">
+                    <input type="radio" id="active-gender-f" style="display: none;" name="gender4" value="f">
                     <div class="male"> <label for="active-gender-m">Male</label></div>
                     <div class="female"> <label for="active-gender-f">Female</label></div>
                 </div>
             </div>
 
             <div style=" height: 10vh;text-align: center;">
-                <input type="submit" name="submit" value="Proceed" class="footer-btn btn">
+                <input type="reset" name="reset" value="Reset" class="footer-btn btn" onclick="location.reload()">&nbsp;&nbsp;&nbsp;
+                <input type="submit" name="submit" value="Proceed" class="footer-btn btn" id="submit-btn">
             </div>
             <!-- <div style="height: 8vh;"></div> -->
 
