@@ -271,7 +271,7 @@ img{
     width: 100%;
     color: #777;
     transition: .1s;
-    margin-top: 70px;
+    margin-top: 45px;
 }
 .end{
     width: 33.33%;
@@ -355,3 +355,121 @@ h4 span{
               -5px 5px 40px rgba(100, 0, 0, 0.4); */
     background-color: rgb(255, 255, 255);
 }
+
+.btw:hover .Sub1-form-btn{
+    border: 2px solid white;
+    transition: .1s;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.911);
+                 /* box-shadow: 0 5px rgba(93, 64, 55, 0.4), 0 10px rgba(93, 64, 55, 0.3),
+              0 15px rgba(93, 64, 55, 0.2), 0 20px rgba(93, 64, 55, 0.1),
+              0 25px rgba(93, 64, 55, 0.05),
+              -5px 5px 40px rgba(100, 0, 0, 0.4); */
+    /* background-color: rgb(255, 255, 255); */
+}
+.Sub1-form{
+    color: #777;
+    margin: auto;
+    width: auto;
+    /* float: left; */
+    /* margin: 120px auto 120px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sub1-form-btn h4{
+    cursor: pointer;
+    font-size: 17px;
+    transition: .1s;
+    width: auto;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.Sub1-form-btn{
+    margin: 80px 150px 50px;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #777;
+    transition: .1s;
+    
+}
+.Sub1-form-btn:hover h4 span,
+.Sub1-form-btn:active h4 span{
+    color: white;
+    transition: .1s;
+    text-shadow: 0 0 2px #fff,
+                 
+                 0 0 5px #fff;
+
+}
+.Sub1-form-btn:hover,
+.Sub1-form-btn:active{
+    border: 2px solid white;
+    transition: .1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.911);
+                 /* box-shadow: 0 5px rgba(93, 64, 55, 0.4), 0 10px rgba(93, 64, 55, 0.3),
+              0 15px rgba(93, 64, 55, 0.2), 0 20px rgba(93, 64, 55, 0.1),
+              0 25px rgba(93, 64, 55, 0.05),
+              -5px 5px 40px rgba(100, 0, 0, 0.4); */
+    /* background-color: rgb(255, 255, 255); */
+}
+.toggles{
+    color: #777;
+    background-color: rgba(19, 19, 19, 0.966);
+    padding: 5px;
+    font-size: 30px;
+}
+.form-1{
+
+    color: #777;
+}
+.form-1 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    float: left;
+}
+.toggles{
+    display: none;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#list{
+    margin-top: 15px;
+    padding: 4px 35px;
+    background-color: black;
+    color: #777;
+    font-size: 17px;
+}
+.detail h3{
+    font-size: 38px;
+}
+.toggles:hover h3{
+    color: white;
+}
+.toggles:hover #list{
+    color: white;
+}
+.toggles:hover p{
+        color: white;
+    /* text-shadow: 0px 0px 5px #e0c477; */
+}
+.disp-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        color: #777;
+    font-size: 23px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+    font-style: oblique;
+}
+

@@ -6,6 +6,29 @@
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
         <title>GENESIS G90</title>
     </head>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("toggle");
+        if (x.style.display == "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+            }
+        }
+        
+        function text(selTag) {
+          var x = selTag.options[selTag.selectedIndex].text;
+         if(x=='2 Days'){
+         document.getElementById("demo").innerHTML = "COST - Rs.5000 \n Car booked!" ;}
+         else if(x=='4 Days'){
+         document.getElementById("demo").innerHTML = "COST - Rs.20000 \n Car booked!" ;}
+         else if(x=='5 Days'){
+         document.getElementById("demo").innerHTML = "COST - Rs.25000 \n Car booked!" ;}
+         else if(x=='A Week'){
+         document.getElementById("demo").innerHTML = "COST - Rs.30000 \n Car booked!" ;}
+        }
+        
+    </script>
     <body>
         <div class="main-grid">
             <div class="main-one">
@@ -76,61 +99,30 @@
                 </div>
             </div> 
         </div>
-        <div class="detail">
-            <h3>Choose your Type</h3>            
-            <div class="form">
-                <form>
-                    <div class="la">
-                        <h5>Gear?</h5>
-                        <div class="lab">
-                            <lable for="g1" >                            
-                                <input type="radio" id="g1" name="gear">
-                                Auto
-                            </lable>
-                        </div>
-                        <div class="lab">
-                            <lable for="g2">                            
-                                <input type="radio" id="g2" name="gear">
-                                Manual
-                            </lable>
+        <div class="btw">
+            <div onclick="myFunction()" class="Sub1-form Sub1-form-btn">
+                <div class="btn" >
+                    <h4><span><a >Click here to check out the packages</a> </span></h4>
+                </div>
+            </div>
+            <div class="toggles" id="toggle">
+                <div class="detail">
+                    <h3>Choose your Package</h3>            
+                    <div class="form">
                         
-                        
+                            <select name="list" id="list" onchange="text(this)">
+                                <option value="none" selected disabled hidden>No of Days</option>
+                                <option>2 Days</option>
+                                <option>4 Days</option>
+                                <option>5 Days</option>
+                                <option>A Week</option>
+                              </select>
                     </div>
-                    <div class="lb">
-                        <h5>Air Conditioning?</h5>
-                        <div class="lab">
-                            <lable for="a1">                            
-                                <input type="radio"  id="a1" name="air">
-                                AirCon
-                            </lable>
-                        </div>
-                        <div class="lab">
-                            <lable for="a2">                            
-                                <input type="radio"  id="a2" name="air">
-                                Windows Open
-                            </lable>
-                        
-                        
-                    </div>
-                    <div class="lc">
-                        <h5>Fuel?</h5>
-                        <div class="lab">
-                            <lable for="f1">                            
-                                <input type="radio" id="f1" name="fuel">
-                                Diesel
-                            </lable>
-                        </div>
-                        <div class="lab">
-                            <lable for="f2">                            
-                                <input type="radio" id="f2" name="fuel">
-                                Petrol
-                            </lable>
-                        </div>                        
-                    </div>
-                    
-                </form>
+                    <div class="disp-text"><p id="demo"></p></div>
+                </div> 
             </div>
         </div>
+
         <div class="end-text">
             <div onclick="location.href='../Car-Rentals-Main/CarMain.html';" style="cursor: pointer;" class="end end-text-col-one">
                 <div class="btn">
