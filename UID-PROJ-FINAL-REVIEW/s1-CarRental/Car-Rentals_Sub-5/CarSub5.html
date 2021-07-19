@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CarSub5.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <title>HYUNDAI ELANTRA</title>
+    </head>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("toggle");
+        if (x.style.display == "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+            }
+        }
+        
+        function text(selTag) {
+          var x = selTag.options[selTag.selectedIndex].text;
+         if(x=='2 Days'){
+         document.getElementById("demo").innerHTML = "COST - Rs.5000 \n Car booked!" ;}
+         else if(x=='4 Days'){
+         document.getElementById("demo").innerHTML = "COST - Rs.20000 \n Car booked!" ;}
+         else if(x=='5 Days'){
+         document.getElementById("demo").innerHTML = "COST - Rs.25000 \n Car booked!" ;}
+         else if(x=='A Week'){
+         document.getElementById("demo").innerHTML = "COST - Rs.30000 \n Car booked!" ;}
+        }
+        
+    </script>
+    <body>
+        <div class="main-grid">
+            <div class="main-one">
+                <div class="main-head-text">
+                    <h1>HYUNDAI ELANTRA</h1>
+                </div>
+            </div>
+            <div class="main-two">
+                <div class="icon">
+                    <ion-icon name="car-sport-outline"></ion-icon>
+                </div>
+                <div class="main-text">
+                    <p>
+                        Paddle Shifters for a immersive driving experience.
+                        Smart Pure Air Purifier with Virus and Bacteria Protection
+                    </p>
+                </div>
+            </div>
+            <div class="main-three">
+                <div class="icon">
+                    <ion-icon name="musical-notes"></ion-icon>
+                </div>
+                <div class="main-text">
+                    <p>
+                        BOSE Premium 8-speaker system with Sound Mood lights.
+                        The immersive sound achieved by BOSE speakers keeps you entertained.
+                    </p>
+                </div>
+            </div>
+            <div class="main-four">
+                <div class="icon">
+                    <ion-icon name="tv-outline"></ion-icon>
+                </div>
+                <div class="main-text">
+                    <p>
+                        26.03cm (10.25") Touch Screen Navigation and UVO connected        car technology
+                        improves safety in the car.
+                    </p>
+                </div>
+            </div>     
+        </div>
+        <div class="sub-grid-one">
+            <div class="sub-one">
+                <div class="sub-text">
+                    <h2>Stay Connected</h2>
+                    <p>
+                        You can’t put a price on peace of mind. UVO lets you drive with confidence, knowing someone can be there to help no matter what happens out on the road.
+                    </p>
+                </div>
+            </div>
+            <div class="sub-two">
+                <div class="sub-img">
+                    <img src="elantra-2.jpg">
+                </div> 
+                <div class="grad"></div>
+            </div>    
+        </div>
+        <div class="sub-grid-two">
+            <div class="sub-three">
+                <div class="sub-img">
+                    <img src="elantra-3.jpg">
+                </div> 
+                <div class="grad"></div>
+            </div>
+            <div class="sub-four">
+                <div class="sub-text">
+                    <h2>Room For Everything</h2>
+                    <p>
+                        Be it stretching out for your favourite driving position, the large boot space or various utility storages for a weekend destination, the Kia Seltos is bursting with little things to make your drive a pleasure.
+                    </p>
+                </div>
+            </div> 
+        </div>
+        <div class="btw">
+            <div onclick="myFunction()" class="Sub1-form Sub1-form-btn">
+                <div class="btn" >
+                    <h4><span><a >Click here to check out the packages</a> </span></h4>
+                </div>
+            </div>
+            <div class="toggles" id="toggle">
+                <div class="detail">
+                    <h3>Choose your Package</h3>            
+                    <div class="form">
+                        <!-- <form> -->
+                            <select name="list" id="list" onchange="text(this)">
+                                <option value="none" selected disabled hidden>No of Days</option>
+                                <option>2 Days</option>
+                                <option>4 Days</option>
+                                <option>5 Days</option>
+                                <option>A Week</option>
+                              </select><br>
+                              
+                              
+                               
+                        <!-- </form> -->
+                    </div>
+                    <div class="disp-text"><p id="demo"></p></div>
+                </div> 
+            </div>
+        </div>
+        <div class="end-text">
+            <div onclick="location.href='../Car-Rentals-Main/CarMain.html';" style="cursor: pointer;"  class="end end-text-col-one">
+                <div class="btn">
+                    <h4><span>TAKE ME BACK</span></h4>
+                </div>
+            </div>
+            <div class="end end-text-col-two">
+                <h2>Enjoy Your Ride</h2>
+            </div>
+            <div class="end end-text-col-three">
+                <div class="btn" onclick="location.href='../../s2-ResortsRedone/5-ResortsRedone.html'">
+                    <h4><span>BOOK NOW</span></h4>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+        </script>
+    </body>
+</html>

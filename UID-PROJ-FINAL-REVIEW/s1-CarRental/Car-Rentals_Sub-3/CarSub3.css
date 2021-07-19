@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif ;
+}
+/* giving Auto and 1fr are same for column */
+/* for row doesnt make any difference */
+body{
+    /* padding-left: 80px;
+    padding-right: 80px;  */
+    background-color:black;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.main-grid{
+    padding: 20px 40px 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 610px 250px;
+    grid-gap: 40px; 
+    background-color: black;
+    background-image: url(jaguar-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+}
+.main-grid div{
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+.main-one{
+    grid-column: 1/-1;
+    grid-row: 1/span 2;
+
+}
+.main-head-text{
+    position: absolute;
+    top: 13%;
+    right: -37%;
+    padding: 15px;
+}
+.main-head-text h1{
+    color: black;
+    font-size: 75px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 100px white;
+   
+}
+.main-head-text h1::before{
+    content: 'JAGUAR XF';
+    color: white ;
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    transition: 0.8s ;
+}
+.main-head-text h1:hover:before{
+    width: 100%;
+    /* text-shadow: 0 0 20px #fff; */
+}
+.main-two{
+    grid-column: 1/ span 1;
+    grid-row: 2/span 2;
+    background-color: black;
+    opacity: 0.6;
+    transition: 0.1s;
+}
+.icon{
+    color: white;
+    padding-top: 70px;
+    font-size: 50px;
+
+    text-align: center;
+}
+.main-text{
+    width: 70%;
+    margin: auto;
+}
+.main-two:hover,
+.main-three:hover,
+.main-four:hover{
+    transform:translatey(-20px);
+    box-shadow: 0 0 20px #000,
+                0 0 50px #000;
+    opacity: .75;
+    transition: all 0.1s ;
+}
+.main-text p{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 20px;
+}
+.main-three{
+    grid-column: 2/ span 1;
+    grid-row: 2/span 2;
+    background-color: black;
+    opacity: 0.6;
+    transition: 0.1s;
+}
+.main-four{
+    grid-column: 3/ span 1;
+    grid-row: 2/span 2;
+    background-color: black;
+    opacity: 0.6;
+    transition: 0.1s;
+}
+/* ------sub-stuff--------- */
+
+.sub-grid-one{
+    display: grid;
+    grid-template-columns: 650px auto;
+    grid-template-rows: 450px;
+    /* grid-gap:5px;  */
+    background-color: grey;
+    opacity: 0.85;
+}
+.sub-grid-two{
+    display: grid;
+    grid-template-columns: auto 650px;
+    grid-template-rows: 470px ;
+    opacity: 0.85;
+}
+.sub-text{
+    color: white;
+    opacity: 0.7;
+}
+.sub-text h2{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.sub-text p{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: .5px;
+}
+.sub-text:hover{
+    opacity: 0.9;
+
+}
+.sub-grid-one div,
+.sub-grid-two div{
+    overflow: hidden;
+    position: relative;
+
+}
+.sub-img{
+    width: auto;
+    height: 100%;
+    opacity: 1;
+    transition:  all 0.2s ease-in;
+}
+.sub-one{
+    grid-column: 1/span 1;
+    grid-row: 1/ span 1;
+    background-color: black;
+}
+.sub-two{
+    grid-column: 2/span 1;
+    grid-row: 1/ span 1;
+    background-color: transparent;
+}
+.sub-two:hover .sub-img{
+    transform: scale(1.15);
+    transition:  all 0.2s ease-in;  
+
+}
+.sub-three{
+    grid-column: 1/span 1;
+    grid-row: 1/ span 1;
+    background-color: black;
+}
+
+.sub-three:hover .sub-img{
+    transform: scale(1.15);
+    transition:  all 0.2s ease-in;   
+}
+.sub-four{
+    grid-column: 2/span 1;
+    grid-row: 1/ span 1;
+    background-color: black;
+}
+
+.sub-two .grad{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -300px;
+    right: 0px;
+    opacity: 0.6;
+    transition: 0.5s;
+    background-image: linear-gradient(to bottom,transparent,black);
+}
+
+.sub-three .grad{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -300px;
+    right: 0px;
+    opacity: 0.75;
+    transition: 0.5s;
+    background-image: linear-gradient(to top,transparent,black);
+}
+
+.sub-grid-one:hover .grad{
+    bottom: -130px;
+    transition: 0.5s ;
+}
+.sub-grid-two:hover .grad{
+    top: -130px;
+    transition: 0.5s ;
+}
+.detail{
+    color: #777;
+    background-color: rgba(19, 19, 19, 0.966);
+    transition: .1s;
+}
+.detail h3{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-left: 40px;
+    color: #777;  
+    transition: .1s;  
+} 
+.form h5{
+    font-size: 25px;
+    padding-top: 30px;
+    font-family: sans-serif,cursive;
+
+    text-align: center;
+    transition: .1s;
+}
+.lab{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    transition: .1s;
+    /* padding-left: 10px; */
+}
+
+.la:hover{
+    color: white;
+    transition: .1s;
+}
+.lb:hover{color: white;
+    transition: .1s;}
+.lc:hover{color: white;
+    transition: .1s;}
+.end-text{
+    background-color: black;
+    height: 250px;
+    width: 100%;
+    color: #777;
+    transition: .1s;
+    margin-top: 45px;
+}
+.end{
+    width: 33.33%;
+    float: left;
+    /* margin: 120px auto 120px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-text-col-one{
+    margin: 100px 150px 120px;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #777;
+    transition: .1s;
+}
+.end-text-col-one h4,
+.end-text-col-three h4{
+    cursor: pointer;
+    font-size: 20px;
+    transition: .1s;
+}
+.end-text-col-two{
+    margin: 90px auto 120px;
+    transition: .1s;
+}
+.end-text-col-three{
+    margin: 100px 150px 120px;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #777;
+    transition: .1s;
+    
+}
+.end-text-col-two h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    letter-spacing: 2px;
+    transition: .1s;
+
+}
+h4 span{
+    letter-spacing: 1px;
+    transition: .1s;
+}
+.end-text-col-one:hover h4 span,
+.end-text-col-three:hover h4 span{
+    color: black;
+    transition: .1s;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff,
+                 0 0 140px #fff,
+                 0 0 160px #fff;
+
+}
+.end-text-col-two:hover h2{
+    color: white;
+    transition: .1s;
+    text-shadow: 0 0 10px #fff,
+                 /* 0 0 70px #fff,
+                 0 0 40px #fff, */
+
+                 0 0 140px #fff;
+
+}
+.end-text-col-one:hover,
+.end-text-col-three:hover{
+    border: 2px solid white;
+    transition: .1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.911),
+                 0 0 30px rgba(255, 255, 255, 0.897),
+                 0 0 60px rgba(255, 255, 255, 0.705);
+                 /* box-shadow: 0 5px rgba(93, 64, 55, 0.4), 0 10px rgba(93, 64, 55, 0.3),
+              0 15px rgba(93, 64, 55, 0.2), 0 20px rgba(93, 64, 55, 0.1),
+              0 25px rgba(93, 64, 55, 0.05),
+              -5px 5px 40px rgba(100, 0, 0, 0.4); */
+    background-color: rgb(255, 255, 255);
+}
+
+.btw:hover .Sub1-form-btn{
+    border: 2px solid white;
+    transition: .1s;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.911);
+                 /* box-shadow: 0 5px rgba(93, 64, 55, 0.4), 0 10px rgba(93, 64, 55, 0.3),
+              0 15px rgba(93, 64, 55, 0.2), 0 20px rgba(93, 64, 55, 0.1),
+              0 25px rgba(93, 64, 55, 0.05),
+              -5px 5px 40px rgba(100, 0, 0, 0.4); */
+    /* background-color: rgb(255, 255, 255); */
+}
+.Sub1-form{
+    color: #777;
+    margin: auto;
+    width: auto;
+    /* float: left; */
+    /* margin: 120px auto 120px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sub1-form-btn h4{
+    cursor: pointer;
+    font-size: 17px;
+    transition: .1s;
+    width: auto;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.Sub1-form-btn{
+    margin: 80px 150px 50px;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #777;
+    transition: .1s;
+    
+}
+.Sub1-form-btn:hover h4 span,
+.Sub1-form-btn:active h4 span{
+    color: white;
+    transition: .1s;
+    text-shadow: 0 0 2px #fff,
+                 
+                 0 0 5px #fff;
+
+}
+.Sub1-form-btn:hover,
+.Sub1-form-btn:active{
+    border: 2px solid white;
+    transition: .1s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.911);
+                 /* box-shadow: 0 5px rgba(93, 64, 55, 0.4), 0 10px rgba(93, 64, 55, 0.3),
+              0 15px rgba(93, 64, 55, 0.2), 0 20px rgba(93, 64, 55, 0.1),
+              0 25px rgba(93, 64, 55, 0.05),
+              -5px 5px 40px rgba(100, 0, 0, 0.4); */
+    /* background-color: rgb(255, 255, 255); */
+}
+.toggles{
+    color: #777;
+    background-color: rgba(19, 19, 19, 0.966);
+    padding: 5px;
+    font-size: 30px;
+}
+.form-1{
+
+    color: #777;
+}
+.form-1 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    float: left;
+}
+.toggles{
+    display: none;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#list{
+    margin-top: 15px;
+    padding: 4px 35px;
+    background-color: black;
+    color: #777;
+    font-size: 17px;
+}
+.detail h3{
+    font-size: 38px;
+}
+.toggles:hover h3{
+    color: white;
+}
+.toggles:hover #list{
+    color: white;
+}
+.toggles:hover p{
+    color: white;
+    /* text-shadow: 0px 0px 5px #e0c477; */
+}
+.disp-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-size: 23px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+    font-style: oblique;
+}
