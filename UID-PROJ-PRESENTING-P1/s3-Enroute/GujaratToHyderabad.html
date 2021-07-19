@@ -123,8 +123,8 @@
 
                 <label for="locations" style="margin-left: -6.5%;"><font size="5">Choose a location:</font></label>
                 <select id="dropdown" name="locations">
-                    <option value="Jhansi">Jhansi (+460 km)</option>
-                    <option value="Nagpur">Nagpur(+620 km)</option>
+                    <option value="A">Aurangabad</option>
+                    <option value="B">Surat</option>
                 </select>
 
                 <label for="stars" ><font size="5">Choose which type of hotel</font></label>
@@ -150,13 +150,13 @@
                     loc=document.getElementById("dropdown").value;
                     star=document.getElementById("dropdown2").value;
                     //if(loc.localeCompare("Jhansi") ==0)
-                    if(loc=="Jhansi"){
+                    if(loc=="A"){
                         switch(star){
-                            case '3': window.open("https://www.tripadvisor.in/Hotel_Review-s1-g679029-d1585365-Reviews-Hotel_Shrinath_Palace-Jhansi_Uttar_Pradesh.html");
+                            case '3': window.open("http://www.hoteljpinternational.com/");
                                               break;
-                            case '4': window.open("https://jhansihotel.com/");
+                            case '4': window.open("https://www.vivantahotels.com/en-in/aurangabad-maharashtra/");
                                               break;
-                            case '5': window.open("https://jhansihotel.com/");
+                            case '5': window.open("https://www.lemontreehotels.com/lemon-tree-hotel/aurangabad/hotel-aurangabad.aspx");
                                               break;
                             default:window.alert("Error") ;
                             break;
@@ -166,15 +166,15 @@
                         }
                     }
 
-                    else if (loc=="Nagpur"){
+                    else if (loc=="B"){
                         switch(star){
-                            case '3': window.open("https://hotel.happyeasygo.com/hotels/nagpur/hotel_5e02d11f159c9427644417a3/2021-07-17_2021-07-18/2-0?source_from=google_ads&hotelId=5e02d11f159c9427644417a3&api_source=google_ads&fclid=13031676393&visitor=fcebeb65ca2a444096bab4450c4f17ac");
+                            case '3': window.open("https://www.airportcentrepoint.com/");
                                               break;
-                            case '4': window.open("https://www.marriott.com/reservation/rateListMenu.mi?defaultTab=standard");
+                            case '4': window.open("https://www.radissonhotels.com/en-us/hotels/radisson-blu-nagpur?cid=a:se+b:gmb+c:apac+i:local+e:rdb+d:ind+h:INDNAGP");
                                               break;
-                            case '5': window.open("https://www.booking.com/hotel/in/radisson-blu-nagpur.en-gb.html?aid=2146259;label=metagha-link-localuniversalIN-hotel-424968_dev-desktop_los-1_bw-2_dow-Saturday_defdate-1_room-0_lang-en_curr-INR_gstadt-2_rateid-0_aud-0_cid-_gacid-12958475244_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20210717;sid=f7784f8f1b1e0c663fdd79898ba6ce9c;all_sr_blocks=42496801_204050534_2_1_0;checkin=2021-07-17;checkout=2021-07-18;dest_id=-2105396;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=42496801_204050534_2_1_0;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=42496801_204050534_2_1_0__700000;srepoch=1626365712;srpvid=5c2c724721d80004;type=total;ucfs=1&#hotelTmpl");
+                            case '5': window.open("https://www.marriott.com/hotels/travel/nagmd-le-m%C3%A9ridien-nagpur/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_Mjg3MDAxMi03MTUtbG9jYXRpb24uZ29vZ2xlX3dlYnNpdGVfb3ZlcnJpZGU%3D");
                                               break;
-                                              default:window.alert("oops");
+                                              default:window.alert("Select Correct Option");
                                               break;
                         }
                     }
