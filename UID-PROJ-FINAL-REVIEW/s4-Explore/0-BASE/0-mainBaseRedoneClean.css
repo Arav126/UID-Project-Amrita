@@ -188,7 +188,7 @@ iframe {
 }
 
 /* CHANGE REQUIRED0 */
-.s1:hover>.borderBottom,.s2:hover>.borderBottom,.s3:hover>.borderBottom,.s4:hover>.borderBottom {
+.s1:hover>.borderBottom,.s2:hover>.borderBottom,.s3:hover>.borderBottom,.s4:hover>.borderBottom,.s5:hover>.borderBottom {
     border-bottom: 2px solid var(--darker-black);
     position: absolute;
     left: 40%;
@@ -221,28 +221,28 @@ skin - #D7B08B
 /*==========ACTIVE STAGE==========*/
 
 /* CHANGE REQUIRED1 */
-.s3 {color: #0e0e0e;background-color:#be9e44 ;}
-.s3:hover{flex-grow: 1.25;}
+.s4 {color: #0e0e0e;background-color:#be9e44 ;}
+.s4:hover{flex-grow: 1.25;}
 /* no hover animation for current stage obiviously  */
 
 /*==========TO BE VISITED STAGE==========*/
 
 /* for all consecutive stages except active state  */
 /* CHANGE REQUIRED2 */
-.s4,.s5,.s6 {color: #be9e44;background-color: #FFEFCA;}
-.s5,.s6{cursor: not-allowed;}
+.s5,.s6 {color: #be9e44;background-color: #FFEFCA;}
+.s6{cursor: not-allowed;}
 
 /* only for the consecutive stage from active  */
 /* CHANGE REQUIRED3 */
-.s4:hover {color: #0e0e0e;box-shadow: 300px 0px 0px 0px #be9e44 inset;-webkit-box-shadow: 300px 0px 0px 0px #be9e44 inset;flex-grow: 1.25;}
+.s5:hover {color: #0e0e0e;box-shadow: 300px 0px 0px 0px #be9e44 inset;-webkit-box-shadow: 300px 0px 0px 0px #be9e44 inset;flex-grow: 1.25;}
 /* .s5:hover ~ .s4 {color: #be9e44;box-shadow: 100px 0px 0px 0px #0e0e0e inset;} doesnt work  */
 
 /*==========ALREADY VISITED STAGE==========*/
 
 /* all clases before active class  */
 /* CHANGE REQUIRED4 */
-.s1,.s2 {color: #be9e44;background-color: #0e0e0e;}
-.s1:hover,.s2:hover {color: #0e0e0e;box-shadow: 0px 100px 0px 0px #be9e44 inset;-webkit-box-shadow: 0px 100px 0px 0px #be9e44 inset;flex-grow: 1.25;}
+.s1,.s2,.s3 {color: #be9e44;background-color: #0e0e0e;}
+.s1:hover,.s2:hover,.s3:hover {color: #0e0e0e;box-shadow: 0px 100px 0px 0px #be9e44 inset;-webkit-box-shadow: 0px 100px 0px 0px #be9e44 inset;flex-grow: 1.25;}
 
 /* IMP - NO NEED TO REMOVE 5 OR 6 IF ITS ALREADY WHITE, CUZ NO CHANGE
 DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS COMMENT IS ENOUGH*/
