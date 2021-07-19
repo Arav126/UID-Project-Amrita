@@ -49,3 +49,31 @@ function travellerCount() {
 
     alert('end');
 }
+
+
+
+function dateCheck() {
+    var birth = document.payForm.birthName.value;
+    alert(birth);
+    //alert(typeof(birth));
+    var now = new Date();
+    var dt1 = Date.parse(now);//present date
+    var dt2 = Date.parse(birth);//expired
+
+    cond1 = document.getElementById('birth-cond-1');
+    cond1icon = document.getElementById('birth-cond-1-icon');
+
+    alert(dt1 + 'lol' + dt2);
+
+    if(dt2 > dt1) {
+        alert('you are under 18');
+        // falsePart(cond1,cond1icon,1);
+    } else {
+        // truePart(cond1,cond1icon,1);
+        // JS2 = 1;
+        alert('cool');
+    }
+
+    // submitCheck();//calling submission check
+
+}
