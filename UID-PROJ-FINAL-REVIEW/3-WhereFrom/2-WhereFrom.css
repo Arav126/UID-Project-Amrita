@@ -1,0 +1,304 @@
+/* container-bg-color: #F9F6F0 ;
+
+
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* body {
+    background-color: rgb(30, 30, 30);
+} */
+
+/* img {
+    display: block;
+}  */
+
+/* icon pack  */
+
+ion-icon {
+    color: black;
+    font-size: 16px;
+    /* do multiples of 8 */
+    /* use this instead of size=large */
+  }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~BASE NO CHANGE~~~~~~~~~~~~~~~~~~~~~*/
+  
+body {
+    background-color: #0e0e0e;
+}
+
+.destContainer {
+    width: 95%;
+    background-color: #FFEFCA ;
+    
+    height: 95vh;
+    margin: 0px auto;
+    /* margin-bottom: 0px; */
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr)s;
+
+    border-radius: 10px;
+    
+
+    /* grid-row-gap:20px;
+    grid-column-gap:20px; */
+    
+}
+.destContainer:nth-child(2) {
+    /* grid-template-rows: repeat(3,1fr)s; */
+    /* margin-top: 0px; */
+
+}
+
+.p1 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+.p2 {
+    grid-column: 3/span 2;
+    grid-row: 1/span 2;
+}
+.p3 {
+    grid-column: 5/span 2;
+    grid-row: 1/span 2;
+}
+.footer-content1 {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+}
+.footer-img1 {
+    grid-column: 2/span 3;
+    grid-row: 3/span 1;
+}
+.footer-content2 {
+    grid-column: 5/span 2;
+    grid-row: 3/span 1;
+}
+
+/* copy */
+/* .p1:nth-child(2) {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+.p2:nth-child(2) {
+    grid-column: 3/span 2;
+    grid-row: 1/span 2;
+}
+.p3:nth-child(2) {
+    grid-column: 5/span 2;
+    grid-row: 1/span 2;
+}
+.footer-content1:nth-child(2) {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+}
+.footer-img1:nth-child(2) {
+    grid-column: 2/span 3;
+    grid-row: 3/span 1;
+}
+.footer-content2:nth-child(2) {
+    grid-column: 5/span 2;
+    grid-row: 3/span 1;
+} */
+/* end of copy  */
+
+
+
+/* individual sub grids  */
+.p1,.p2,.p3 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~INSERTING IMAGES~~~~~~~~~~~~~~~~~~~~~*/
+.all-pics {
+    background-repeat: no-repeat;
+    /* background-attachment: cover; */
+    /* background-position: 50% 30%; */
+    background-size: cover;
+    /* transform: scale(1.1); */
+    /* height: 100%;
+    width: 100%; */
+}
+
+.p1 {background-image: url("Pics/delhi.jpg");}
+.p2 {background-image: url("Pics/bombay.jpg");}
+.p3 {background-image: url("Pics/kolkata.jpg");}
+.p4 {background-image: url("Pics/chennai.jpg");}
+.p5 {background-image: url("Pics/Gujarat.jpg");}
+.p6 {background-image: url("Pics/assam.jpg");}
+
+.f1 {background-image: url("Pics/mid-1.jpg");}
+.f2 {background-image: url("Pics/mid-2.jpg");}
+
+/* p4,p5,p6 are additional classes, hence no need to change the props of p1,p2,p3 */
+
+/*~~~~~~~~~~~~~~~~~~~~~individual cuts~~~~~~~~~~~~~~~~~~~~~*/
+
+/* backgroud color : #FFEFCA */
+/* button color : #be9e44 */
+
+.cuts {
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    /* background-image: linear-gradient(to bottom, #FFEFCA,#FFF6E2); */
+    background-color: #FFEFCA ;
+    opacity: 0.7;
+
+    text-align: center;
+
+    padding: 15px;
+
+    transition: all 1s ease 100ms;
+    
+
+}
+/* means direct child element not descendent or sibling */
+.cuts > span {
+    font-style: italic;
+
+    /* font family showing up differently in diff browsers  */
+    font-family: ;
+    font-size: 16px;
+    /* font-weight: 600; */
+
+}
+
+.btnDest {
+    color: #be9e44;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+
+    padding: 8px 20px;
+    border: 2px solid;
+    
+    transform: translateY(-20px);
+
+    transition: all;
+    transition-duration: 1.2s;
+    transition-delay: 150ms;
+}
+
+.p1:hover>.cuts, .p2:hover>.cuts, .p3:hover>.cuts {
+    opacity: 1;
+}
+
+.cuts:hover > .btnDest {
+    transform: translateY(0px) scale(1.1);
+    box-shadow: 0px -10px 8px #be9e44;
+    /* opacity: 0.8; */
+}
+
+.cuts > .btnDest:hover {
+    color: #0e0e0e;
+    background-color: #be9e44;
+    /* border-color: #be9e44; */
+
+    font-style: italic;
+
+    border-radius: 15px;
+    
+    /* opacity: 1; */
+
+}
+
+/* almost broke the active state
+doesn't work without mentioning that it is a child element */
+.cuts > .btnDest:active {
+    transform: translateY(-10px) scale(1) ;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+/* <!--                  BGCOLOR COLORinStyle
+        VISITED STATE COLOR = #0e0e0e #be9e44
+        ACTIVE STATE COLOR = #be9e44 #0e0e0e
+        UNVISITED STATE COLOR = #FFEFCA #be9e44
+        --> */
+
+
+/*~~~~~~~~~~~~~~~~~~~~~header text~~~~~~~~~~~~~~~~~~~~~*/
+        
+.header-text {
+    margin: auto;
+    text-align: center;
+
+    font-family: Perpetua;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-style: italic;
+    /* font-weight: 500; */
+
+    padding: 10px 20px;
+
+    letter-spacing: 1px;
+    /* word-spacing: 1.5px; */
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
+
+}
+
+.header-text > hr {
+    margin: auto;
+    width: 20%;
+    /* height: 2px; */
+    transform: translateY(5px);
+    border-color: #0e0e0e;
+}
+
+.footer-img1{
+    /* background-image: url("Pics/main-bottom.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.footer-content1 {
+    margin: auto;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.footer-content2 {
+    margin: 50px 30px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+
+    grid-column: 5/-1;
+}
+
+
+/* extra additions  */
+
+#toTop:hover{
+    /* background-color: #be9e44; */
+    
+
+}

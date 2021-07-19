@@ -112,10 +112,10 @@ iframe {
     top: initial;
     left: 0px;
     right: 0px;
-    /* z-index: -1; */
+    z-index: 2;
     /* initial means deafault value  */
 
-    /* transition: all 3s ease 100ms; */
+    transition: all 3s ease 100ms;
 }
 
 .main-stages-container {
@@ -355,7 +355,7 @@ DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS C
 .h-rule > hr {
     width:50%;
     height: 1px;
-    border-color: #A03650;
+    border-color: #be9e44;
 } 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~main-footer-container-2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -368,7 +368,7 @@ DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS C
     height: 40vh;
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 0.045fr;
     grid-template-rows: repeat(2,1fr) 4fr;
 
 }
@@ -380,6 +380,14 @@ DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS C
     justify-items: center;
     align-items: center; */
 
+}
+
+.side {
+    grid-column: 2/-1;
+}
+
+.socials, .copyrights, .h-rule-2{
+    grid-column: 1/span 1;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~ICONS~~~~~~~~~~~~~~~~~~~~~*/
@@ -421,7 +429,7 @@ DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS C
 }
 
 .h-rule-2 > hr{
-    border-color: #A03650;
+    border-color: #be9e44;
     width: 1px;
     height: 16vh;
 }
