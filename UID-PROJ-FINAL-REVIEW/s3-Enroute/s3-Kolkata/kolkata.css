@@ -6,6 +6,7 @@ html{
     body{
             margin: 0%;
             padding: 0%;
+            background-color: black;
     }
 
     .headimage{
@@ -29,7 +30,6 @@ html{
         grid-template-columns: repeat(3,1fr);
         height:100vh;
         max-width: 100%;
-        grid-row-gap: 10%;
     }
 
     .hotels{
@@ -83,6 +83,7 @@ html{
         justify-content: center;
         color: black;
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        color: white;
         font-size: 200%;
         font-weight: 400;
         position: relative;
