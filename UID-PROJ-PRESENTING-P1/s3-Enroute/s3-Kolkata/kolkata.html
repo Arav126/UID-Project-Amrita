@@ -13,7 +13,7 @@
 
     <body>
         <div class="headimage">
-            <img src="1912587.jpg" width="100%"> 
+            <img src="himg.jpg" width="100%"> 
             <div class="headimagetext">
             KOLKATA TO HYDERABAD
             </div>
@@ -25,7 +25,7 @@
                 <img src="map.png" usemap="#image-map" width="100%">
 
                 <map name="image-map">
-                    <area href=#und coords="369,512,31" shape="circle">
+                    <area href=#und coords="40,60,18" shape="circle">
                     <area href=#lin coords="728,243,33" shape="circle">
                     
                 </map>
@@ -40,27 +40,27 @@
             </div>
 
             <div class="pic2">
-                <img src="2.jpg" width=100%>
+                <img src="2.jfif" width=100%>
             </div>
 
             <div class="vij" id=und>
-                <img src="taj.jpg" width=100%>
+                <img src="und.jpg" width=100%>
             </div>
            
             <div class="caption">
-                Visit the Taj Mahal, one of the seven wonders of the world
+                The Undavalli Caves date back to the 7th century BC and are prime example of rock-cut architecture
             </div>
 
-            <div class="bhu" id=temp>
-                <img src="sanchi.jpg" width="100%">
+            <div class="bhu" id=lin>
+                <img src="lin.jpg" width="100%">
             </div>
 
             <div class="caption">
-                Sanchi is home to one of the unesco world heritage sites
+                The Lingaraja Temple is one of the oldest temples in India
             </div>
 
             <div class="pic3">
-                <img src="5.jpg" width=100%>
+                <img src="3.jpg" width=100%>
             </div>
 
         </div>
@@ -73,8 +73,9 @@
 
                 <label for="locations">Choose a location:</label>
                 <select id="dropdown" name="locations">
-                    <option value="Jhansi">Jhansi (+460 km)</option>
-                    <option value="Nagpur">Nagpur(+620 km)</option>
+                    <option value="Keonjhar">Keonjhar (+347 km)</option>
+                    <option value="Balangir">Balangir(+327 km)</option>
+                    <option value="Jagdalpur">Jagdalpur(+548 km)</option>
                 </select>
 
                 <label for="stars" >Choose which type of hotel</label>
@@ -99,13 +100,13 @@
                     var star;
                     loc=document.getElementById("dropdown").value;
                     star=document.getElementById("dropdown2").value;
-                    if(loc.localeCompare("Jhansi") ==0){
+                    if(loc.localeCompare("Keonjhar") ==0){
                         switch(star){
-                            case '3': window.open("https://www.tripadvisor.in/Hotel_Review-s1-g679029-d1585365-Reviews-Hotel_Shrinath_Palace-Jhansi_Uttar_Pradesh.html");
+                            case '3': window.open("https://www.tripadvisor.in/Hotel_Review-g1390102-d5614779-Reviews-Hotel_Sans-Keonjhar_Keonjhar_District_Odisha.html");
                                               break;
-                            case '4': window.open("https://jhansihotel.com/");
+                            case '4': window.open("https://www.tripadvisor.in/Hotel_Review-g1390102-d5614779-Reviews-Hotel_Sans-Keonjhar_Keonjhar_District_Odisha.html");
                                               break;
-                            case '5': window.open("https://jhansihotel.com/");
+                            case '5': window.open("https://www.tripadvisor.in/Hotel_Review-g1390102-d5614779-Reviews-Hotel_Sans-Keonjhar_Keonjhar_District_Odisha.html");
                                               break;
                             default:window.alert("Error") ;
                             break;
@@ -114,13 +115,26 @@
                         }
                     }
 
+                    else if(loc.localeCompare("Balangir") ==0){
+                        switch(star){
+                            case '3': window.open("https://www.makemytrip.com/hotels/hotel-details/?city=CTBNR&country=IN&checkin=07232021&checkout=07242021&hotelId=202105201827597848&roomStayQualifier=2e0e&cmp=googlehoteldfinder_DH_IN_localuniversal_202105201827597848_11323756018&totalGuestCount=2&roomCount=1&type=CTY&_uCurrency=INR&Campaign=11323756018&locusType=city&locusId=CTBNR&mtkeys=M0T8FnqZ.i2d-520-0&gclid=Cj0KCQjwxdSHBhCdARIsAG6zhlVjhDRBqcnoEhLrXbLT2UlPb9kAItX_iGJvUG5aCfTy-UTSSEV1iIQaAsncEALw_wcB");
+                                              break;
+                            case '4': window.open("https://www.makemytrip.com/hotels/hotel-details/?city=CTBNR&country=IN&checkin=07232021&checkout=07242021&hotelId=201807131553071941&roomStayQualifier=2e0e&cmp=googlehoteldfinder_DH_IN_localuniversal_201807131553071941_10198780550&totalGuestCount=2&roomCount=1&type=CTY&_uCurrency=INR&Campaign=10198780550&locusType=city&locusId=CTBNR&mtkeys=M0C14pDFH1FtO-6vu-pb&gclid=Cj0KCQjwxdSHBhCdARIsAG6zhlXHh9CxI9VGQen3alLoI9YIBDsCugidmCqveH0qUZjjyC4ACB_DScwaAr31EALw_wcB");
+                                              break;
+                            case '5': window.open("https://www.priceline.com/relax/at/104965405/from/20210723/to/20210724/rooms/1?meta-id=Mx-SHdsM3RwjI94dLatsX8E_IxH6rP9pwAclZxQOWcKUBoQEtrg5EUGriD1NDER1aNuw8HXQIlTqD5AZtBUfyslkNd0c3mWAw1RDiVXeeN0R7wtpdeq0kHrUgqm-yKoFqTubMrFIX4WIBa2x_Bovu6-mlXEECpbfh2UR-3XffFqrvs2KYcpxoElo4rCJHHvr2zFKeVlmukZPqlPuy3_kjHkGsW3qQpVenfXf4LFBIN_pQjywl0mxb8dVEG7k9c2FRZ1h1qLAZCNw3LL6w-V_Ow&pclnId=113DC731CCF38B9EB5B41636AE5C4930D32B1D42FDF272FD29475F5FCE6D78D7548B10D3A7517576925188C496E8BF0BDDC485F8727F3891551544B0AD940139F5A1129778A79267408E232E179DAC6F&gid=2314&cityId=5000140360&cur=INR&qdp=2899&vrid=37a041340ff564f21870e0dc000fa362");
+                                              break;
+                                              default:window.alert("oops");
+                                              break;
+                        }
+                    }
+
                     else{
                         switch(star){
-                            case '3': window.open("https://hotel.happyeasygo.com/hotels/nagpur/hotel_5e02d11f159c9427644417a3/2021-07-17_2021-07-18/2-0?source_from=google_ads&hotelId=5e02d11f159c9427644417a3&api_source=google_ads&fclid=13031676393&visitor=fcebeb65ca2a444096bab4450c4f17ac");
+                            case '3': window.open("https://www.makemytrip.com/hotels/hotel-details/?city=CTJGD&country=IN&checkin=07232021&checkout=07242021&hotelId=201701271834117852&roomStayQualifier=2e0e&cmp=googlehoteldfinder_DH_IN_localuniversal_201701271834117852_11323756018&totalGuestCount=2&roomCount=1&type=CTY&_uCurrency=INR&Campaign=11323756018&locusType=city&locusId=CTJGD&mtkeys=M0CIJosg.ONI-20u-Ez&gclid=Cj0KCQjwxdSHBhCdARIsAG6zhlUW3xRX8nJKDJPLxPo1Iy6V4gUFusXKy3iY_u3GQuJ3xCEFXI4tYwEaAidtEALw_wcB");
                                               break;
-                            case '4': window.open("https://www.marriott.com/reservation/rateListMenu.mi?defaultTab=standard");
+                            case '4': window.open("https://www.makemytrip.com/hotels/hotel_devansh_residency-details-jagdalpur.html");
                                               break;
-                            case '5': window.open("https://www.booking.com/hotel/in/radisson-blu-nagpur.en-gb.html?aid=2146259;label=metagha-link-localuniversalIN-hotel-424968_dev-desktop_los-1_bw-2_dow-Saturday_defdate-1_room-0_lang-en_curr-INR_gstadt-2_rateid-0_aud-0_cid-_gacid-12958475244_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20210717;sid=f7784f8f1b1e0c663fdd79898ba6ce9c;all_sr_blocks=42496801_204050534_2_1_0;checkin=2021-07-17;checkout=2021-07-18;dest_id=-2105396;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=42496801_204050534_2_1_0;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=42496801_204050534_2_1_0__700000;srepoch=1626365712;srpvid=5c2c724721d80004;type=total;ucfs=1&#hotelTmpl");
+                            case '5': window.open("https://www.makemytrip.com/hotels/champa_baag-details-jagdalpur.html");
                                               break;
                                               default:window.alert("oops");
                                               break;
@@ -129,31 +143,7 @@
                 }
             </script>
           
-            <!--  <div class="dropdown">
-                <button class="dropbtn">Locations for hotels on the way</button>
-                <div class="dropdown-content">
-                  <a href="#">Agra (+240 km)</a>
-                  <a href="#">Gwalior (+120 km)</a>
-                  <a href="#">Jhansi (+102 km)</a>
-                  <a href="#">Sagar (+220 km)</a>
-                  <a href="#">Nagpur(+400 km)</a>
-                  <a href="#">Adilabad (+200 km)</a>
-                  <a href="#">Nizamabad (+150 km)</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">What kind of hotel?</button>
-                <div class="dropdown-content">
-                  <a href="#">3 star</a>
-                  <a href="#">4 star</a>
-                  <a href="#">5 star</a>
-                </div>
-            </div>
-
-            <br><br><br>
-
-            <button type="submit" class="registerbtn">Register</button> -->
+          
 
             <br><br><br><br><br><br><br>
 
