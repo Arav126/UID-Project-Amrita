@@ -1,0 +1,155 @@
+/* container-bg-color: #F9F6F0 ;
+
+
+
+
+*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* body {
+    background-color: rgb(30, 30, 30);
+} */
+
+/* img {
+    display: block;
+}  */
+
+/* icon pack  */
+
+ion-icon {
+    color: black;
+    font-size: 50px;
+    /* do multiples of 8 */
+    /* use this instead of size=large */
+  }
+
+.payContainer {
+    width: 70%;
+    background-color: #F9F6F0 ;
+    height: 150vh;
+    margin: 40px auto;
+    /* padding: 40px; */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8% 1fr 1% 8% 1fr;
+
+    /* grid-row-gap:20px;
+    grid-column-gap:20px; */
+    
+}
+
+.header-text {
+    grid-column: 1/-1;
+    margin: auto auto;
+
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+}
+
+.listContainer {
+    grid-column: 1/-1;
+    text-align: left;
+
+    width: 80%;
+    margin: 30px auto;
+}
+
+li {
+    list-style-position: inside;
+    list-style-type:disc;
+    /* list-style-image: url("Pics/wallet-gradient-line.png"); */
+
+    font-family: sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+
+    padding: 18px 5%;
+    border-top: 0.01px solid whitesmoke;
+
+    /* border-bottom: 0.01px solid rgba(0, 0, 0, 0.251); */
+    /* removing border bottom atleast remove partial error. but kept it seperately again for last item to remove lil error  */
+
+    transition: all;
+    transition-duration: 0.6s;
+    transition-delay: 200ms;
+}
+
+.list-last-item {
+    border-bottom: 0.01px solid rgba(245, 245, 245, 0.646);
+}
+
+li:hover {
+    transform: translateY(-10px);
+    border: 0px;
+    box-shadow: 10px 10px 30px 10px #0e0e0e;
+}
+
+li:active {
+    transform: translateY(0px);
+    border: 0px;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+
+/* adjusting colors  */
+
+body {
+    /* background-image: linear-gradient(to bottom,#EC505F,#A10B22) ; */
+    background-color: #0e0e0e;
+}
+
+.payContainer {
+    /* background-image: linear-gradient(to bottom, rgb(199, 24, 199),rgba(196, 80, 196, 0.625)); */
+
+    background-color: #880808;
+    /* background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.796),rgb(0, 0, 0)); */
+    color: whitesmoke;
+    border-radius: 20px;
+
+    transition: all 1s 150ms;
+}
+li > a {color: whitesmoke;}
+
+.payContainer:hover {
+    box-shadow: 0px 0px 20px whitesmoke;
+}
+
+.header-text{position: relative;}
+
+.borderBottom{
+    transition: all 2s ease-in-out 0.15s;
+
+    border-bottom: 3px solid whitesmoke;
+
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    bottom: -10px;
+
+}
+
+.payContainer:hover .borderBottom {
+    
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: -10px;
+
+    
+}
+
+.tableContainer th {text-align: center;}
+.tableContainer td {text-align: center;}
+.tableContainer {margin-top: 30px;}

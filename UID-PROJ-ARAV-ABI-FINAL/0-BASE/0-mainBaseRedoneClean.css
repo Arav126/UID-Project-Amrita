@@ -229,7 +229,7 @@ skin - #D7B08B
 
 /* only for the consecutive stage from active  */
 /* CHANGE REQUIRED3 */
-.s4:hover {color: #0e0e0e;box-shadow: 300px 0px 0px 0px #be9e44 inset;flex-grow: 1.25;}
+.s4:hover {color: #0e0e0e;box-shadow: 300px 0px 0px 0px #be9e44 inset;-webkit-box-shadow: 300px 0px 0px 0px #be9e44 inset;flex-grow: 1.25;}
 /* .s5:hover ~ .s4 {color: #be9e44;box-shadow: 100px 0px 0px 0px #0e0e0e inset;} doesnt work  */
 
 /*==========ALREADY VISITED STAGE==========*/
@@ -237,36 +237,36 @@ skin - #D7B08B
 /* all clases before active class  */
 /* CHANGE REQUIRED4 */
 .s1,.s2 {color: #be9e44;background-color: #0e0e0e;}
-.s1:hover,.s2:hover {color: #0e0e0e;box-shadow: 0px 100px 0px 0px #be9e44 inset;flex-grow: 1.25;}
+.s1:hover,.s2:hover {color: #0e0e0e;box-shadow: 0px 100px 0px 0px #be9e44 inset;-webkit-box-shadow: 0px 100px 0px 0px #be9e44 inset;flex-grow: 1.25;}
 
 /* IMP - NO NEED TO REMOVE 5 OR 6 IF ITS ALREADY WHITE, CUZ NO CHANGE
 DAYUM NO NEED TO COMMENT OUT ANYTHING ANYWHERE ONLY CHANGING THOSE BEFORE THIS COMMENT IS ENOUGH*/
 
 /* SELF SUFFICIENT ---- NO CHANGE REQUIRED  */
 /* for s1  */
-.s1:hover ~ .s2 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
-.s1:hover ~ .s3 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
-.s1:hover ~ .s4 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
-.s1:hover ~ .s5 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
-.s1:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s1:hover ~ .s2 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s1:hover ~ .s3 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s1:hover ~ .s4 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s1:hover ~ .s5 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s1:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
 
 /* for s2  */
-.s2:hover ~ .s3 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
-.s2:hover ~ .s4 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
-.s2:hover ~ .s5 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
-.s2:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s2:hover ~ .s3 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s2:hover ~ .s4 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s2:hover ~ .s5 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s2:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
 
 /* for s3  */
-.s3:hover ~ .s4 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
-.s3:hover ~ .s5 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
-.s3:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s3:hover ~ .s4 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow:  0px -100px 0px 0px #FFEFCA  inset;}
+.s3:hover ~ .s5 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow:  0px -100px 0px 0px #FFEFCA  inset;}
+.s3:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow:  0px -100px 0px 0px #FFEFCA  inset;}
 
 /* for s4  */
-.s4:hover ~ .s5 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
-.s4:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s4:hover ~ .s5 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s4:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
 
 /* for s5  */
-.s5:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
+.s5:hover ~ .s6 {color: #be9e44;box-shadow: 0px -100px 0px 0px #FFEFCA  inset;-webkit-box-shadow: 0px -100px 0px 0px #FFEFCA  inset;}
 
 /* for all clickable stages --- doesnt make sense */
 /* .div-stages:hover {border-bottom: 6px solid #A03650;} */
