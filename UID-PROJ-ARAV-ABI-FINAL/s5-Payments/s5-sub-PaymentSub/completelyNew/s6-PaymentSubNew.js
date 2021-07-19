@@ -24,6 +24,7 @@ function cardNameCheck() {
         JS1 = 1;
     } else {
         falsePart(cond1,cond1icon,1);
+        JS1 = 0;
     }
 
     submitCheck();//calling submission check
@@ -47,6 +48,7 @@ function expiryCheck() {
     if(dt2 > dt1) {
         alert('your card is expired');
         falsePart(cond1,cond1icon,1);
+        JS2 = 0;
     } else {
         truePart(cond1,cond1icon,1);
         JS2 = 1;
@@ -74,6 +76,7 @@ function cardNoCheck() {
         JS31 = 1;
     } else {
         falsePart(cond1,cond1icon,1);
+        JS31 = 0;
     }
 
     //condition 2
@@ -83,6 +86,7 @@ function cardNoCheck() {
         JS32 = 1;
     } else {
         falsePart(cond2,cond2icon,2);
+        JS32 = 0;
     }
 
     submitCheck();//calling submission check
@@ -108,6 +112,7 @@ function cvvCheck() {
         JS41 = 1;
     } else {
         falsePart(cond1,cond1icon,1);
+        JS41 = 0;
     }
 
     //condition 2
@@ -117,6 +122,7 @@ function cvvCheck() {
         JS42 = 1;
     } else {
         falsePart(cond2,cond2icon,2);
+        JS42 = 0;
     }
 
     submitCheck();//calling submission check

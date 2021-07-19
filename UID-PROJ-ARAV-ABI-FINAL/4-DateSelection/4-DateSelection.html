@@ -16,6 +16,7 @@
     </head>
 
     <body>
+        <form action="https://www.youtube.com/" method="GET" name="dateForm">
         <div class="dateContainer" id="parentContainer">
             
             <div class="header-text"><div style="height: 10px;"></div>Start your trip by filling this form <div class="borderBottom"></div> </div>
@@ -58,16 +59,22 @@
                 </span>
             </div> -->
             
+            <!-- 
+                PATTERNS
+                (/^[A-Za-z]+$/i)
+
+
+             -->
             <div id="traveller1" class="traveller-all">
                 <span class="span-text">#1 Traveler </span><br>
                 <span class="span-text">First Name: </span>
-                <input class="name-entry" type="text" name="name-field">
+                <input class="name-entry" type="text" name="name-field" pattern="[A-Z]" title="only characters, case-insensitive, no spaces">
                 <span class="tab"></span>
-                <span class="span-text">Last Name: </span>
+                <span class="span-text" pattern="(/^[A-Za-z]+$/i)" title="only characters, case-insensitive, no spaces">Last Name: </span>
                 <input class="name-entry" type="text" name="name-field">
                 <span class="tab"></span>
                 <span class="span-text">Date of Birth: </span>
-                <input type="date">
+                <input type="date" id="birth" name="birthName" onchange="dateCheck()">
                 <span class="tab"></span>
                 <span class="span-text">Gender: </span>
                 <div class="gender-div">
@@ -143,6 +150,7 @@
             <!-- <div style="height: 8vh;"></div> -->
 
         </div>
+        </form>
 
          <!-- SCRIPT INSERTS -->
          <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
