@@ -12,6 +12,7 @@
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* body {
@@ -26,7 +27,7 @@ a{
 
 ion-icon {
     color: black;
-    font-size: 50px;
+    font-size: 16px;
     /* do multiples of 8 */
     /* use this instead of size=large */
   }
@@ -35,12 +36,12 @@ ion-icon {
 /*~~~~~~~~~~~~~~~~~~~~~BASE NO CHANGE~~~~~~~~~~~~~~~~~~~~~*/
   
 body {
-    background-color: #f9f6f0;
+    background-color: #0e0e0e;
 }
 
 .destContainer {
     width: 95%;
-    background-color: #feefada1;
+    background-color: #FFEFCA ;
     
     height: 95vh;
     margin: 0px auto;
@@ -137,12 +138,12 @@ body {
     width: 100%; */
 }
 
-.p1 {background-image: url("Pics/HYD/main.jpg");}
-.p2 {background-image: url("Pics/GER/main.jpg");}
-.p3 {background-image: url("Pics/AN/main.jpg");}
-.p4 {background-image: url("Pics/bombay.jpg");}
-.p5 {background-image: url("Pics/assam.jpg");}
-.p6 {background-image: url("Pics/chennai.jpg");}
+.p1 {background-image: url("Pics/delhi.jpg");}
+.p2 {background-image: url("Pics/bombay.jpg");}
+.p3 {background-image: url("Pics/kolkata.jpg");}
+.p4 {background-image: url("Pics/chennai.jpg");}
+.p5 {background-image: url("Pics/Gujarat.jpg");}
+.p6 {background-image: url("Pics/assam.jpg");}
 /* p4,p5,p6 are additional classes, hence no need to change the props of p1,p2,p3 */
 
 /*~~~~~~~~~~~~~~~~~~~~~individual cuts~~~~~~~~~~~~~~~~~~~~~*/
@@ -212,7 +213,7 @@ body {
 
     font-style: italic;
 
-    border-radius: 100px;
+    border-radius: 15px;
     
     /* opacity: 1; */
 
@@ -287,4 +288,13 @@ doesn't work without mentioning that it is a child element */
     font-style: italic;
 
     grid-column: 5/-1;
+}
+
+
+/* extra additions  */
+
+#toTop:hover{
+    /* background-color: #be9e44; */
+    
+
 }

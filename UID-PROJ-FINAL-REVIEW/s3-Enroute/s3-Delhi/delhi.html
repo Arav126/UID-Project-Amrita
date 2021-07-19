@@ -1,0 +1,175 @@
+<html>
+    <title>Delhi to Hyderabad</title>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="delhi.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    </head>
+
+    
+
+    <body>
+        <div class="headimage">
+            <img src="1912587.jpg" width="100%"> 
+            <div class="headimagetext">
+            DELHI TO HYDERABAD
+            </div>
+        </div>  
+
+        <div class="grid">
+            
+            <div class="map">
+                <img src="map.png" usemap="#image-map" width="100%">
+
+                <map name="image-map">
+                    <area href=#taj coords="240,60,18" shape="circle">
+                    <area href=#stupa coords="240,200,23" shape="circle">
+                    
+                </map>
+            </div>
+
+            <div class="caption">
+                Pick a landmark by clicking on it
+            </div>
+
+            <div class="pic1">
+                <img src="1.jpg" width="100%">
+            </div>
+
+            <div class="pic2">
+                <img src="2.jpg" width=100%>
+            </div>
+
+            <div class="agra" id=taj>
+                <img src="taj.jpg" width=100%>
+            </div>
+           
+            <div class="caption">
+                Visit the Taj Mahal, one of the seven wonders of the world
+            </div>
+
+            <div class="sanchi" id=stupa>
+                <img src="sanchi.jpg" width="100%">
+            </div>
+
+            <div class="caption">
+                Sanchi is home to one of the unesco world heritage sites
+            </div>
+
+            <div class="pic3">
+                <img src="5.jpg" width=100%>
+            </div>
+
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="hotels">
+            <br><br><br><br>
+            <span class="hoteltext">Book a hotel with</span> <span class="tttt">  Trip to the tee</span> <br><br><br>
+
+            <form>
+
+                <label for="locations">Choose a location:</label>
+                <select id="dropdown" name="locations">
+                    <option value="Jhansi">Jhansi (+460 km)</option>
+                    <option value="Nagpur">Nagpur(+620 km)</option>
+                </select>
+
+                <label for="stars" >Choose which type of hotel</label>
+                <select id="dropdown2" name="stars">
+                    <option value="3">3 star</option>
+                    <option value="4">4 star</option>
+                    <option value="5">5 star</option>
+                    
+                </select>
+
+                <br><br><br><br>
+
+                <input type="button" value="Submit" id="submitbtn" onclick="find()">
+            
+            </form> 
+
+            <script>
+                
+                
+                function find(){
+                    var loc;
+                    var star;
+                    loc=document.getElementById("dropdown").value;
+                    star=document.getElementById("dropdown2").value;
+                    //if(loc.localeCompare("Jhansi") ==0)
+                    if(loc=="Jhansi"){
+                        switch(star){
+                            case '3': window.open("https://www.tripadvisor.in/Hotel_Review-s1-g679029-d1585365-Reviews-Hotel_Shrinath_Palace-Jhansi_Uttar_Pradesh.html");
+                                              break;
+                            case '4': window.open("https://jhansihotel.com/");
+                                              break;
+                            case '5': window.open("https://jhansihotel.com/");
+                                              break;
+                            default:window.alert("Error") ;
+                            break;
+                            
+                                    
+                                            
+                        }
+                    }
+
+                    else if (loc=="Nagpur"){
+                        switch(star){
+                            case '3': window.open("https://hotel.happyeasygo.com/hotels/nagpur/hotel_5e02d11f159c9427644417a3/2021-07-17_2021-07-18/2-0?source_from=google_ads&hotelId=5e02d11f159c9427644417a3&api_source=google_ads&fclid=13031676393&visitor=fcebeb65ca2a444096bab4450c4f17ac");
+                                              break;
+                            case '4': window.open("https://www.marriott.com/reservation/rateListMenu.mi?defaultTab=standard");
+                                              break;
+                            case '5': window.open("https://www.booking.com/hotel/in/radisson-blu-nagpur.en-gb.html?aid=2146259;label=metagha-link-localuniversalIN-hotel-424968_dev-desktop_los-1_bw-2_dow-Saturday_defdate-1_room-0_lang-en_curr-INR_gstadt-2_rateid-0_aud-0_cid-_gacid-12958475244_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20210717;sid=f7784f8f1b1e0c663fdd79898ba6ce9c;all_sr_blocks=42496801_204050534_2_1_0;checkin=2021-07-17;checkout=2021-07-18;dest_id=-2105396;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=42496801_204050534_2_1_0;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=42496801_204050534_2_1_0__700000;srepoch=1626365712;srpvid=5c2c724721d80004;type=total;ucfs=1&#hotelTmpl");
+                                              break;
+                                              default:window.alert("oops");
+                                              break;
+                        }
+                    }
+                }
+            </script>
+          
+            <!--  <div class="dropdown">
+                <button class="dropbtn">Locations for hotels on the way</button>
+                <div class="dropdown-content">
+                  <a href="#">Agra (+240 km)</a>
+                  <a href="#">Gwalior (+120 km)</a>
+                  <a href="#">Jhansi (+102 km)</a>
+                  <a href="#">Sagar (+220 km)</a>
+                  <a href="#">Nagpur(+400 km)</a>
+                  <a href="#">Adilabad (+200 km)</a>
+                  <a href="#">Nizamabad (+150 km)</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">What kind of hotel?</button>
+                <div class="dropdown-content">
+                  <a href="#">3 star</a>
+                  <a href="#">4 star</a>
+                  <a href="#">5 star</a>
+                </div>
+            </div>
+
+            <br><br><br>
+
+            <button type="submit" class="registerbtn">Register</button> -->
+
+            <br><br><br><br><br><br><br>
+
+        </div>
+
+        
+
+   
+
+
+        
+
+       
+    </body>
+</html>
+
+

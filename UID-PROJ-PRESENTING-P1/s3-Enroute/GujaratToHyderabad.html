@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>
+            Gujarat to Hyderabad
+        </title>
+        <style>
+            *{
+                margin: 0%;
+                padding: 0.35%;
+            }
+            .back{
+                margin: -1%;
+            padding:0%;
+                height: 650px;
+                width: 101.66%;
+                background-image: url(gujaratback.jpg);
+                background-repeat:repeat;
+                background-size:cover;
+                background-attachment:scroll;
+            }
+            body{
+                background-color: #634a06;
+            }
+            .map
+            {
+                top:20;
+                left: -5;
+                position: relative;
+                
+            }
+            img{
+                width: 100%;
+                display: block; 
+            }
+
+            .hotels{
+                background-color: #594730;
+                width: 100%;
+                padding: 0%;
+                margin: 0%;
+        
+    }
+
+    .tttt{
+        font-family: 'Kaushan Script', cursive;
+        color: #be9e44;
+        font-size: 50;
+    }
+
+    .hoteltext{
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 50;
+        color: black;
+        margin-left: 25%;
+        
+    }
+
+    #submitbtn {
+        background-color: #be9e44;
+        color: white;
+        padding: 16px 10px;
+        margin: 5px 0;
+        border: none;
+        cursor: pointer;
+        width: 30%;
+        opacity: 0.9;
+        margin-left: 15%;
+        font-size: 150%;
+      }
+      
+    #submitbtn:hover {
+        opacity: 1;
+       
+        background-color:#251A13; 
+      }
+
+    #dropdown {
+        display: inline-block;
+        height: 50px
+    }
+
+    #dropdown2 {
+        display: inline-block;
+        height: 50px;
+    }
+
+    
+
+    form{
+        margin-left: 30%;
+    }
+
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="back"><center style="font-weight: bolder; font-size:630%;color: #1a1501; font-family: 'Zen Tokyo Zoo',cursive;"><br><br>Gujarat To Hyderabad</center>
+            
+        </div>
+
+        <div class="map">
+            
+            <img src="Gujaratmap.PNG" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="" title="Aurangabad" href="https://www.google.com/travel/things-to-do?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4371334%2C4401769%2C4419364%2C4429192%2C4482438%2C4486153%2C4509341%2C4515404%2C4545890%2C4573678%2C4588560%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&dest_mid=%2Fm%2F02npk5&dest_state_type=main&dest_src=ts&sa=X&ved=2ahUKEwjhmN7wlu_xAhWZXisKHYQVClQQuL0BMAB6BAgGEBo#ttdm=19.879849_75.279857_11" coords="780,500,50" shape="circle">
+    <area target="_blank" alt="" title="Surat" href="https://www.google.com/travel/things-to-do?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4371334%2C4401769%2C4419364%2C4429192%2C4482438%2C4486153%2C4509341%2C4515404%2C4545890%2C4573678%2C4588560%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&dest_mid=%2Fm%2F01h1hn&dest_state_type=main&dest_src=ts&sa=X&ved=2ahUKEwjhmN7wlu_xAhWZXisKHYQVClQQuL0BMAB6BAgGEBo&tcfs=EhIKCS9tLzAxaDFobhIFU3VyYXQ#ttdm=21.125054_72.804057_11" coords="360,300,43" shape="circle">
+</map>
+
+        </div>
+        
+        <div class="hotels">
+            
+            <br><br><br><br>
+            <span class="hoteltext">Book a hotel with</span> <span class="tttt">  Trip to the tee</span> <br><br><br>
+
+            <form>
+
+                <label for="locations" style="margin-left: -6.5%;"><font size="5">Choose a location:</font></label>
+                <select id="dropdown" name="locations">
+                    <option value="A">Aurangabad</option>
+                    <option value="B">Surat</option>
+                </select>
+
+                <label for="stars" ><font size="5">Choose which type of hotel</font></label>
+                <select id="dropdown2" name="stars">
+                    <option value="3">3 star</option>
+                    <option value="4">4 star</option>
+                    <option value="5">5 star</option>
+                    
+                </select>
+
+                <br><br><br><br>
+
+                <input type="button" value="Submit" id="submitbtn" onclick="find()">
+            
+            </form> 
+
+            <script>
+                
+                
+                function find(){
+                    var loc;
+                    var star;
+                    loc=document.getElementById("dropdown").value;
+                    star=document.getElementById("dropdown2").value;
+                    //if(loc.localeCompare("Jhansi") ==0)
+                    if(loc=="A"){
+                        switch(star){
+                            case '3': window.open("http://www.hoteljpinternational.com/");
+                                              break;
+                            case '4': window.open("https://www.vivantahotels.com/en-in/aurangabad-maharashtra/");
+                                              break;
+                            case '5': window.open("https://www.lemontreehotels.com/lemon-tree-hotel/aurangabad/hotel-aurangabad.aspx");
+                                              break;
+                            default:window.alert("Error") ;
+                            break;
+                            
+                                    
+                                            
+                        }
+                    }
+
+                    else if (loc=="B"){
+                        switch(star){
+                            case '3': window.open("https://www.airportcentrepoint.com/");
+                                              break;
+                            case '4': window.open("https://www.radissonhotels.com/en-us/hotels/radisson-blu-nagpur?cid=a:se+b:gmb+c:apac+i:local+e:rdb+d:ind+h:INDNAGP");
+                                              break;
+                            case '5': window.open("https://www.marriott.com/hotels/travel/nagmd-le-m%C3%A9ridien-nagpur/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_Mjg3MDAxMi03MTUtbG9jYXRpb24uZ29vZ2xlX3dlYnNpdGVfb3ZlcnJpZGU%3D");
+                                              break;
+                                              default:window.alert("Select Correct Option");
+                                              break;
+                        }
+                    }
+                }
+            </script>
+        
+
+            <br><br><br><br><br><br><br>
+
+        </div>
+
+            
+        </div>
+    </body>
+</html>

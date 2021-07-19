@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+
+<html> 
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Trying Out
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="s6-PaymentSub.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        
+
+
+    </head>
+
+    <body>
+        <form action="../../s6-Gracias/s6-Menu-ThankYou/s7-ThankYou-Menu.html" method="GET">
+
+            <div class="payContainer">
+                <div class="header-text">
+                    Payment Gateway
+                    <div class="borderBottom"></div>
+                </div>
+    
+                <div class="payMain payMainLeft">
+                    <input type="checkbox" id="active-ref-credit" style="display: none;">
+                    <!-- <label for="active-ref"> -->
+                        <!-- <input type="button" name="credit" value="Credit Card" class="card btn"> -->
+                        <a href="#" class="card btn">
+                            <label for="active-ref-credit">Credit Card</label>
+                        </a>
+                    <!-- </label> -->
+    
+                    <br><br><br>
+    
+                    <label for="card-type">
+                        <span>Type of card:</span><br>
+                        <select name="card" id="card-type" class="type-of-card">
+                            <option value="visa">Visa 💳</option>
+                            <option value="mcard">MasterCard 💳</option>
+                            <option value="amex">American Express 💳</option>
+                            <option value="rupay">rupay 💳</option>
+                        </select>
+                    </label>
+                    
+                    <br><br>
+    
+                    
+                    
+                    <label for="name-on-card">
+                        <span>Name on card:</span><br>
+                        <input class="card-name" id="name-on-card" type="text" name="cardName"><br><br>
+                    </label>
+                    
+                    <label for="cvv">
+                        <span>CVV:</span><br>
+                        <input type="password" id="cvv" class="cvv-no" onchange="cvvCheck()">
+                    </label>
+                    <ion-icon name="checkmark-sharp" id="tick"></ion-icon>
+                    
+    
+                    
+    
+                </div>
+    
+                <div class="payMain payMainRight">
+                    <!-- <input type="button" name="debit" value="Debit Card" class="card btn"> -->
+                    <input type="checkbox" id="active-ref-debit" style="display: none;">
+                    <!-- <label for="active-ref"> -->
+                        <!-- <input type="button" name="credit" value="Credit Card" class="card btn"> -->
+                        <a href="#" class="card btn">
+                            <label for="active-ref-debit">Debit Card</label>
+                        </a>
+                    <!-- </label> -->
+    
+                    <br><br><br><br>
+    
+                    <label for="expiry">
+                        <span>Expiry date:</span> <br>
+                        <input type="month" id="expiry" class="exp-date"><br><br>
+                    </label>
+                    
+                    <label for="card-nos">
+                        <span>Card Number:</span><br>
+                        <input class="card-no" id="card-nos" type="number" name="card-number"><br><br>
+                        <!-- couldnt use css here  -->
+                    </label>
+    
+                </div>
+    
+                <div class="footer-text header-text">
+                    <input type="reset" value="Reset" class="reset-btn btn footer-btn">
+                    &nbsp; 
+                    <input type="submit" name="submit" value="Proceed" class="submit-btn btn footer-btn">
+                    <br><br>
+                    <span>We hope you enjoyed your trip customization experience !</span>
+                    
+                    
+                </div>
+                <br><br>
+            </div>
+
+        </form>
+        
+        <!-- SCRIPT INSERTS -->
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+        </script>
+        <script src="s6-PaymentSub.js"></script> 
+
+    </body>
+</html>
+

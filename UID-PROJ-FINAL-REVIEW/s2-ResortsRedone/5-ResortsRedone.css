@@ -1,0 +1,219 @@
+/* container-bg-color: #F9F6F0 ;
+
+
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* body {
+    background-color: rgb(30, 30, 30);
+} */
+
+/* img {
+    display: block;
+}  */
+
+/* icon pack  */
+
+:root {
+    --darker-black: #0e0e0e;
+    --lighter-black: #303030 ; 
+    --smoke :#FFEFCA;
+    --gold: #be9e44;
+    --red: #ee1d3d;
+  }
+
+ion-icon {
+    color: black;
+    font-size: 50px;
+    /* do multiples of 8 */
+    /* use this instead of size=large */
+  }
+
+.bigContainer {
+    width: 100%;
+    background-color: #F9F6F0 ;
+    height: 200vh;
+    /* margin: 5px auto; */
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1.3fr repeat(4,1fr);
+
+    /* grid-row-gap:20px;
+    grid-column-gap:20px; */
+    
+}
+
+/* HEADER IMAGE  */
+.header-img {
+    background-attachment: fixed;
+    background-size: 50% 50%;
+    /* background-repeat: no-repeat; 
+    messes with h2*/
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~LINKING~~~~~~~~~~~~~~~~~~~~~*/
+
+.h1 {
+    /* span SPACE 2 is imp  */
+    grid-column: 1/span 2;
+    background-image: url("Pics/H1/H1-main.jpg");
+}
+
+.h2 {
+    grid-column: 3/span 2;
+    background-image: url("Pics/H2/h2-main.jpeg");
+}
+
+.img1 { background-image: url("Pics/H1/h1-fam.jpg"); }
+.img2 { background-image: url("Pics/H2/h2-fam.jpg"); }
+/* .img3 { background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url('Pics/H1/h1-coup.jpg')} */
+.img3 { background-image: url("Pics/H1/h1-coup.jpg");}
+.img4 { background-image: url("Pics/H2/h2-coup.jpg"); }
+.img5 { background-image: url("Pics/H1/h1-sing.jpg"); }
+.img6 { background-image: url("Pics/H2/h2-sing.jpg"); }
+
+.img7 { background-image: url("Pics/resort-opt/spa.jpg"); }
+.img8 { background-image: url("Pics/resort-opt/gym.jpg"); }
+.img9 { background-image: url("Pics/resort-opt/swim.jpg"); }
+.img10 { background-image: url("Pics/resort-opt/buffet.jpg"); }
+
+/*~~~~~~~~~~~~~~~~~~~~~IMG HOVER~~~~~~~~~~~~~~~~~~~~~*/
+
+.content-img {
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+/* transition prop must be kept in standard state --  not in link or visited states */
+
+.content-img {
+    /* background-image: linear-gradient(to bottom,grey, black); */
+    /* background-color: rgba(0, 0, 0, 1); */
+    opacity: 0.85;
+
+    /* transition-property: transform; */
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 100ms;
+}
+
+.content-img:hover,
+.content-img:active {
+    /* height: 110%;
+    width: 110%;
+
+    transform: translateX(-5%) translateY(-5%); */
+
+    transform: scale(1.1);
+
+    opacity: 1;
+    z-index: 10;
+
+    /* border: 5px solid white; */
+
+    /* for evenly distributed box shadow  */
+    box-shadow:0px 0px 35px black;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~CONTENT FONT~~~~~~~~~~~~~~~~~~~~~*/
+
+/* to affect all text  */
+.content-text {
+    color:  rgb(30, 30, 30);
+
+    line-height: 35px;
+    
+    
+    text-align: center;
+    margin: auto;
+
+    /* grid-auto-rows: 40px; */
+    /* not able to center arrow symbol  */
+
+}
+
+
+
+
+/* to affect all first lines  */
+.content-text > i {
+    font-family: Perpetua;
+    font-size:18px;
+
+    
+
+}
+
+/* to affect all hr  */
+.content-text > hr {
+    width: 55%;
+    /* to center hr use this  */
+    margin: auto;
+    border-color: #be9e44;
+
+}
+
+/* to affect all second lines */
+.content-text > span {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    line-height: 50px;
+
+}
+
+/* to affect all ionicons in content text  */
+.content-text > ion-icon {
+    font-size: 50px;
+    line-height: 60px;
+    /* width: stretch; */
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~btnResort~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.btnResort {
+    color: #be9e44;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+
+    /* margin: 10px auto; */
+    line-height: 60px;
+
+    padding: 12px 25px;
+    border: 3px solid;
+
+    transition: all;
+    transition-duration: 1.5s;
+    transition-delay: 150ms;
+
+}
+
+.btnResort:hover {
+    border-radius: 100px;
+}
+
+#family-room-1:checked ~ a, #family-room-2:checked ~ a,
+#couple-room-1:checked ~ a, #couple-room-2:checked ~ a,
+#single-room-1:checked ~ a, #single-room-2:checked ~ a
+{
+    background-color: var(--gold);
+    color: var(--lighter-black);
+    border-color: var(--lighter-black);
+}

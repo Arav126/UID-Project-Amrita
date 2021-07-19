@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>
-            Destination
+            Where From ?
         </title>
         <link rel="stylesheet" type="text/css" href="2-WhereFrom.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,7 +14,7 @@
 
     <body>
         <!-- parent grid -->
-        <div class="header-text">choose&nbsp;your&nbsp;escape ;) <hr></div>
+        <div id="top" class="header-text" style="color: #FFEFCA ;" >choose&nbsp;your&nbsp;escape ;) <hr></div>
 
         <div class="destContainer">
 
@@ -23,11 +23,10 @@
             <div class="p1 all-pics">
                 <div class="p1-c1 cuts">
                     <span>
-                        The charm of charminar<br>
-                        The calm of hussain sagar lake<br>
-                        Here is Hyderabad for you<br><br><br>
+                        One day I asked my soul: what is Delhi? <br>
+                        She replied: The world is the body and Delhi is its soul.<br><br>
                     </span>
-                    <a href="../4-DateSelection/4-DateSelection.html" class="btnDest">Take Me Here !</a>
+                    <a onclick="mainLink()" class="btnDest">DELHI</a>
                 </div>
                 <div class="p1-c2"></div>
                 <div class="p1-c3"></div>
@@ -39,11 +38,12 @@
                 <div class="p2-c2"></div>
                 <div class="p2-c3 cuts">
                     <span>
-                        FERNWEH -<br>
-                        Being homesick for a place<br>
-                        Where you've never been<br><br><br>
+                        More Dreams are Realized and<br>
+                        Extinguished in Bombay than<br>
+                        Any Other Place in India.<br><br><br>
+                        
                     </span>
-                    <a href="#" class="btnDest">Out Soon.</a>
+                    <a onclick="mainLink()" class="btnDest">BOMBAY</a>
                 </div>
                 <div class="p2-c4"></div>
             </div>
@@ -52,12 +52,11 @@
                 <div class="p3-c1"></div>
                 <div class="p3-c2 cuts">
                     <span>
-                        Emerald, Blue and You<br>
-                        Good vibes happen on the tides<br>
-                        Life is better at the beach<br>
-                        and most importantly happiness comes in waves<br><br>
+                        Calcutta's the only city I know where<br>
+                        You are actively encouraged to stop strangers<br>
+                        At random for a quick chat.<br><br>
                     </span>
-                    <a href="#" class="btnDest">Out Soon.</a>
+                    <a onclick="mainLink()" class="btnDest">KOLKATA</a>
                 </div>
                 <div class="p3-c3"></div>
                 <div class="p3-c4"></div>
@@ -78,11 +77,12 @@
             <div class="p1 p4 all-pics">
                 <div class="p1-c1 cuts">
                     <span>
-                        The charm of charminar<br>
-                        The calm of hussain sagar lake<br>
-                        Here is Hyderabad for you<br><br><br>
+                        Vantharai vaazha vaikum<br>
+                        Hope you got it right..<br>
+                        My city.. My pride<br>
+                        Namma Chennai<br><br>
                     </span>
-                    <a href="../4-DateSelection/4-DateSelection.html" class="btnDest">Take Me Here !</a>
+                    <a href="../4-DateSelection/4-DateSelection.html" class="btnDest">CHENNAI</a>
                 </div>
                 <div class="p1-c2"></div>
                 <div class="p1-c3"></div>
@@ -94,11 +94,11 @@
                 <div class="p2-c2"></div>
                 <div class="p2-c3 cuts">
                     <span>
-                        FERNWEH -<br>
-                        Being homesick for a place<br>
-                        Where you've never been<br><br><br>
+                        Gujarat is all about Trade with Tradition,<br>
+                        Commerce with Culture, Enterprise with Entertainmen<br>
+                        And Development with Disaster management.<br><br>
                     </span>
-                    <a href="#" class="btnDest">Out Soon.</a>
+                    <a onclick="mainLink()" class="btnDest">GUJARAT</a>
                 </div>
                 <div class="p2-c4"></div>
             </div>
@@ -107,26 +107,37 @@
                 <div class="p3-c1"></div>
                 <div class="p3-c2 cuts">
                     <span>
-                        Emerald, Blue and You<br>
-                        Good vibes happen on the tides<br>
-                        Life is better at the beach<br>
-                        and most importantly happiness comes in waves<br><br>
+                        Inclusiveness is hollow and futile if it speaks<br>
+                        Only for immigrants and fails to<br>
+                        Safeguard the indigenous people.<br><br>
                     </span>
-                    <a href="#" class="btnDest">Out Soon.</a>
+                    <!-- not linked  -->
+                    <a style="cursor: not-allowed;" class="btnDest"><ion-icon name="lock-closed"></ion-icon> ASSAM</a>
                 </div>
                 <div class="p3-c3"></div>
                 <div class="p3-c4"></div>
             </div>
 
             <!-- use it as go back and to top  -->
-            <div class="footer-content1">&#8220;To travel is to take a <br>JOURNERY into <br> YOURSELF&#8221;</div>
+              
+            <div class="footer-content1">&#8220;We travel <br> not to escape life<br>but for LIFE <br> not to ESCAPE us.&#8221;</div>
             <div class="footer-img1"></div>
-            <div class="footer-content2">
-                <p>
-                    This is a phenomena that can be witnessed on no moon nights. The water on the beach glows due to the presence of phytoplankton and this is why it is one of the top things to do when you visit Andaman.
-                </p>
+            <div id="toTop" class="footer-content2" style="font-size: 25px;cursor: pointer;" onclick="window.location.href='#top'">
+                <ion-icon name="arrow-up-outline" style="font-size: 40px;"></ion-icon><br>
+                To Top
             </div>
 
         </div>
+        
+
+        <!-- SCRIPT INSERTS -->
+        <!-- only this version works  -->
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script>
+            function mainLink() {
+                
+                window.open('https://www.google.com/search?client=firefox-b-d&q=travel+quotes');
+            }
+        </script>
     </body>
 </html>
