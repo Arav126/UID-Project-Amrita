@@ -1,7 +1,7 @@
 
 function travellerCount() {
     var i = document.getElementById('no-of-traveller').value;//wow this is a string
-    alert(i);
+    //alert(i);
     var j;
     j = parseInt(i);
 
@@ -26,7 +26,7 @@ function travellerCount() {
             traveller3.style.display = 'none';
             traveller4.style.display = 'none';
             main.style.height = '105vh';
-            alert('reached 2');
+            //alert('reached 2');
             break;
         case 3:
             traveller1.style.display = 'block';
@@ -43,20 +43,20 @@ function travellerCount() {
             main.style.height = '135vh';
             break;
         default:
-            alert('wrong input');
+            //alert('wrong input');
             break;
     }
 
-    alert('end');
+    //alert('end');
 }
 
 
 var JS1;
 function dateCheck1() {
-    alert('called');
+    //alert('called');
     var birth = document.dateForm.birthName1.value;
-    alert(birth);
-    //alert(typeof(birth));
+    //alert(birth);
+    ////alert(typeof(birth));
     var now = new Date('2003-07-20');
     var dt1 = Date.parse(now);//present date
     var dt2 = Date.parse(birth);//expired
@@ -64,16 +64,16 @@ function dateCheck1() {
     //cond1 = document.getElementById('birth-cond-1');
     //cond1icon = document.getElementById('birth-cond-1-icon');
 
-    alert(dt1 + 'lol' + dt2);
+    //alert(dt1 + 'lol' + dt2);
 
     if(dt2 > dt1) {
-        alert('you are under 18');
+        //alert('you are under 18');
         // falsePart(cond1,cond1icon,1);
         JS1 = 0;
     } else {
         // truePart(cond1,cond1icon,1);
         JS1 = 1;
-        alert('you are above 18');
+        //alert('you are above 18');
     }
     var a = document.getElementById('child1');
      submitCheck(a);//calling submission check
@@ -83,10 +83,10 @@ function dateCheck1() {
 // COPIES 
 
 function dateCheck2() {
-    alert('called');
+    //alert('called');
     var birth = document.dateForm.birthName2.value;
-    alert(birth);
-    //alert(typeof(birth));
+    //alert(birth);
+    ////alert(typeof(birth));
     var now = new Date('2003-07-20');
     var dt1 = Date.parse(now);//present date
     var dt2 = Date.parse(birth);//expired
@@ -94,16 +94,16 @@ function dateCheck2() {
     //cond1 = document.getElementById('birth-cond-1');
     //cond1icon = document.getElementById('birth-cond-1-icon');
 
-    alert(dt1 + 'lol' + dt2);
+    //alert(dt1 + 'lol' + dt2);
 
     if(dt2 > dt1) {
-        alert('you are under 18');
+        //alert('you are under 18');
         // falsePart(cond1,cond1icon,1);
         JS1 = 0;
     } else {
         // truePart(cond1,cond1icon,1);
         JS1 = 1;
-        alert('you are above 18');
+        //alert('you are above 18');
     }
 
     var a = document.getElementById('child2');
@@ -112,10 +112,10 @@ function dateCheck2() {
 }
 
 function dateCheck3() {
-    alert('called');
+    //alert('called');
     var birth = document.dateForm.birthName3.value;
-    alert(birth);
-    //alert(typeof(birth));
+    //alert(birth);
+    ////alert(typeof(birth));
     var now = new Date('2003-07-20');
     var dt1 = Date.parse(now);//present date
     var dt2 = Date.parse(birth);//expired
@@ -123,16 +123,16 @@ function dateCheck3() {
     //cond1 = document.getElementById('birth-cond-1');
     //cond1icon = document.getElementById('birth-cond-1-icon');
 
-    alert(dt1 + 'lol' + dt2);
+    //alert(dt1 + 'lol' + dt2);
 
     if(dt2 > dt1) {
-        alert('you are under 18');
+        //alert('you are under 18');
         // falsePart(cond1,cond1icon,1);
         JS1 = 0;
     } else {
         // truePart(cond1,cond1icon,1);
         JS1 = 1;
-        alert('you are above 18');
+        //alert('you are above 18');
     }
     var a = document.getElementById('child3');
      submitCheck(a);//calling submission check
@@ -140,10 +140,10 @@ function dateCheck3() {
 }
 
 function dateCheck4() {
-    alert('called');
+    //alert('called');
     var birth = document.dateForm.birthName4.value;
-    alert(birth);
-    //alert(typeof(birth));
+    //alert(birth);
+    ////alert(typeof(birth));
     var now = new Date('2003-07-20');
     var dt1 = Date.parse(now);//present date
     var dt2 = Date.parse(birth);//expired
@@ -151,19 +151,47 @@ function dateCheck4() {
     //cond1 = document.getElementById('birth-cond-1');
     //cond1icon = document.getElementById('birth-cond-1-icon');
 
-    alert(dt1 + 'lol' + dt2);
+    //alert(dt1 + 'lol' + dt2);
 
     if(dt2 > dt1) {
-        alert('you are under 18');
+        //alert('you are under 18');
         // falsePart(cond1,cond1icon,1);
         JS1 = 0;
     } else {
         // truePart(cond1,cond1icon,1);
         JS1 = 1;
-        alert('you are above 18');
+        //alert('you are above 18');
     }
     var a = document.getElementById('child4');
      submitCheck(a);//calling submission check
+
+}
+
+function mainCheck() {
+    //alert('called');
+    var birth = document.dateForm.departureDate.value;
+    //alert(birth);
+    ////alert(typeof(birth));
+    var now = new Date();
+    var dt1 = Date.parse(now);//present date
+    var dt2 = Date.parse(birth);//expired
+
+    //cond1 = document.getElementById('birth-cond-1');
+    //cond1icon = document.getElementById('birth-cond-1-icon');
+
+    //alert(dt1 + 'lol' + dt2);
+
+    if(dt2 > dt1) {
+        //alert('okay');
+        // falsePart(cond1,cond1icon,1);
+        // JS1 = 0;
+    } else {
+        // truePart(cond1,cond1icon,1);
+        // JS1 = 1;
+        alert('Date has already passed.');
+    }
+    // var a = document.getElementById('child4');
+    //  submitCheck(a);//calling submission check
 
 }
 
@@ -174,11 +202,11 @@ function submitCheck(check) {
     var submit = document.getElementById('submit-btn');
 
     if(JS1==1) {
-        alert('enabled');
+        //alert('enabled');
         // submit.disabled = false;
         check.checked = "true";
     } else if(JS1==0) {
-        alert('disabled');
+        //alert('disabled');
         // submit.disabled = true;
         check.checked = "false";
     }

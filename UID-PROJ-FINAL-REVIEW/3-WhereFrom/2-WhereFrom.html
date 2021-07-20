@@ -13,6 +13,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">    </head>
 
     <body>
+
+        <form action="" method="GET" name="whereForm">
         <!-- parent grid -->
         <div id="top" class="header-text" style="color: #FFEFCA ;" >choose&nbsp;your&nbsp;escape ;) <hr></div>
 
@@ -22,11 +24,12 @@
 
             <div class="p1 all-pics">
                 <div class="p1-c1 cuts">
+                    <input type="radio" id="delhiID" name="radios" value="delhi" style="display: none;">
                     <span>
                         One day I asked my soul: what is Delhi? <br>
                         She replied: The world is the body and Delhi is its soul.<br><br>
                     </span>
-                    <a onclick="mainLink()" class="btnDest">DELHI</a>
+                    <a onclick="mainLink()" class="btnDest"> <label for="delhiID">DELHI</label></a>
                 </div>
                 <div class="p1-c2"></div>
                 <div class="p1-c3"></div>
@@ -37,13 +40,14 @@
                 <div class="p2-c1"></div>
                 <div class="p2-c2"></div>
                 <div class="p2-c3 cuts">
+                    <input type="radio" id="bombayID" name="radios" value="bombay" style="display: none;">
                     <span>
                         More Dreams are Realized and<br>
                         Extinguished in Bombay than<br>
                         Any Other Place in India.<br><br><br>
                         
                     </span>
-                    <a onclick="mainLink()" class="btnDest">BOMBAY</a>
+                    <a onclick="mainLink()" class="btnDest"><label for="bombayID">BOMBAY</label></a>
                 </div>
                 <div class="p2-c4"></div>
             </div>
@@ -51,12 +55,13 @@
             <div class="p3 all-pics">
                 <div class="p3-c1"></div>
                 <div class="p3-c2 cuts">
+                    <input type="radio" id="kolkataID" name="radios" value="kolkata" style="display: none;">
                     <span>
                         Calcutta's the only city I know where<br>
                         You are actively encouraged to stop strangers<br>
                         At random for a quick chat.<br><br>
                     </span>
-                    <a onclick="mainLink()" class="btnDest">KOLKATA</a>
+                    <a onclick="mainLink()" class="btnDest"><label for="kolkataID">KOLKATA</label></a>
                 </div>
                 <div class="p3-c3"></div>
                 <div class="p3-c4"></div>
@@ -79,13 +84,14 @@
 
             <div class="p1 p4 all-pics">
                 <div class="p1-c1 cuts">
+                    <input type="radio" id="chennaiID" name="radios" value="chennai" style="display: none;">
                     <span>
                         Vantharai vaazha vaikum<br>
                         Hope you got it right..<br>
                         My city.. My pride<br>
                         Namma Chennai<br><br>
                     </span>
-                    <a onclick="mainLink()" class="btnDest">CHENNAI</a>
+                    <a onclick="mainLink()" class="btnDest"><label for="chennaiID">CHENNAI</label></a>
                 </div>
                 <div class="p1-c2"></div>
                 <div class="p1-c3"></div>
@@ -96,11 +102,12 @@
                 <div class="p2-c1"></div>
                 <div class="p2-c2"></div>
                 <div class="p2-c3 cuts">
+                    <input type="radio" id="gujaratID" name="radios" value="gujarat" style="display: none;">
                     <span>
                         Khushbu Gujarat ki<br>
                         Kuchh din toh Gujariye Gujarat mein<br><br><br>
                     </span>
-                    <a onclick="mainLink()" class="btnDest">GUJARAT</a>
+                    <a onclick="mainLink()" class="btnDest"><label for="gujaratID">GUJARAT</label></a>
                 </div>
                 <div class="p2-c4"></div>
             </div>
@@ -130,13 +137,15 @@
             </div>
 
         </div>
+        </form>
         
 
         <!-- SCRIPT INSERTS -->
         <!-- only this version works  -->
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script src="../z-global/global.js"></script>
         <script>
-            function mainLink() {  
+            function mainLink() {
                 window.open('../4-DestinationsRedone/SubCoverAbi.html');
             }
         </script>

@@ -24,10 +24,10 @@
             <div class="main">
                 <div style="height: 10px;"></div>
                 <span>Your name : </span><br>
-                <input class="name-entry" type="text" name="name-field"><br><br>
+                <input class="name-entry" type="text" name="name-field" pattern="^[a-zA-Z]*$" title="only alphabets, no numbers, no spaces"><br><br>
 
                 <span>When do you plan on beginning your trip?</span><br>
-                <input class="dept-date-selection" type="date" name="departure-date"><br><br>
+                <input class="dept-date-selection" type="date" name="departureDate" onchange="mainCheck()"><br><br>
 
                 <span>Number of travellers -</span><br>
                 <!-- <input class="number-selection" type="number"><br><br> -->
@@ -50,7 +50,10 @@
                         <!-- Disclaimer - This site is purely made for adults <br>
                         adult user experience and thu<br>
                         no kids below the -->
-                    </center>                    
+                    </center>
+                    <span style="color: whitesmoke;">
+                        Chekcbox auto checks if traveller is below 18 years old.                 
+                    </span>
                 </div>
 
             </div>
@@ -105,10 +108,10 @@
                 <span class="tab"></span>
                 <span class="span-text">Gender: </span>
                 <div class="gender-div">
-                    <input type="radio" id="active-gender-m" style="display: none;" name="gender2" value="m">
-                    <input type="radio" id="active-gender-f" style="display: none;" name="gender2" value="f">
-                    <div class="male"> <label for="active-gender-m">Male</label></div>
-                    <div class="female"> <label for="active-gender-f">Female</label></div>
+                    <input type="radio" id="active-gender-m-c1" style="display: none;" name="gender2" value="m">
+                    <input type="radio" id="active-gender-f-c1" style="display: none;" name="gender2" value="f">
+                    <div class="male"> <label for="active-gender-m-c1">Male</label></div>
+                    <div class="female"> <label for="active-gender-f-c1">Female</label></div>
                 </div>
             </div>
             <div id="traveller3" class="traveller-all">
@@ -125,10 +128,10 @@
                 <span class="tab"></span>
                 <span class="span-text">Gender: </span>
                 <div class="gender-div">
-                    <input type="radio" id="active-gender-m" style="display: none;" name="gender3" value="m">
-                    <input type="radio" id="active-gender-f" style="display: none;" name="gender3" value="f">
-                    <div class="male"> <label for="active-gender-m">Male</label></div>
-                    <div class="female"> <label for="active-gender-f">Female</label></div>
+                    <input type="radio" id="active-gender-m-c2" style="display: none;" name="gender3" value="m">
+                    <input type="radio" id="active-gender-f-c2" style="display: none;" name="gender3" value="f">
+                    <div class="male"> <label for="active-gender-m-c2">Male</label></div>
+                    <div class="female"> <label for="active-gender-f-c2">Female</label></div>
                 </div>
             </div>
             <div id="traveller4" class="traveller-all">
@@ -145,10 +148,10 @@
                 <span class="tab"></span>
                 <span class="span-text">Gender: </span>
                 <div class="gender-div">
-                    <input type="radio" id="active-gender-m" style="display: none;" name="gender4" value="m">
-                    <input type="radio" id="active-gender-f" style="display: none;" name="gender4" value="f">
-                    <div class="male"> <label for="active-gender-m">Male</label></div>
-                    <div class="female"> <label for="active-gender-f">Female</label></div>
+                    <input type="radio" id="active-gender-m-c3" style="display: none;" name="gender4" value="m">
+                    <input type="radio" id="active-gender-f-c3" style="display: none;" name="gender4" value="f">
+                    <div class="male"> <label for="active-gender-m-c3">Male</label></div>
+                    <div class="female"> <label for="active-gender-f-c3">Female</label></div>
                 </div>
             </div>
 

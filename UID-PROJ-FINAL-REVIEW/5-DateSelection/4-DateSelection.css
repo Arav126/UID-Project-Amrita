@@ -198,8 +198,11 @@ body {
     padding: 4px 15px;
 }
 
-#active-gender-m:checked ~ .male{background-color: #be9e44;}
-#active-gender-f:checked ~ .female{background-color: #be9e44;}
+#active-gender-m:checked ~ .male,#active-gender-f:checked ~ .female,
+#active-gender-m-c1:checked ~ .male,#active-gender-f-c1:checked ~ .female,
+#active-gender-m-c2:checked ~ .male,#active-gender-f-c2:checked ~ .female,
+#active-gender-m-c3:checked ~ .male,#active-gender-f-c3:checked ~ .female
+{background-color: #be9e44;}
 
 
 
