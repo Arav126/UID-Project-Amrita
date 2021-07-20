@@ -1,20 +1,19 @@
 
-var g;
+
 var i = 0;
 
+function enroute(lol){
+   
 
-function enroute() {
-    alert(g);
-
-    if(g=="delhi"){
-        window.open('../s3-Enroute/s3-Delhi/delhi.html');
-    } else if(g=="bombay") {
+    if(lol=="delhi"){
+        window.open("../s3-Enroute/s3-Delhi/delhi.html");
+    } else if(lol=="bombay") {
         window.open('../s3-Enroute/s3-Bombay/BombayToHyderabad.html');
-    } else if(g=="kolkata") {
+    } else if(lol=="kolkata") {
         window.open('../s3-Enroute/s3-Kolkata/kolkata.html');
-    } else if(g=="chennai") {
+    } else if(lol=="chennai") {
         window.open('../s3-Enroute/s3-Chennai/stage31.html');
-    } else if(g=="gujarat") {
+    } else if(lol=="gujarat") {
         window.open('../s3-Enroute/s3-Gujarat/GujaratToHyderabad.html');
     }
 
@@ -23,12 +22,14 @@ function enroute() {
 
 function mainLink() {
     
-    g = document.whereForm.radios.value;
-    // alert(g);
-
+    var g = document.whereForm.radios.value;
+    alert(g);
+    
     ++i;
     if(i==3){
-        window.open('../4-DestinationsRedone/SubCoverAbi.html');
+        location.href="../4-DestinationsRedone/SubCoverAbi.html";
+        return g;
     }
-    
+
 }
+var lol=mainLink();
