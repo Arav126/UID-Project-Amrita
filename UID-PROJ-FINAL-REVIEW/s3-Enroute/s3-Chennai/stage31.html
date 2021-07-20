@@ -88,6 +88,49 @@
     form{
         margin-left: 30%;
     }
+    
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 10px;
+  color: white;
+  z-index: 3;
+}
 
         </style>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -98,10 +141,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+
+        
+
+          <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
+
         <div class="back"><center style="font-weight: bolder; font-size:620%;color: #ffffff; font-family: 'Zen Tokyo Zoo',cursive;"><br>Chennai</center>
             <center style="font-weight: bolder; font-size:620%;color: #ffffff; font-family: 'Zen Tokyo Zoo',cursive;">To</center>
             <center style="font-weight: bolder; font-size:700%;color: #ffffff; font-family: 'Zen Tokyo Zoo',cursive;">Hyderabad</center>
         </div>
+
+       
 
         <div class="map">
             
@@ -125,8 +185,8 @@
 
                 <label for="locations" style="margin-left: -6.5%;"><font size="5">Choose a location:</font></label>
                 <select id="dropdown" name="locations">
-                    <option value="Jhansi">Jhansi (+460 km)</option>
-                    <option value="Nagpur">Nagpur(+620 km)</option>
+                    <option value="Jhansi">Kadapa</option>
+                    <option value="Nagpur">Nandyal</option>
                 </select>
 
                 <label for="stars" ><font size="5">Choose which type of hotel</font></label>
@@ -142,6 +202,13 @@
                 <input type="button" value="Submit" id="submitbtn" onclick="find()">
             
             </form> 
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../s3-3-Temple/stage32.html">SRI RANGANAYKA TEMPLES</a>
+                <a href="../s3-4-Caves/stage33new.html">BELUM CAVES</a>
+                <a href="../s3-Chennai/stage31.html">BACK TO MAP</a>
+              </div>
 
             <script>
                 
